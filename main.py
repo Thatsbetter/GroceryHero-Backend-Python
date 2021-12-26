@@ -1,7 +1,7 @@
 import bcrypt
 from flask import Flask, jsonify, request
 from flask_restful import Resource, Api
-from sqlalchemy import create_engine
+from sqlalchemy import create_engine, and_
 from sqlalchemy.orm.session import sessionmaker
 
 from models.user import User, Base
@@ -22,7 +22,8 @@ class RegisterUser(Resource):
     def post(self):
         status = 400
         request_data = request.get_json()
-        #TODO Check if "name","password",... exists in request_data
+
+        # TODO Check if "name","password",... exists in request_data
 
         if request_data is not None:
             name = request_data.get("name")
@@ -84,8 +85,12 @@ class DeleteUser(Resource):
             name = request_data.get("name")
             email = request_data.get("email")
             if checkUserExists(email):
-                del_usr = session.query(User).filter(User.email == email).first()
-                session.delete(del_usr)
+                # checks if name and email are the same
+                address = session.query(User).filter(
+                    and_(User.email == email,
+                         User.name == name))
+                address.delete()
+                session.commit()
                 session.close()
 
                 status = 200
