@@ -136,4 +136,4 @@ api.add_resource(CheckLoginDetails, "/api/checkLoginDetails")
 api.add_resource(DeleteUser, "/api/deleteUser")
 
 if (__name__ == "__main__"):
-    app.run(port=1111)
+    app.run(host="0.0.0.0",port=1111)
