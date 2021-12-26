@@ -1,10 +1,10 @@
-from sqlalchemy import create_engine, delete
-from sqlalchemy.orm.session import sessionmaker
-from models.user import User, Base
-from flask import Flask, jsonify, request
 import bcrypt
-import json
+from flask import Flask, jsonify, request
+from flask_restful import Resource, Api
+from sqlalchemy import create_engine
+from sqlalchemy.orm.session import sessionmaker
 
+from models.user import User, Base
 
 SALT = bcrypt.gensalt()
 
@@ -15,74 +15,89 @@ Session = sessionmaker(bind=engine)
 session = Session()
 
 app = Flask(__name__)
+api = Api(app)
 
-@app.route("/api/registerUser", methods=["POST"])
-def registerUser():
-    request_data = request.get_json()
-    name = request_data.get("name")
-    password = request_data.get("password")
-    age = request_data.get("age")
-    email = request_data.get("email")
-    location = request_data.get("location")
 
-    status = 400
+class RegisterUser(Resource):
+    def post(self):
+        status = 400
+        request_data = request.get_json()
+        #TODO Check if "name","password",... exists in request_data
 
-    if (not checkUserExists(email)):
-        # Generate new Password Hash
-        hash = generatePasswordHash(password).hex()
+        if request_data is not None:
+            name = request_data.get("name")
+            password = request_data.get("password")
+            age = request_data.get("age")
+            email = request_data.get("email")
+            location = request_data.get("location")
 
-        new_user = User(name=name, age=age, email=email, password=hash, location=location)
-        session.add(new_user)
-        session.commit()
+            if (not checkUserExists(email)):
+                # Generate new Password Hash
+                hash = generatePasswordHash(password).hex()
 
-        status = 201
-    else:
-        # User already exists
-        status = 409
+                new_user = User(name=name, age=age, email=email, password=hash, location=location)
+                session.add(new_user)
+                session.commit()
 
-    return jsonify({
-        "status": status,
-    })
+                status = 201
+            else:
+                # User already exists
+                status = 409
 
-@app.route("/api/checkLoginDetails", methods=["POST"])
-def checkLoginDetails():
-    request_data = request.get_json()
-    email = request_data.get("email")
-    password = request_data.get("password")
+        return jsonify({
+            "status": status,
+        })
 
-    status = 402
 
-    result = session.query(User).filter(User.email == email).all()
+class CheckLoginDetails(Resource):
+    def post(self):
+        status = 402
+        request_data = request.get_json()
+        if request_data is not None:
 
-    if (len(result) == 1):
-        user = result[0]
-        id = user.id
-        hash = user.password
+            email = request_data.get("email")
+            password = request_data.get("password")
 
-        if (checkPasswordHash(password, hash)):
-            status = 200
-        else:
-            status = 401
+            result = session.query(User).filter(User.email == email).all()
+            session.close()
 
-    return jsonify({
-        "status" : status
-    })
+            if (len(result) == 1):
+                user = result[0]
+                id = user.id
+                hash = user.password
 
-@app.route("/api/deleteUser", methods=["POST"])
-def deleteUser():
-    request_data = request.get_json()
-    name = request_data.get("name")
+                if (checkPasswordHash(password, hash)):
+                    status = 200
+                else:
+                    status = 401
 
-    # TODO
-    users = session.query(User).filter(User.name == name).all()
+        return jsonify({
+            "status": status
+        })
 
-    delete = User.delete().where(User.name == name)
-    delete.execute()
 
-    return {"test": "test"}
+class DeleteUser(Resource):
+    def post(self):
+        status = 400
+        request_data = request.get_json()
+        if request_data is not None:
+            name = request_data.get("name")
+            email = request_data.get("email")
+            if checkUserExists(email):
+                del_usr = session.query(User).filter(User.email == email).first()
+                session.delete(del_usr)
+                session.close()
+
+                status = 200
+
+        return jsonify({
+            "status": status
+        })
+
 
 def checkUserExists(email):
     users = session.query(User).filter(User.email == email).all()
+    session.close()
 
     exists = False
 
@@ -91,11 +106,13 @@ def checkUserExists(email):
 
     return exists
 
+
 def generatePasswordHash(password):
     password = password.encode()
 
     hash = bcrypt.hashpw(password, SALT)
     return hash
+
 
 def checkPasswordHash(password, storedHash):
     password = password.encode()
@@ -108,5 +125,10 @@ def checkPasswordHash(password, storedHash):
 
     return match
 
+
+api.add_resource(RegisterUser, "/api/registerUser")
+api.add_resource(CheckLoginDetails, "/api/checkLoginDetails")
+api.add_resource(DeleteUser, "/api/deleteUser")
+
 if (__name__ == "__main__"):
-    app.run(host="0.0.0.0", port=1111)
+    app.run(port=1111)
