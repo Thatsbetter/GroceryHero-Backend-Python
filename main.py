@@ -3,10 +3,11 @@ from flask import Flask, jsonify, request
 from flask_restful import Resource, Api
 from sqlalchemy import create_engine, and_
 from sqlalchemy.orm.session import sessionmaker
-
+import os
 from models.user import User, Base
 
-SALT = bcrypt.gensalt()
+# Get salt from file, if existent, else generate new salt
+SALT = getSalt()
 
 conn_string = "sqlite:///data/smartshopping.db"
 engine = create_engine(conn_string)
@@ -129,6 +130,21 @@ def checkPasswordHash(password, storedHash):
         match = True
 
     return match
+
+
+def getSalt():
+    salt = bcrypt.gensalt()
+
+    # Check if there is a file called salt.txt
+    if (os.path.exists("salt.txt")):
+        with open("salt.txt") as file:
+            salt = file.readline()
+    else:
+        # Create new file for the generated salt
+        with open("salt.txt", "w") as file:
+            file.write(salt)
+
+    return salt
 
 
 api.add_resource(RegisterUser, "/api/registerUser")
