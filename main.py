@@ -6,8 +6,6 @@ from sqlalchemy.orm.session import sessionmaker
 import os
 from models.user import User, Base
 
-# Get salt from file, if existent, else generate new salt
-SALT = getSalt()
 
 conn_string = "sqlite:///data/smartshopping.db"
 engine = create_engine(conn_string)
@@ -18,15 +16,32 @@ session = Session()
 app = Flask(__name__)
 api = Api(app)
 
+def getSalt():
+    salt = bcrypt.gensalt().hex()
+
+    # Check if there is a file called salt.txt
+    if (os.path.exists("salt.txt")):
+        with open("salt.txt") as file:
+            salt = file.readline()
+    else:
+        # Create new file for the generated salt
+        with open("salt.txt", "w") as file:
+            file.write(salt)
+
+    return salt
+
+# Get salt from file, if existent, else generate new salt
+SALT = bytes.fromhex(getSalt())
+
 
 class RegisterUser(Resource):
     def post(self):
         status = 400
+        required_params = {"name", "password", "email", "age", "location"}
         request_data = request.get_json()
 
-        # TODO Check if "name","password",... exists in request_data
-
-        if request_data is not None:
+        # Validate Parameters
+        if (request_data is not None and validateParameters(request_data, required_params, request_data.keys(), required_params)):
             name = request_data.get("name")
             password = request_data.get("password")
             age = request_data.get("age")
@@ -45,6 +60,8 @@ class RegisterUser(Resource):
             else:
                 # User already exists
                 status = 409
+        else:
+            status = 418
 
         return jsonify({
             "status": status,
@@ -54,9 +71,11 @@ class RegisterUser(Resource):
 class CheckLoginDetails(Resource):
     def post(self):
         status = 402
+        required_params = {"email", "password"}
         request_data = request.get_json()
-        if request_data is not None:
 
+        # Validate Parameters
+        if (request_data is not None and validateParameters(request_data, required_params, request_data.keys(), required_params)):
             email = request_data.get("email")
             password = request_data.get("password")
 
@@ -72,6 +91,8 @@ class CheckLoginDetails(Resource):
                     status = 200
                 else:
                     status = 401
+        else:
+            status = 418
 
         return jsonify({
             "status": status
@@ -81,8 +102,11 @@ class CheckLoginDetails(Resource):
 class DeleteUser(Resource):
     def post(self):
         status = 400
+        required_params = {"name", "email"}
         request_data = request.get_json()
-        if request_data is not None:
+
+        # Validate Parameters
+        if (request_data is not None and validateParameters(request_data, required_params, request_data.keys(), required_params)):
             name = request_data.get("name")
             email = request_data.get("email")
             if checkUserExists(email):
@@ -95,6 +119,8 @@ class DeleteUser(Resource):
                 session.close()
 
                 status = 200
+        else:
+            status = 418
 
         return jsonify({
             "status": status
@@ -132,20 +158,20 @@ def checkPasswordHash(password, storedHash):
     return match
 
 
-def getSalt():
-    salt = bcrypt.gensalt()
+def validateParameters(data, requiredParameters, receivedParameters, necessaryParameters):
+    valid = True
 
-    # Check if there is a file called salt.txt
-    if (os.path.exists("salt.txt")):
-        with open("salt.txt") as file:
-            salt = file.readline()
+    # Check if all necessary parameters are existent
+    if (receivedParameters >= requiredParameters):
+        # Check if all necessary parameters are nonempty
+        parametersToCheck = receivedParameters & necessaryParameters
+        for parameter in parametersToCheck:
+            if not (len(data.get(parameter)) > 0):
+                valid = False
     else:
-        # Create new file for the generated salt
-        with open("salt.txt", "w") as file:
-            file.write(salt)
+        valid = False
 
-    return salt
-
+    return valid
 
 api.add_resource(RegisterUser, "/api/registerUser")
 api.add_resource(CheckLoginDetails, "/api/checkLoginDetails")
