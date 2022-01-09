@@ -1,11 +1,12 @@
+import os
+
 import bcrypt
 from flask import Flask, jsonify, request
 from flask_restful import Resource, Api
 from sqlalchemy import create_engine, and_
 from sqlalchemy.orm.session import sessionmaker
-import os
-from models.user import User, Base
 
+from models.user import User, Base
 
 conn_string = "sqlite:///data/smartshopping.db"
 engine = create_engine(conn_string)
@@ -15,6 +16,14 @@ session = Session()
 
 app = Flask(__name__)
 api = Api(app)
+
+'''
+A Function to generate Salt for hashing
+it checks if a file exists, which has Salt within
+if not it will generate a salt and saves it in a file
+
+'''
+
 
 def getSalt():
     salt = bcrypt.gensalt().hex()
@@ -30,8 +39,28 @@ def getSalt():
 
     return salt
 
+
 # Get salt from file, if existent, else generate new salt
 SALT = bytes.fromhex(getSalt())
+
+'''
+A Class to register a user
+Data is given using post Method
+it checks if all the parameters exist and request is not empty
+then saves it to database
+
+@:param: email (string)     : email to login
+@:param: password (string)  : password to login
+@:param: name  (string)     : name of the user 
+@:param: age (string)       : age of the user
+@:param: location (string)  : user´s location
+
+@:return 201 : if new user created
+@:return 409 : if user already exists
+@:return 418 : if data is not in a correct form or has missing parameters
+
+
+'''
 
 
 class RegisterUser(Resource):
@@ -41,7 +70,8 @@ class RegisterUser(Resource):
         request_data = request.get_json()
 
         # Validate Parameters
-        if (request_data is not None and validateParameters(request_data, required_params, request_data.keys(), required_params)):
+        if (request_data is not None and validateParameters(request_data, required_params, request_data.keys(),
+                                                            required_params)):
             name = request_data.get("name")
             password = request_data.get("password")
             age = request_data.get("age")
@@ -58,7 +88,6 @@ class RegisterUser(Resource):
 
                 status = 201
             else:
-                # User already exists
                 status = 409
         else:
             status = 418
@@ -68,6 +97,23 @@ class RegisterUser(Resource):
         })
 
 
+'''
+A Class to check login credential
+Data is given using post Method
+it checks if all parameters exist and request is not empty
+then saves it to database
+
+@:param: email (string)      : email to login
+@:param: password (string)   : password to login
+
+@:return 200 : if password is correct
+@:return 409 : if password is incorrect
+@:return 418 : if data is not in a correct form or has missing parameters
+
+
+'''
+
+
 class CheckLoginDetails(Resource):
     def post(self):
         status = 402
@@ -75,7 +121,8 @@ class CheckLoginDetails(Resource):
         request_data = request.get_json()
 
         # Validate Parameters
-        if (request_data is not None and validateParameters(request_data, required_params, request_data.keys(), required_params)):
+        if (request_data is not None and validateParameters(request_data, required_params, request_data.keys(),
+                                                            required_params)):
             email = request_data.get("email")
             password = request_data.get("password")
 
@@ -84,7 +131,6 @@ class CheckLoginDetails(Resource):
 
             if (len(result) == 1):
                 user = result[0]
-                id = user.id
                 hash = user.password
 
                 if (checkPasswordHash(password, hash)):
@@ -99,6 +145,26 @@ class CheckLoginDetails(Resource):
         })
 
 
+'''
+A Class to delete a user
+Data is given using post Method
+it checks if all the parameters exist and request is not empty
+then saves it to database
+
+@:param: email (string)     : email to login
+@:param: name  (string)     : name of the user 
+
+
+@:return 201 : if user is deleted
+@:return 400 : email or user does not exist
+@:return 418 : if data is not in a correct form or has missing parameters
+
+
+
+
+'''
+
+
 class DeleteUser(Resource):
     def post(self):
         status = 400
@@ -106,7 +172,8 @@ class DeleteUser(Resource):
         request_data = request.get_json()
 
         # Validate Parameters
-        if (request_data is not None and validateParameters(request_data, required_params, request_data.keys(), required_params)):
+        if (request_data is not None and validateParameters(request_data, required_params, request_data.keys(),
+                                                            required_params)):
             name = request_data.get("name")
             email = request_data.get("email")
             if checkUserExists(email):
@@ -127,6 +194,17 @@ class DeleteUser(Resource):
         })
 
 
+'''
+A Function to check if a user already in database exists
+
+@:param: email (string) : email that user is registered with it
+
+@:return: True : if user exists
+@:return: False : if user does not exist
+
+'''
+
+
 def checkUserExists(email):
     users = session.query(User).filter(User.email == email).all()
     session.close()
@@ -139,6 +217,15 @@ def checkUserExists(email):
     return exists
 
 
+'''
+A Function to generate a hashed password using Salt
+
+@:param: password (string) : the password that user uses to login
+
+@:return: password (string) : a hashed password
+'''
+
+
 def generatePasswordHash(password):
     password = password.encode()
 
@@ -146,22 +233,40 @@ def generatePasswordHash(password):
     return hash
 
 
+'''
+A Function to check if a password matches with the hashed password
+
+@:param: password (string) : password that user uses to login
+@:param: password (string) : hashed password that saved in database
+
+@:return: True : if password matches with hashed password
+@:return: False : if password does not matches with hashed password
+
+'''
+
+
 def checkPasswordHash(password, storedHash):
     password = password.encode()
     generatedHash = bcrypt.hashpw(password, SALT)
 
-    match = False
+    return (generatedHash.hex() == storedHash)
 
-    if (generatedHash.hex() == storedHash):
-        match = True
+'''
 
-    return match
+a Function to check if all of required Parameters exist in data
 
+@:param data (dict) : received data
+@:param requiredParameters (dict) : ??
+@:param receivedParameters (dict) : ??
+@:param necessaryParameters (dict) : ??
 
+@:return True : if received data has required parameters
+@:return False : if received data hasn´t required parameters
+
+'''
 def validateParameters(data, requiredParameters, receivedParameters, necessaryParameters):
     valid = True
 
-    # Check if all necessary parameters are existent
     if (receivedParameters >= requiredParameters):
         # Check if all necessary parameters are nonempty
         parametersToCheck = receivedParameters & necessaryParameters
@@ -173,9 +278,10 @@ def validateParameters(data, requiredParameters, receivedParameters, necessaryPa
 
     return valid
 
+# assigning routs to each class
 api.add_resource(RegisterUser, "/api/registerUser")
 api.add_resource(CheckLoginDetails, "/api/checkLoginDetails")
 api.add_resource(DeleteUser, "/api/deleteUser")
 
 if (__name__ == "__main__"):
-    app.run(host="0.0.0.0",port=1111)
+    app.run(host="0.0.0.0", port=1111)
