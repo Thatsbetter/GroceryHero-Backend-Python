@@ -3,14 +3,21 @@ from flask import Flask, jsonify, request
 from flask_restful import Resource, Api
 from sqlalchemy import create_engine, and_
 from sqlalchemy.orm.session import sessionmaker
+from sqlalchemy.ext.declarative import declarative_base
+from models.RegisteredUser import RegisteredUser, Base
 import os
-from models.user import User, Base
 
 
-conn_string = "sqlite:///data/smartshopping.db"
-engine = create_engine(conn_string)
-Base.metadata.create_all(engine)
-Session = sessionmaker(bind=engine)
+# TODO Save username and password of database somewhere and then load in the variables (not hardcoded in main.py!)
+username = "smartshopping"
+password = "smartshopping"
+
+conn_string = "postgresql://smartshopping:smartshopping@127.0.0.1:5432/smartshopping"
+db = create_engine(conn_string)
+base = declarative_base()
+base.metadata.create_all(db)
+
+Session = sessionmaker(db)
 session = Session()
 
 app = Flask(__name__)
@@ -52,7 +59,7 @@ class RegisterUser(Resource):
                 # Generate new Password Hash
                 hash = generatePasswordHash(password).hex()
 
-                new_user = User(name=name, age=age, email=email, password=hash, location=location)
+                new_user = RegisteredUser(name=name, age=age, email=email, password=hash, location=location)
                 session.add(new_user)
                 session.commit()
 
@@ -79,7 +86,7 @@ class CheckLoginDetails(Resource):
             email = request_data.get("email")
             password = request_data.get("password")
 
-            result = session.query(User).filter(User.email == email).all()
+            result = session.query(RegisteredUser).filter(RegisteredUser.email == email).all()
             session.close()
 
             if (len(result) == 1):
@@ -111,9 +118,9 @@ class DeleteUser(Resource):
             email = request_data.get("email")
             if checkUserExists(email):
                 # checks if name and email are the same
-                address = session.query(User).filter(
-                    and_(User.email == email,
-                         User.name == name))
+                address = session.query(RegisteredUser).filter(
+                    and_(RegisteredUser.email == email,
+                         RegisteredUser.name == name))
                 address.delete()
                 session.commit()
                 session.close()
@@ -128,7 +135,7 @@ class DeleteUser(Resource):
 
 
 def checkUserExists(email):
-    users = session.query(User).filter(User.email == email).all()
+    users = session.query(RegisteredUser).filter(RegisteredUser.email == email).all()
     session.close()
 
     exists = False
@@ -163,11 +170,12 @@ def validateParameters(data, requiredParameters, receivedParameters, necessaryPa
 
     # Check if all necessary parameters are existent
     if (receivedParameters >= requiredParameters):
-        # Check if all necessary parameters are nonempty
+        # Check if necessary parameters are nonempty
         parametersToCheck = receivedParameters & necessaryParameters
         for parameter in parametersToCheck:
-            if not (len(data.get(parameter)) > 0):
-                valid = False
+            if (isinstance((data.get(parameter)), str)):
+                if not (len(data.get(parameter)) > 0):
+                    valid = False
     else:
         valid = False
 

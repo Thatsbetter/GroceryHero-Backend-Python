@@ -1,9 +1,8 @@
 CREATE TABLE user (
-	id integer not null,
+	id serial primary key,
 	name text not null,
 	age integer not null,
 	email text not null,
 	password text not null,
-	location text not null,
-	primary key (id)
+	location text not null
 )
