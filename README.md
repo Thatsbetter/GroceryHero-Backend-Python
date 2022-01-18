@@ -1,4 +1,5 @@
 # Info
 
-**Refactored Branch Basesetup with Falsk_restful and added delete function**
+Dev Branch
 
+Create a new branch, if you're working on a new feature
