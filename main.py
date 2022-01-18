@@ -1,17 +1,24 @@
-import os
-
 import bcrypt
 from flask import Flask, jsonify, request
 from flask_restful import Resource, Api
 from sqlalchemy import create_engine, and_
 from sqlalchemy.orm.session import sessionmaker
+from sqlalchemy.ext.declarative import declarative_base
+from models.RegisteredUser import RegisteredUser, Base
+from models.ShoppingItem import ShoppingItem
+import os
 
-from models.user import User, Base
 
-conn_string = "sqlite:///data/smartshopping.db"
-engine = create_engine(conn_string)
-Base.metadata.create_all(engine)
-Session = sessionmaker(bind=engine)
+# TODO Save username and password of database somewhere and then load in the variables (not hardcoded in main.py!)
+username = "smartshopping"
+password = "smartshopping"
+
+conn_string = "postgresql://smartshopping:smartshopping@127.0.0.1:5432/smartshopping"
+db = create_engine(conn_string)
+base = declarative_base()
+base.metadata.create_all(db)
+
+Session = sessionmaker(db)
 session = Session()
 
 app = Flask(__name__)
@@ -23,8 +30,6 @@ it checks if a file exists, which has Salt within
 if not it will generate a salt and saves it in a file
 
 '''
-
-
 def getSalt():
     salt = bcrypt.gensalt().hex()
 
@@ -39,9 +44,14 @@ def getSalt():
 
     return salt
 
-
 # Get salt from file, if existent, else generate new salt
 SALT = bytes.fromhex(getSalt())
+
+
+'''
+User Management Endpoints
+'''
+
 
 '''
 A Class to register a user
@@ -59,10 +69,7 @@ then saves it to database
 @:return 409 : if user already exists
 @:return 418 : if data is not in a correct form or has missing parameters
 
-
 '''
-
-
 class RegisterUser(Resource):
     def post(self):
         status = 400
@@ -70,8 +77,7 @@ class RegisterUser(Resource):
         request_data = request.get_json()
 
         # Validate Parameters
-        if (request_data is not None and validateParameters(request_data, required_params, request_data.keys(),
-                                                            required_params)):
+        if (request_data is not None and validateParameters(request_data, required_params, request_data.keys(), required_params)):
             name = request_data.get("name")
             password = request_data.get("password")
             age = request_data.get("age")
@@ -82,7 +88,7 @@ class RegisterUser(Resource):
                 # Generate new Password Hash
                 hash = generatePasswordHash(password).hex()
 
-                new_user = User(name=name, age=age, email=email, password=hash, location=location)
+                new_user = RegisteredUser(name=name, age=age, email=email, password=hash, location=location)
                 session.add(new_user)
                 session.commit()
 
@@ -112,8 +118,6 @@ then saves it to database
 
 
 '''
-
-
 class CheckLoginDetails(Resource):
     def post(self):
         status = 402
@@ -121,16 +125,16 @@ class CheckLoginDetails(Resource):
         request_data = request.get_json()
 
         # Validate Parameters
-        if (request_data is not None and validateParameters(request_data, required_params, request_data.keys(),
-                                                            required_params)):
+        if (request_data is not None and validateParameters(request_data, required_params, request_data.keys(), required_params)):
             email = request_data.get("email")
             password = request_data.get("password")
 
-            result = session.query(User).filter(User.email == email).all()
+            result = session.query(RegisteredUser).filter(RegisteredUser.email == email).all()
             session.close()
 
             if (len(result) == 1):
                 user = result[0]
+                id = user.id
                 hash = user.password
 
                 if (checkPasswordHash(password, hash)):
@@ -145,26 +149,6 @@ class CheckLoginDetails(Resource):
         })
 
 
-'''
-A Class to delete a user
-Data is given using post Method
-it checks if all the parameters exist and request is not empty
-then saves it to database
-
-@:param: email (string)     : email to login
-@:param: name  (string)     : name of the user 
-
-
-@:return 201 : if user is deleted
-@:return 400 : email or user does not exist
-@:return 418 : if data is not in a correct form or has missing parameters
-
-
-
-
-'''
-
-
 class DeleteUser(Resource):
     def post(self):
         status = 400
@@ -172,15 +156,14 @@ class DeleteUser(Resource):
         request_data = request.get_json()
 
         # Validate Parameters
-        if (request_data is not None and validateParameters(request_data, required_params, request_data.keys(),
-                                                            required_params)):
+        if (request_data is not None and validateParameters(request_data, required_params, request_data.keys(), required_params)):
             name = request_data.get("name")
             email = request_data.get("email")
             if checkUserExists(email):
                 # checks if name and email are the same
-                address = session.query(User).filter(
-                    and_(User.email == email,
-                         User.name == name))
+                address = session.query(RegisteredUser).filter(
+                    and_(RegisteredUser.email == email,
+                         RegisteredUser.name == name))
                 address.delete()
                 session.commit()
                 session.close()
@@ -195,6 +178,80 @@ class DeleteUser(Resource):
 
 
 '''
+Shopping List Management Endpoints
+'''
+
+
+'''
+A Endpoint to create a new Shopping List
+TODO add status codes as response
+
+@:param: item1 (json)   : First item of the shopping list (send as json)
+@:param: item2 (json)   : Second item of the shopping list (send as json)
+@:param: item3 (json)   : Third item of the shopping list (send as json) 
+@:param: status (string)    : Current status of the shopping list (e.g open, reserved, closed)
+@:param: created_by (integer)  : creator of the shopping list
+@:param: allow_multiple_shoppers (boolean)  : Allow multiple shoppers to participate in finishing the list
+
+@:return 201 : TODO
+'''
+class CreateShoppingList(Resource):
+    def post(self):
+        required_params = {"item1", "item2", "item3", "status", "created_by", "allow_multiple_shoppers"}
+        request_data = request.get_json()
+
+        if (request_data is not None and validateParameters(request_data, required_params, request_data.keys(), {"status", "created_by", "allow_multiple_shoppers"})):
+            item1 = request_data.get("item1")
+            item2 = request_data.get("item2")
+            item3 = request_data.get("item3")
+            status = request_data.get("status")
+            created_by = request_data.get("created_by")
+            allow_multiple_shoppers = request_data.get("allow_multiple_shoppers")
+
+            # Create singe shopping items if existent
+            new_shopping_item1 = ShoppingItem(
+                product=item1["product"],
+                count=item1["count"],
+                shopper=item1["shopper"],
+                status=item1["status"]
+            )
+            new_shopping_item2 = ShoppingItem(
+                product=item2["product"],
+                count=item2["count"],
+                shopper=item2["shopper"],
+                status=item2["status"]
+            )
+            new_shopping_item3 = ShoppingItem(
+                product=item3["product"],
+                count=item3["count"],
+                shopper=item3["shopper"],
+                status=item3["status"]
+            )
+
+            session.add(new_shopping_item1)
+            session.add(new_shopping_item2)
+            session.add(new_shopping_item3)
+
+            # Create shopping list
+            new_shopping_list = ShoppingList(
+                item1=new_shopping_item1.id,
+                item2=new_shopping_item2.id,
+                item3=new_shopping_item3.id,
+                status=status,
+                created_by=created_by,
+                allow_multiple_shoppers=allow_multiple_shoppers
+            )
+
+            session.add(new_shopping_list)
+            session.commit()
+
+
+'''
+Helper Methods
+'''
+
+
+'''
 A Function to check if a user already in database exists
 
 @:param: email (string) : email that user is registered with it
@@ -203,10 +260,8 @@ A Function to check if a user already in database exists
 @:return: False : if user does not exist
 
 '''
-
-
 def checkUserExists(email):
-    users = session.query(User).filter(User.email == email).all()
+    users = session.query(RegisteredUser).filter(RegisteredUser.email == email).all()
     session.close()
 
     exists = False
@@ -224,8 +279,6 @@ A Function to generate a hashed password using Salt
 
 @:return: password (string) : a hashed password
 '''
-
-
 def generatePasswordHash(password):
     password = password.encode()
 
@@ -243,8 +296,6 @@ A Function to check if a password matches with the hashed password
 @:return: False : if password does not matches with hashed password
 
 '''
-
-
 def checkPasswordHash(password, storedHash):
     password = password.encode()
     generatedHash = bcrypt.hashpw(password, SALT)
@@ -252,9 +303,7 @@ def checkPasswordHash(password, storedHash):
     return (generatedHash.hex() == storedHash)
 
 '''
-
 a Function to check if all of required Parameters exist in data
-
 @:param data (dict) : received data
 @:param requiredParameters (dict) : ??
 @:param receivedParameters (dict) : ??
@@ -262,17 +311,18 @@ a Function to check if all of required Parameters exist in data
 
 @:return True : if received data has required parameters
 @:return False : if received data hasn´t required parameters
-
 '''
 def validateParameters(data, requiredParameters, receivedParameters, necessaryParameters):
     valid = True
 
+    # Check if all necessary parameters are existent
     if (receivedParameters >= requiredParameters):
-        # Check if all necessary parameters are nonempty
+        # Check if necessary parameters are nonempty
         parametersToCheck = receivedParameters & necessaryParameters
         for parameter in parametersToCheck:
-            if not (len(data.get(parameter)) > 0):
-                valid = False
+            if (isinstance((data.get(parameter)), str)):
+                if not (len(data.get(parameter)) > 0):
+                    valid = False
     else:
         valid = False
 
@@ -282,6 +332,8 @@ def validateParameters(data, requiredParameters, receivedParameters, necessaryPa
 api.add_resource(RegisterUser, "/api/registerUser")
 api.add_resource(CheckLoginDetails, "/api/checkLoginDetails")
 api.add_resource(DeleteUser, "/api/deleteUser")
+
+api.add_resource(CreateShoppingList, "/api/createShoppingList")
 
 if (__name__ == "__main__"):
     app.run(host="0.0.0.0", port=1111)
