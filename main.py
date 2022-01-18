@@ -28,7 +28,6 @@ api = Api(app)
 A Function to generate Salt for hashing
 it checks if a file exists, which has Salt within
 if not it will generate a salt and saves it in a file
-
 '''
 def getSalt():
     salt = bcrypt.gensalt().hex()
@@ -68,7 +67,6 @@ then saves it to database
 @:return 201 : if new user created
 @:return 409 : if user already exists
 @:return 418 : if data is not in a correct form or has missing parameters
-
 '''
 class RegisterUser(Resource):
     def post(self):
@@ -115,8 +113,6 @@ then saves it to database
 @:return 200 : if password is correct
 @:return 409 : if password is incorrect
 @:return 418 : if data is not in a correct form or has missing parameters
-
-
 '''
 class CheckLoginDetails(Resource):
     def post(self):
@@ -148,7 +144,17 @@ class CheckLoginDetails(Resource):
             "status": status
         })
 
+'''
+API Endpoin to delete a existing User
+TODO secure endpoint so not everyone can just delete a user 
 
+@:param: email (string)      : email to login
+@:param: password (string)   : password to login
+
+@:return 200 : if user has been successfully deleted
+@:return 400 : Error while trying to delete the user
+@:return 418 : if data is not in a correct form or has missing parameters
+'''
 class DeleteUser(Resource):
     def post(self):
         status = 400
@@ -258,7 +264,6 @@ A Function to check if a user already in database exists
 
 @:return: True : if user exists
 @:return: False : if user does not exist
-
 '''
 def checkUserExists(email):
     users = session.query(RegisteredUser).filter(RegisteredUser.email == email).all()
@@ -294,7 +299,6 @@ A Function to check if a password matches with the hashed password
 
 @:return: True : if password matches with hashed password
 @:return: False : if password does not matches with hashed password
-
 '''
 def checkPasswordHash(password, storedHash):
     password = password.encode()
