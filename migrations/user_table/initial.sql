@@ -1,4 +1,4 @@
-CREATE TABLE user (
+CREATE TABLE registered_user (
 	id serial primary key,
 	name text not null,
 	age integer not null,

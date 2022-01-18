@@ -5,6 +5,7 @@ from sqlalchemy import create_engine, and_
 from sqlalchemy.orm.session import sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
 from models.RegisteredUser import RegisteredUser, Base
+from models.ShoppingItem import ShoppingItem
 import os
 
 
@@ -40,6 +41,10 @@ def getSalt():
 # Get salt from file, if existent, else generate new salt
 SALT = bytes.fromhex(getSalt())
 
+
+'''
+User Management Endpoints
+'''
 
 class RegisterUser(Resource):
     def post(self):
@@ -133,6 +138,64 @@ class DeleteUser(Resource):
             "status": status
         })
 
+
+'''
+Shopping List Management Endpoints
+'''
+
+class CreateShoppingList(Resource):
+    def post(self):
+        required_params = {"item1", "item2", "item3", "status", "created_by", "allow_multiple_shoppers"}
+        request_data = request.get_json()
+
+        if (request_data is not None and validateParameters(request_data, required_params, request_data.keys(), {"status", "created_by", "allow_multiple_shoppers"})):
+            item1 = request_data.get("item1")
+            item2 = request_data.get("item2")
+            item3 = request_data.get("item3")
+            status = request_data.get("status")
+            created_by = request_data.get("created_by")
+            allow_multiple_shoppers = request_data.get("allow_multiple_shoppers")
+
+            # Create singe shopping items if existent
+            new_shopping_item1 = ShoppingItem(
+                product=item1["product"],
+                count=item1["count"],
+                shopper=item1["shopper"],
+                status=item1["status"]
+            )
+            new_shopping_item2 = ShoppingItem(
+                product=item2["product"],
+                count=item2["count"],
+                shopper=item2["shopper"],
+                status=item2["status"]
+            )
+            new_shopping_item3 = ShoppingItem(
+                product=item3["product"],
+                count=item3["count"],
+                shopper=item3["shopper"],
+                status=item3["status"]
+            )
+
+            session.add(new_shopping_item1)
+            session.add(new_shopping_item2)
+            session.add(new_shopping_item3)
+
+            # Create shopping list
+            new_shopping_list = ShoppingList(
+                item1=new_shopping_item1.id,
+                item2=new_shopping_item2.id,
+                item3=new_shopping_item3.id,
+                status=status,
+                created_by=created_by,
+                allow_multiple_shoppers=allow_multiple_shoppers
+            )
+
+            session.add(new_shopping_list)
+            session.commit()
+
+'''
+Helper Methods
+'''
 
 def checkUserExists(email):
     users = session.query(RegisteredUser).filter(RegisteredUser.email == email).all()
