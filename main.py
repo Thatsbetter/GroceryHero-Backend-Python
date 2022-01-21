@@ -1,19 +1,22 @@
+import os
+
 import bcrypt
 from flask import Flask, jsonify, request
 from flask_restful import Resource, Api
 from sqlalchemy import create_engine, and_
-from sqlalchemy.orm.session import sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
-from models.RegisteredUser import RegisteredUser, Base
+from sqlalchemy.orm.session import sessionmaker
+
+from models.RegisteredUser import RegisteredUser
 from models.ShoppingItem import ShoppingItem
-import os
-
-
 # TODO Save username and password of database somewhere and then load in the variables (not hardcoded in main.py!)
+from models.ShoppingList import ShoppingList
+
 username = "smartshopping"
 password = "smartshopping"
 
 conn_string = "postgresql://smartshopping:smartshopping@127.0.0.1:5432/smartshopping"
+
 db = create_engine(conn_string)
 base = declarative_base()
 base.metadata.create_all(db)
@@ -22,6 +25,7 @@ Session = sessionmaker(db)
 session = Session()
 
 app = Flask(__name__)
+
 api = Api(app)
 
 '''
@@ -29,6 +33,8 @@ A Function to generate Salt for hashing
 it checks if a file exists, which has Salt within
 if not it will generate a salt and saves it in a file
 '''
+
+
 def getSalt():
     salt = bcrypt.gensalt().hex()
 
@@ -43,14 +49,13 @@ def getSalt():
 
     return salt
 
+
 # Get salt from file, if existent, else generate new salt
 SALT = bytes.fromhex(getSalt())
-
 
 '''
 User Management Endpoints
 '''
-
 
 '''
 A Class to register a user
@@ -68,6 +73,8 @@ then saves it to database
 @:return 409 : if user already exists
 @:return 418 : if data is not in a correct form or has missing parameters
 '''
+
+
 class RegisterUser(Resource):
     def post(self):
         status = 400
@@ -75,7 +82,8 @@ class RegisterUser(Resource):
         request_data = request.get_json()
 
         # Validate Parameters
-        if (request_data is not None and validateParameters(request_data, required_params, request_data.keys(), required_params)):
+        if (request_data is not None and validateParameters(request_data, required_params, request_data.keys(),
+                                                            required_params)):
             name = request_data.get("name")
             password = request_data.get("password")
             age = request_data.get("age")
@@ -114,6 +122,8 @@ then saves it to database
 @:return 409 : if password is incorrect
 @:return 418 : if data is not in a correct form or has missing parameters
 '''
+
+
 class CheckLoginDetails(Resource):
     def post(self):
         status = 402
@@ -121,7 +131,8 @@ class CheckLoginDetails(Resource):
         request_data = request.get_json()
 
         # Validate Parameters
-        if (request_data is not None and validateParameters(request_data, required_params, request_data.keys(), required_params)):
+        if (request_data is not None and validateParameters(request_data, required_params, request_data.keys(),
+                                                            required_params)):
             email = request_data.get("email")
             password = request_data.get("password")
 
@@ -130,13 +141,14 @@ class CheckLoginDetails(Resource):
 
             if (len(result) == 1):
                 user = result[0]
-                id = user.id
                 hash = user.password
 
                 if (checkPasswordHash(password, hash)):
                     status = 200
                 else:
                     status = 401
+            else:
+                status = 404
         else:
             status = 418
 
@@ -144,8 +156,9 @@ class CheckLoginDetails(Resource):
             "status": status
         })
 
+
 '''
-API Endpoin to delete a existing User
+API Endpoint to delete a existing User
 TODO secure endpoint so not everyone can just delete a user 
 
 @:param: email (string)      : email to login
@@ -155,6 +168,8 @@ TODO secure endpoint so not everyone can just delete a user
 @:return 400 : Error while trying to delete the user
 @:return 418 : if data is not in a correct form or has missing parameters
 '''
+
+
 class DeleteUser(Resource):
     def post(self):
         status = 400
@@ -162,7 +177,8 @@ class DeleteUser(Resource):
         request_data = request.get_json()
 
         # Validate Parameters
-        if (request_data is not None and validateParameters(request_data, required_params, request_data.keys(), required_params)):
+        if (request_data is not None and validateParameters(request_data, required_params, request_data.keys(),
+                                                            required_params)):
             name = request_data.get("name")
             email = request_data.get("email")
             if checkUserExists(email):
@@ -187,7 +203,6 @@ class DeleteUser(Resource):
 Shopping List Management Endpoints
 '''
 
-
 '''
 A Endpoint to create a new Shopping List
 TODO add status codes as response
@@ -201,12 +216,16 @@ TODO add status codes as response
 
 @:return 201 : TODO
 '''
+
+
 class CreateShoppingList(Resource):
     def post(self):
+        status = 400
         required_params = {"item1", "item2", "item3", "status", "created_by", "allow_multiple_shoppers"}
         request_data = request.get_json()
 
-        if (request_data is not None and validateParameters(request_data, required_params, request_data.keys(), {"status", "created_by", "allow_multiple_shoppers"})):
+        if (request_data is not None and validateParameters(request_data, required_params, request_data.keys(),
+                                                            {"status", "created_by", "allow_multiple_shoppers"})):
             item1 = request_data.get("item1")
             item2 = request_data.get("item2")
             item3 = request_data.get("item3")
@@ -214,7 +233,7 @@ class CreateShoppingList(Resource):
             created_by = request_data.get("created_by")
             allow_multiple_shoppers = request_data.get("allow_multiple_shoppers")
 
-            # Create singe shopping items if existent
+            # Create single shopping items if existent
             new_shopping_item1 = ShoppingItem(
                 product=item1["product"],
                 count=item1["count"],
@@ -250,12 +269,54 @@ class CreateShoppingList(Resource):
 
             session.add(new_shopping_list)
             session.commit()
+            status = 201
+            return jsonify({
+                "status": status
+            })
+
+
+'''
+A Class to change Shopping List´s Status
+Data is given using post Method
+it checks if all the parameters exist and request is not empty
+then changes the status of Shopping List
+
+@:param: id (string)      : id of the Shopping List
+@:param: status (string)  : new status of the Shopping List
+
+@:return 200 : if Status Changed Successfully 
+@:return 404 : if Shopping List does not exist
+@:return 400 : if data is not in a correct form or has missing parameters
+'''
+
+
+class ChangeShoppingListStatus(Resource):
+    def post(self):
+        request_data = request.get_json()
+        required_params = {"id", "status"}
+        status = 400
+        if (request_data is not None and validateParameters(request_data, required_params, request_data.keys(),
+                                                            required_params)):
+            shoppinglist_id = request_data.get("id")
+            new_status = request_data.get("status")
+            if shopping_list_exists(shoppinglist_id):
+                shoppinglist = session.query(ShoppingList).filter((ShoppingList.id == shoppinglist_id))
+                shoppinglist.status = new_status
+                status = 200
+                session.commit()
+                session.close()
+
+            else:
+                status = 404
+
+        return jsonify({
+            "status": status
+        })
 
 
 '''
 Helper Methods
 '''
-
 
 '''
 A Function to check if a user already in database exists
@@ -265,6 +326,8 @@ A Function to check if a user already in database exists
 @:return: True : if user exists
 @:return: False : if user does not exist
 '''
+
+
 def checkUserExists(email):
     users = session.query(RegisteredUser).filter(RegisteredUser.email == email).all()
     session.close()
@@ -277,6 +340,18 @@ def checkUserExists(email):
     return exists
 
 
+def shopping_list_exists(shoppinglist_id):
+    shopping_lists = session.query(ShoppingList).filter(ShoppingList.id == shoppinglist_id).all()
+    session.close()
+
+    exists = False
+
+    if (len(shopping_lists) > 0):
+        exists = True
+
+    return exists
+
+
 '''
 A Function to generate a hashed password using Salt
 
@@ -284,6 +359,8 @@ A Function to generate a hashed password using Salt
 
 @:return: password (string) : a hashed password
 '''
+
+
 def generatePasswordHash(password):
     password = password.encode()
 
@@ -300,11 +377,14 @@ A Function to check if a password matches with the hashed password
 @:return: True : if password matches with hashed password
 @:return: False : if password does not matches with hashed password
 '''
+
+
 def checkPasswordHash(password, storedHash):
     password = password.encode()
     generatedHash = bcrypt.hashpw(password, SALT)
 
     return (generatedHash.hex() == storedHash)
+
 
 '''
 a Function to check if all of required Parameters exist in data
@@ -316,6 +396,8 @@ a Function to check if all of required Parameters exist in data
 @:return True : if received data has required parameters
 @:return False : if received data hasn´t required parameters
 '''
+
+
 def validateParameters(data, requiredParameters, receivedParameters, necessaryParameters):
     valid = True
 
@@ -332,12 +414,14 @@ def validateParameters(data, requiredParameters, receivedParameters, necessaryPa
 
     return valid
 
+
 # assigning routs to each class
 api.add_resource(RegisterUser, "/api/registerUser")
 api.add_resource(CheckLoginDetails, "/api/checkLoginDetails")
 api.add_resource(DeleteUser, "/api/deleteUser")
 
 api.add_resource(CreateShoppingList, "/api/createShoppingList")
+api.add_resource(ChangeShoppingListStatus, "/api/changeShoppinglistStatus")
 
 if (__name__ == "__main__"):
     app.run(host="0.0.0.0", port=1111)
