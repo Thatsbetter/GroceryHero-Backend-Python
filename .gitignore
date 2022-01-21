@@ -3,3 +3,4 @@ env/
 salt.txt
 credential.json
 .idea
+__pycache__/.
