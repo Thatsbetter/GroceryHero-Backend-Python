@@ -1,9 +1,11 @@
 from sqlalchemy import create_engine, Column, Integer, String, ForeignKey, Table
 from sqlalchemy.orm import relationship, backref
 from sqlalchemy.ext.declarative import declarative_base
+from databasecredential import Credential
 
 Base = declarative_base()
-db = create_engine("postgresql://smartshopping:smartshopping@127.0.0.1:5432/smartshopping")
+conn_string = Credential().get_conn_uri()
+db = create_engine(conn_string)
 
 
 class ShoppingItem(Base):

@@ -7,15 +7,12 @@ from sqlalchemy import create_engine, and_
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm.session import sessionmaker
 
+from databasecredential import Credential
 from models.RegisteredUser import RegisteredUser
 from models.ShoppingItem import ShoppingItem
-# TODO Save username and password of database somewhere and then load in the variables (not hardcoded in main.py!)
 from models.ShoppingList import ShoppingList
 
-username = "smartshopping"
-password = "smartshopping"
-
-conn_string = "postgresql://smartshopping:smartshopping@127.0.0.1:5432/smartshopping"
+conn_string = Credential().get_conn_uri()
 
 db = create_engine(conn_string)
 base = declarative_base()
