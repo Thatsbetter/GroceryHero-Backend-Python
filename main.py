@@ -267,9 +267,10 @@ class CreateShoppingList(Resource):
             session.add(new_shopping_list)
             session.commit()
             status = 201
-            return jsonify({
-                "status": status
-            })
+            
+        return jsonify({
+            "status": status
+        })
 
 
 '''
