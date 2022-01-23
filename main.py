@@ -315,7 +315,7 @@ A Class to change Shopping Item´s Status
 '''
 class ChangeShoppingItemStatus(Resource):
     def post(self):
-        request_data = requests.get_json()
+        request_data = request.get_json()
         required_params = {"id", "status"}
         status = 400
         if (request_data is not None and validateParameters(request_data, required_params, request_data.keys(), required_params)):
