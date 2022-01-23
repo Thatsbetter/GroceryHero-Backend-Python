@@ -12,7 +12,7 @@ from models.RegisteredUser import RegisteredUser
 from models.ShoppingItem import ShoppingItem
 from models.ShoppingList import ShoppingList
 
-conn_string = Credential().get_conn_uri()
+conn_string = Credential.get_conn_uri()
 
 db = create_engine(conn_string)
 base = declarative_base()
@@ -207,7 +207,7 @@ TODO add status codes as response
 @:param: item1 (json)   : First item of the shopping list (send as json)
 @:param: item2 (json)   : Second item of the shopping list (send as json)
 @:param: item3 (json)   : Third item of the shopping list (send as json) 
-@:param: status (string)    : Current status of the shopping list (e.g open, reserved, closed)
+@:param: status (string)    : Current status of the shopping list (e.g open, closed)
 @:param: created_by (integer)  : creator of the shopping list
 @:param: allow_multiple_shoppers (boolean)  : Allow multiple shoppers to participate in finishing the list
 
@@ -278,15 +278,13 @@ Data is given using post Method
 it checks if all the parameters exist and request is not empty
 then changes the status of Shopping List
 
-@:param: id (string)      : id of the Shopping List
-@:param: status (string)  : new status of the Shopping List
+@:param: id (integer)     : id of the Shopping List
+@:param: status (string)  : new status of the Shopping List (open, done)
 
 @:return 200 : if Status Changed Successfully 
 @:return 404 : if Shopping List does not exist
 @:return 400 : if data is not in a correct form or has missing parameters
 '''
-
-
 class ChangeShoppingListStatus(Resource):
     def post(self):
         request_data = request.get_json()
@@ -296,13 +294,45 @@ class ChangeShoppingListStatus(Resource):
                                                             required_params)):
             shoppinglist_id = request_data.get("id")
             new_status = request_data.get("status")
-            if shopping_list_exists(shoppinglist_id):
+            if (shopping_list_exists(shoppinglist_id)):
                 shoppinglist = session.query(ShoppingList).filter((ShoppingList.id == shoppinglist_id))
                 shoppinglist.status = new_status
                 status = 200
                 session.commit()
                 session.close()
 
+            else:
+                status = 404
+
+        return jsonify({
+            "status": status
+        })
+
+
+'''
+A Class to change Shopping Item´s Status
+
+@:param: id (integer)     : id of the Shopping List
+@:param: status (string)  : new status of the Shopping Item (open, shopping, done)
+
+@:return 200 : if Status Changed Successfully 
+@:return 404 : if Shopping Item does not exist
+@:return 400 : if data is not in a correct form or has missing parameters
+'''
+class ChangeShoppingItemStatus(Resource):
+    def post(self):
+        request_data = requests.get_json()
+        required_params = {"id", "status"}
+        status = 400
+        if (request_data is not None and validateParameters(request_data, required_params, request_data.keys(), required_params)):
+            shoppingitem_id = request_data.get("id")
+            new_status = request_data.get("status")
+            if (shopping_item_exists(shoppingitem_id)):
+                shoppingitem = session.query(ShoppingItem).filter(ShoppingItem.id == shoppingitem_id)
+                shoppingitem.status = new_status
+                status = 200
+                session.commit()
+                session.close()
             else:
                 status = 404
 
@@ -337,16 +367,34 @@ def checkUserExists(email):
     return exists
 
 
+'''
+A Function that checks, if there is a shoppinglist for the given id
+
+@:param: shoppinglist_id (integer) : the id of the shoppinglist to check
+
+@:return: True : shoppinglist exists
+@:return: False : shoppinglist doesnt exist
+'''
 def shopping_list_exists(shoppinglist_id):
     shopping_lists = session.query(ShoppingList).filter(ShoppingList.id == shoppinglist_id).all()
     session.close()
 
-    exists = False
+    return (len(shopping_lists) > 0)
 
-    if (len(shopping_lists) > 0):
-        exists = True
 
-    return exists
+'''
+A Function that checks, if there is a shoppingitem for the given id
+
+@:param: shoppingitem_id (integer) : the id of the shoppingitem to check
+
+@:return: True : shoppingitem exists
+@:return: False : shoppingitem doesnt exist
+'''
+def shopping_item_exists(shoppingitem_id):
+    shopping_items = session.query(ShoppingItem).filter(ShoppingItem.id == shoppingitem_id).all()
+    session.close()
+
+    return (len(shopping_items) > 0)
 
 
 '''
@@ -413,12 +461,19 @@ def validateParameters(data, requiredParameters, receivedParameters, necessaryPa
 
 
 # assigning routs to each class
-api.add_resource(RegisterUser, "/api/registerUser")
-api.add_resource(CheckLoginDetails, "/api/checkLoginDetails")
-api.add_resource(DeleteUser, "/api/deleteUser")
 
-api.add_resource(CreateShoppingList, "/api/createShoppingList")
-api.add_resource(ChangeShoppingListStatus, "/api/changeShoppinglistStatus")
+# /user
+api.add_resource(RegisterUser, "/api/user/register")
+api.add_resource(CheckLoginDetails, "/api/user/login")
+api.add_resource(DeleteUser, "/api/user/delete")
+
+# /shoppinglist
+api.add_resource(CreateShoppingList, "/api/shoppinglist/create")
+api.add_resource(ChangeShoppingListStatus, "/api/shoppinglist/status")
+
+# /shoppingitem
+api.add_resource(ChangeShoppingItemStatus, "/api/shoppingitem/status")
+
 
 if (__name__ == "__main__"):
     app.run(host="0.0.0.0", port=1111)
