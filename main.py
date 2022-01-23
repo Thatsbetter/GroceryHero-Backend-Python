@@ -279,7 +279,7 @@ it checks if all the parameters exist and request is not empty
 then changes the status of Shopping List
 
 @:param: id (integer)     : id of the Shopping List
-@:param: status (string)  : new status of the Shopping List (open, done)
+@:param: status (string)  : new status of the Shopping List (open, closed)
 
 @:return 200 : if Status Changed Successfully 
 @:return 404 : if Shopping List does not exist
@@ -313,7 +313,7 @@ class ChangeShoppingListStatus(Resource):
 A Class to change Shopping Item´s Status
 
 @:param: id (integer)     : id of the Shopping List
-@:param: status (string)  : new status of the Shopping Item (open, shopping, done)
+@:param: status (string)  : new status of the Shopping Item (open, shopping, closed)
 
 @:return 200 : if Status Changed Successfully 
 @:return 404 : if Shopping Item does not exist
