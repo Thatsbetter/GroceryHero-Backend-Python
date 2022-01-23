@@ -4,7 +4,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from databasecredential import Credential
 
 Base = declarative_base()
-conn_string = Credential.get_conn_uri()
+conn_string = Credential().get_conn_uri()
 db = create_engine(conn_string)
 
 
