@@ -12,7 +12,7 @@ from models.RegisteredUser import RegisteredUser
 from models.ShoppingItem import ShoppingItem
 from models.ShoppingList import ShoppingList
 
-conn_string = Credential.get_conn_uri()
+conn_string = Credential().get_conn_uri()
 
 db = create_engine(conn_string)
 base = declarative_base()
