@@ -221,44 +221,35 @@ class CreateShoppingList(Resource):
         required_params = {"item1", "item2", "item3", "status", "created_by", "allow_multiple_shoppers"}
         request_data = request.get_json()
 
-        if (request_data is not None and validateParameters(request_data, required_params, request_data.keys(),
-                                                            {"status", "created_by", "allow_multiple_shoppers"})):
-            item1 = request_data.get("item1")
-            item2 = request_data.get("item2")
-            item3 = request_data.get("item3")
+        if (request_data is not None):
+            items = getShoppingItems(request_data)
             status = request_data.get("status")
             created_by = request_data.get("created_by")
             allow_multiple_shoppers = request_data.get("allow_multiple_shoppers")
 
-            # Create single shopping items if existent
-            new_shopping_item1 = ShoppingItem(
-                product=item1["product"],
-                count=item1["count"],
-                shopper=item1["shopper"],
-                status=item1["status"]
-            )
-            new_shopping_item2 = ShoppingItem(
-                product=item2["product"],
-                count=item2["count"],
-                shopper=item2["shopper"],
-                status=item2["status"]
-            )
-            new_shopping_item3 = ShoppingItem(
-                product=item3["product"],
-                count=item3["count"],
-                shopper=item3["shopper"],
-                status=item3["status"]
-            )
+            item_ids = {
+                "item1" : None,
+                "item2" : None,
+                "item3" : None
+            }
 
-            session.add(new_shopping_item1)
-            session.add(new_shopping_item2)
-            session.add(new_shopping_item3)
+            # Create single shopping items
+            for item in items.keys():
+                new_shopping_item = ShoppingItem(
+                    product=request_data[item]["product"],
+                    count=request_data[item]["count"],
+                    shopper=request_data[item]["shopper"],
+                    status=request_data[item]["status"]
+                )
+                session.add(new_shopping_item)
+                session.commit()
+                item_ids[item] = new_shopping_item.id
 
             # Create shopping list
             new_shopping_list = ShoppingList(
-                item1=new_shopping_item1.id,
-                item2=new_shopping_item2.id,
-                item3=new_shopping_item3.id,
+                item1=item_ids["item1"],
+                item2=item_ids["item2"],
+                item3=item_ids["item3"],
                 status=status,
                 created_by=created_by,
                 allow_multiple_shoppers=allow_multiple_shoppers
@@ -267,7 +258,9 @@ class CreateShoppingList(Resource):
             session.add(new_shopping_list)
             session.commit()
             status = 201
-            
+        else:
+            status = 409
+
         return jsonify({
             "status": status
         })
@@ -396,6 +389,22 @@ def shopping_item_exists(shoppingitem_id):
     session.close()
 
     return (len(shopping_items) > 0)
+
+
+'''
+A Function that filters the given items of a POST request
+
+@:param: data (dic) : The data of the POST request
+
+@:return: dic : given items for the POST request
+'''
+def getShoppingItems(data):
+    items_to_test = ["item1", "item2", "item3"]
+    items = {}
+    for item in items_to_test:
+        if (item in data.keys()):
+            items[item] = data[item]
+    return items
 
 
 '''
