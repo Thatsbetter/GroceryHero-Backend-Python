@@ -36,7 +36,9 @@ def getSalt():
     salt = bcrypt.gensalt().hex()
 
     # Check if there is a file called salt.txt
-    if (os.path.exists("salt.txt")):
+    dir_name = os.path.dirname(__file__)
+    file_path = os.path.join(dir_name, "salt.txt")
+    if (os.path.exists(file_path)):
         with open("salt.txt") as file:
             salt = file.readline()
     else:

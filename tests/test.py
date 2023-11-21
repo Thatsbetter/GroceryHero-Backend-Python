@@ -3,6 +3,10 @@ import unittest
 
 import requests
 
+from main import app
+
+client = app.test_client()
+
 
 class TestMain(unittest.TestCase):
 
@@ -15,9 +19,9 @@ class TestMain(unittest.TestCase):
             "age": 21
         }
 
-        req = requests.post('http://localhost:1111/api/registerUser', json=myobj)
+        req = client.post('/api/user/register', data=myobj)
 
-        res = json.loads(req.text)
+        res = json.loads(req.data)
         self.assertEqual(res, {"status": 201})
 
     def test_login(self):
@@ -27,9 +31,9 @@ class TestMain(unittest.TestCase):
 
         }
 
-        req = requests.post('http://localhost:1111/api/checkLoginDetails', json=myobj)
+        req = client.post("/api/user/login", data=myobj)
 
-        res = json.loads(req.text)
+        res = json.loads(req.data)
         self.assertEqual(res, {'status': 200})
 
     def test_login_after_delete(self):
@@ -39,9 +43,9 @@ class TestMain(unittest.TestCase):
 
         }
 
-        req = requests.post('http://localhost:1111/api/checkLoginDetails', json=myobj)
+        req = requests.post('api/user/login', data=myobj)
 
-        res = json.loads(req.text)
+        res = json.loads(req.data)
         self.assertEqual(res, {'status': 404})
 
     def test_create_shoppinglist(self):
@@ -62,8 +66,8 @@ class TestMain(unittest.TestCase):
             "created_by": "62",
             "allow_multiple_shoppers": False
         }
-        req = requests.post('http://localhost:1111/api/createShoppingList', json=myobj)
-        res = json.loads(req.text)
+        req = requests.post('/api/shoppinglist/create', data=myobj)
+        res = json.loads(req.data)
         self.assertEqual(res, {'status': 201})
 
     def test_deleteuser(self):
@@ -72,8 +76,8 @@ class TestMain(unittest.TestCase):
             "email": "max2.muster@gmail.com",
         }
 
-        req = requests.post('http://localhost:1111/api/deleteUser', json=myobj)
-        res = json.loads(req.text)
+        req = requests.post('/api/user/delete', data=myobj)
+        res = json.loads(req.data)
         self.assertEqual(res, {'status': 200})
 
     def test_status_shoppinglist(self):
@@ -82,14 +86,13 @@ class TestMain(unittest.TestCase):
         shoppinglist_not_exist = self.change_status_shoppinglist(id=120)
         self.assertEqual(shoppinglist_not_exist, {'status': 404})
 
-    def change_status_shoppinglist(self,id=1,status=True):
+    def change_status_shoppinglist(self, id=1, status=True):
         myobj = {
             "id": id,
             "status": status,
         }
-        req = requests.post('http://localhost:1111/api/changeShoppinglistStatus', json=myobj)
-        return json.loads(req.text)
-
+        req = requests.post('/api/shoppinglist/status', data=myobj)
+        return json.loads(req.data)
 
 
 def suite():
