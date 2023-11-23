@@ -1,8 +1,9 @@
 import os
 
 import bcrypt
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request,make_response
 from flask_restful import Resource, Api
+import paypalrestsdk
 from sqlalchemy import create_engine, and_
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm.session import sessionmaker
@@ -11,6 +12,9 @@ from databasecredential import Credential
 from models.RegisteredUser import RegisteredUser
 from models.ShoppingItem import ShoppingItem
 from models.ShoppingList import ShoppingList
+
+paypal_client_id = Credential().get_paypal_client_id()
+paypal_secret = Credential().get_paypal_secret()
 
 conn_string = Credential().get_conn_uri()
 
@@ -230,9 +234,9 @@ class CreateShoppingList(Resource):
             allow_multiple_shoppers = request_data.get("allow_multiple_shoppers")
 
             item_ids = {
-                "item1" : None,
-                "item2" : None,
-                "item3" : None
+                "item1": None,
+                "item2": None,
+                "item3": None
             }
 
             # Create single shopping items
@@ -281,6 +285,8 @@ then changes the status of Shopping List
 @:return 404 : if Shopping List does not exist
 @:return 400 : if data is not in a correct form or has missing parameters
 '''
+
+
 class ChangeShoppingListStatus(Resource):
     def post(self):
         request_data = request.get_json()
@@ -315,12 +321,15 @@ A Class to change Shopping Item´s Status
 @:return 404 : if Shopping Item does not exist
 @:return 400 : if data is not in a correct form or has missing parameters
 '''
+
+
 class ChangeShoppingItemStatus(Resource):
     def post(self):
         request_data = request.get_json()
         required_params = {"id", "status"}
         status = 400
-        if (request_data is not None and validateParameters(request_data, required_params, request_data.keys(), required_params)):
+        if (request_data is not None and validateParameters(request_data, required_params, request_data.keys(),
+                                                            required_params)):
             shoppingitem_id = request_data.get("id")
             new_status = request_data.get("status")
             if (shopping_item_exists(shoppingitem_id)):
@@ -335,6 +344,73 @@ class ChangeShoppingItemStatus(Resource):
         return jsonify({
             "status": status
         })
+
+
+class CreatePaypalPayment(Resource):
+    def post(self):
+        paypalrestsdk.configure({
+            "mode": "sandbox",
+            "client_id": paypal_client_id,
+            "client_secret": paypal_secret
+        })
+        # item_name = request.form['item_name']
+        # item_price = request.form['item_price']
+
+        payment = paypalrestsdk.Payment({
+            "intent": "sale",
+            "payer": {
+                "payment_method": "paypal"
+            },
+            "redirect_urls": {
+                "cancel_url": "http://localhost:1111/api/paypal/process",
+                "return_url": "http://localhost:1111/api/paypal/process",
+            },
+            "transactions": [{
+                "item_list": {
+                    "items": [{
+                        "name": "item_name",
+                        "sku": "item",
+                        "price": "50",
+                        "currency": "EUR",
+                        "quantity": 1
+                    }]
+                },
+                "amount": {
+                    "total": "50",
+                    "currency": "EUR"
+                },
+                "description": f"This is the payment for item_name."
+            }]
+        })
+
+        # Create Payment and return approval url
+        if payment.create():
+            for link in payment.links:
+                if link.method == "REDIRECT":
+                    redirect_url = link.href
+                    return jsonify({"paymentLink": redirect_url})
+        else:
+            return f"Error while creating payment: {payment.error}"
+
+class ProcessPaypalPayment(Resource):
+    def get(self):
+        print(request)
+        print(request.get_json())
+        return make_response({},201)
+class CheckStatusPaypalPayment(Resource):
+    def post(self):
+        return
+class ExecutePaypalPayment(Resource):
+    def post(self):
+        payment_id = request.args.get('paymentId')
+        payer_id = request.args.get('PayerID')
+
+        payment = paypalrestsdk.Payment.find(payment_id)
+
+        if payment.execute({"payer_id": payer_id}):
+            return "Payment executed successfully!"
+        else:
+            return f"Error while executing payment: {payment.error}"
 
 
 '''
@@ -371,6 +447,8 @@ A Function that checks, if there is a shoppinglist for the given id
 @:return: True : shoppinglist exists
 @:return: False : shoppinglist doesnt exist
 '''
+
+
 def shopping_list_exists(shoppinglist_id):
     shopping_lists = session.query(ShoppingList).filter(ShoppingList.id == shoppinglist_id).all()
     session.close()
@@ -386,6 +464,8 @@ A Function that checks, if there is a shoppingitem for the given id
 @:return: True : shoppingitem exists
 @:return: False : shoppingitem doesnt exist
 '''
+
+
 def shopping_item_exists(shoppingitem_id):
     shopping_items = session.query(ShoppingItem).filter(ShoppingItem.id == shoppingitem_id).all()
     session.close()
@@ -400,6 +480,8 @@ A Function that filters the given items of a POST request
 
 @:return: dic : given items for the POST request
 '''
+
+
 def getShoppingItems(data):
     items_to_test = ["item1", "item2", "item3"]
     items = {}
@@ -486,6 +568,11 @@ api.add_resource(ChangeShoppingListStatus, "/api/shoppinglist/status")
 # /shoppingitem
 api.add_resource(ChangeShoppingItemStatus, "/api/shoppingitem/status")
 
+# /paypal
+api.add_resource(CreatePaypalPayment, "/api/paypal/create")
+api.add_resource(ExecutePaypalPayment, "/api/paypal/execute")
+api.add_resource(ProcessPaypalPayment, "/api/paypal/process")
+api.add_resource(CheckStatusPaypalPayment, "/api/paypal/status")
 
 if (__name__ == "__main__"):
-    app.run(host="0.0.0.0", port=1111)
+    app.run(debug=True, host="0.0.0.0", port=1111)
