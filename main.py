@@ -1,3 +1,4 @@
+import logging
 import os
 
 import bcrypt
@@ -6,6 +7,7 @@ from flask_restful import Resource, Api
 from sqlalchemy import create_engine, and_
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm.session import sessionmaker
+import stripe
 
 from databasecredential import Credential
 from models.RegisteredUser import RegisteredUser
@@ -13,6 +15,9 @@ from models.ShoppingItem import ShoppingItem
 from models.ShoppingList import ShoppingList
 
 conn_string = Credential().get_conn_uri()
+
+stripe.api_key = Credential().get_stripe_secret_key_test()
+stripe_publishable_key = Credential().get_stripe_publishable_key_test()
 
 db = create_engine(conn_string)
 base = declarative_base()
@@ -230,9 +235,9 @@ class CreateShoppingList(Resource):
             allow_multiple_shoppers = request_data.get("allow_multiple_shoppers")
 
             item_ids = {
-                "item1" : None,
-                "item2" : None,
-                "item3" : None
+                "item1": None,
+                "item2": None,
+                "item3": None
             }
 
             # Create single shopping items
@@ -281,6 +286,8 @@ then changes the status of Shopping List
 @:return 404 : if Shopping List does not exist
 @:return 400 : if data is not in a correct form or has missing parameters
 '''
+
+
 class ChangeShoppingListStatus(Resource):
     def post(self):
         request_data = request.get_json()
@@ -315,12 +322,15 @@ A Class to change Shopping Item´s Status
 @:return 404 : if Shopping Item does not exist
 @:return 400 : if data is not in a correct form or has missing parameters
 '''
+
+
 class ChangeShoppingItemStatus(Resource):
     def post(self):
         request_data = request.get_json()
         required_params = {"id", "status"}
         status = 400
-        if (request_data is not None and validateParameters(request_data, required_params, request_data.keys(), required_params)):
+        if (request_data is not None and validateParameters(request_data, required_params, request_data.keys(),
+                                                            required_params)):
             shoppingitem_id = request_data.get("id")
             new_status = request_data.get("status")
             if (shopping_item_exists(shoppingitem_id)):
@@ -335,6 +345,29 @@ class ChangeShoppingItemStatus(Resource):
         return jsonify({
             "status": status
         })
+
+
+class CreateStripePayment(Resource):
+    def post(self):
+        request_data = request.get_json()
+        amount = request_data["amount"]
+
+        paymentIntent = stripe.PaymentIntent.create(
+            amount=amount,
+            currency='eur',
+            automatic_payment_methods={
+                'enabled': True,
+            },
+        )
+        response = jsonify(paymentIntent=paymentIntent.client_secret,
+                      publishableKey=stripe_publishable_key
+                      )
+        return response
+
+class LogStripePaymentError(Resource):
+    def post(self):
+        request_data = request.get_json()
+        logging.error(request_data)
 
 
 '''
@@ -371,6 +404,8 @@ A Function that checks, if there is a shoppinglist for the given id
 @:return: True : shoppinglist exists
 @:return: False : shoppinglist doesnt exist
 '''
+
+
 def shopping_list_exists(shoppinglist_id):
     shopping_lists = session.query(ShoppingList).filter(ShoppingList.id == shoppinglist_id).all()
     session.close()
@@ -386,6 +421,8 @@ A Function that checks, if there is a shoppingitem for the given id
 @:return: True : shoppingitem exists
 @:return: False : shoppingitem doesnt exist
 '''
+
+
 def shopping_item_exists(shoppingitem_id):
     shopping_items = session.query(ShoppingItem).filter(ShoppingItem.id == shoppingitem_id).all()
     session.close()
@@ -400,6 +437,8 @@ A Function that filters the given items of a POST request
 
 @:return: dic : given items for the POST request
 '''
+
+
 def getShoppingItems(data):
     items_to_test = ["item1", "item2", "item3"]
     items = {}
@@ -486,6 +525,9 @@ api.add_resource(ChangeShoppingListStatus, "/api/shoppinglist/status")
 # /shoppingitem
 api.add_resource(ChangeShoppingItemStatus, "/api/shoppingitem/status")
 
+# /stripe
+api.add_resource(CreateStripePayment, "/api/stripe/create")
+api.add_resource(LogStripePaymentError, "/api/stripe/error")
 
 if (__name__ == "__main__"):
-    app.run(host="0.0.0.0", port=1111)
+    app.run(debug=True,host="0.0.0.0", port=1111)
