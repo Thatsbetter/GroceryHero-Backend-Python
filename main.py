@@ -352,14 +352,14 @@ class CreateStripePayment(Resource):
         request_data = request.get_json()
         amount = request_data["amount"]
 
-        paymentIntent = stripe.PaymentIntent.create(
+        payment_intent = stripe.PaymentIntent.create(
             amount=amount,
             currency='eur',
             automatic_payment_methods={
                 'enabled': True,
             },
         )
-        response = jsonify(paymentIntent=paymentIntent.client_secret,
+        response = jsonify(paymentIntent=payment_intent.client_secret,
                       publishableKey=stripe_publishable_key
                       )
         return response
