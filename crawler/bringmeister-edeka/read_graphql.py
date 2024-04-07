@@ -13,15 +13,16 @@ for j in [0, 1]:
     for i in products:
         # print(i['node'].keys())
         data = (i['node'])
-        simplified_data = {
-            'productId': data['productId'],
-            'name': data['name'],
-            'categories': data['rootCategory']['name'],
-            'price': data['prices']['price'],
-            'packing': data['packing'],
-            'image': data['image']
-        }
-        simplified_list.append(simplified_data)
+        if not (data)['bubble']:
+            simplified_data = {
+                'productId': data['productId'],
+                'name': data['name'],
+                'categories': data['rootCategory']['name'],
+                'price': data['prices']['price'],
+                'packing': data['packing'],
+                'image': data['image']
+            }
+            simplified_list.append(simplified_data)
     print(len(simplified_list))
 df = pd.DataFrame(simplified_list)
 df.set_index(df.columns[0], inplace=True)
