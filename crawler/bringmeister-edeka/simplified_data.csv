@@ -1,0 +1,1001 @@
+productId,name,categories,price
+395070289,Bio Banane,"['Obst & Gemüse', 'Obst', 'Bananen']",1.02492
+395029481,Bio Möhren,"['Obst & Gemüse', 'Gemüse', 'Wurzelgemüse', 'Karotte']",1.89
+395054041,Tafeltrauben hell kernlos,"['Obst & Gemüse', 'Obst', 'Trauben']",2.69
+395163311,EDEKA Heimatliebe Bio Champignons braun,"['Obst & Gemüse', 'Gemüse', 'Pilze']",2.29
+8686120052,EDEKA Bio H-Vollmilch,"['Kühlregal', 'Molkereiprodukte', 'Milch', 'H-Milch']",15.0
+8686120051,EDEKA Bio H-Vollmilch,"['Kühlregal', 'Molkereiprodukte', 'Milch', 'H-Milch']",1.25
+395009041,"Bio Avocado Hass, angereift","['Obst & Gemüse', 'Obst', 'Avocados']",1.89
+395026891,Lauchzwiebeln,"['Obst & Gemüse', 'Gemüse', 'Lauch & Porree']",0.99
+8686080062,EDEKA Bio Fettarme H-Milch,"['Kühlregal', 'Molkereiprodukte', 'Milch', 'H-Milch']",14.4
+8686080061,EDEKA Bio Fettarme H-Milch,"['Kühlregal', 'Molkereiprodukte', 'Milch', 'H-Milch']",1.2
+395103141,Bio Demeter Zitronen,"['Obst & Gemüse', 'Obst', 'Zitrusfrüchte', 'Zitronen']",2.79
+395039411,EDEKA Bio Zwiebeln,"['Obst & Gemüse', 'Gemüse', 'Zwiebeln']",1.99
+301007039,EDEKA Bio Frische Vollmilch ESL,"['Kühlregal', 'Molkereiprodukte', 'Milch', 'Frischmilch']",6.45
+301007031,EDEKA Bio Frische Vollmilch ESL,"['Kühlregal', 'Molkereiprodukte', 'Milch', 'Frischmilch']",1.29
+395004921,EDEKA Heimatliebe Zucchini,"['Obst & Gemüse', 'Gemüse', 'Zucchinis']",0.69
+395009281,EDEKA Heimatliebe Eisbergsalat,"['Obst & Gemüse', 'Gemüse', 'Salate']",1.19
+395094681,Paprika rot,"['Obst & Gemüse', 'Gemüse', 'Paprika']",1.89
+395210621,Bio Heimatliebe Kartoffeln vorwiegend festkochend,"['Obst & Gemüse', 'Gemüse', 'Kartoffeln']",2.89
+395122111,Tomaten,"['Obst & Gemüse', 'Gemüse', 'Tomaten']",1.89
+395211611,Kartoffeln festkochend,"['Obst & Gemüse', 'Gemüse', 'Kartoffeln']",2.29
+395154491,Bio Mini Pflaumentomaten,"['Obst & Gemüse', 'Gemüse', 'Tomaten']",1.99
+301144011,EDEKA Bio Mozzarella 45% Fett i. Tr.,"['Kühlregal', 'Käse', 'Mozzarella']",1.35
+8728580081,EDEKA Bio Frischkäse Natur,"['Kühlregal', 'Käse', 'Frischkäse']",1.19
+395211781,Kartoffeln vorwiegend festkochend,"['Obst & Gemüse', 'Gemüse', 'Kartoffeln']",2.29
+395025281,Radieschen,"['Obst & Gemüse', 'Gemüse', 'Wurzelgemüse', 'Radieschen']",0.89
+395061931,Paprika Mix,"['Obst & Gemüse', 'Gemüse', 'Paprika']",1.99
+48921370041,GUT&GÜNSTIG Küchentücher klassik mit mindestens 20% Recyclingfasern 4er,"['Drogerieartikel', 'Papier- & Hygieneartikel', 'Küchenrolle']",2.75
+395000271,Salatgurke 300-400g,"['Obst & Gemüse', 'Gemüse', 'Gurken']",1.19
+395021081,Bio Salatgurke,"['Obst & Gemüse', 'Gemüse', 'Gurken']",1.69
+301159001,EDEKA Bio Körniger Frischkäse 20% Fett i. Tr.,"['Kühlregal', 'Käse', 'Körniger Frischkäse']",0.95
+44003610002,EDEKA Bio My Veggie Veganer Haferdrink Classic,"['Kühlregal', 'Molkereiprodukte', 'Pflanzliche Alternative', 'Hafer']",11.88
+88003128391,"GUT&GÜNSTIG Hackfleisch gemischt, zum Braten","['Frischetheke', 'Fleisch Frischetheke', 'Hackfleisch']",3.89
+395125251,Bio Pflaumentomaten,"['Obst & Gemüse', 'Gemüse', 'Tomaten']",2.99
+16650080082,EDEKA Bio Tomaten in Stücken,"['Nahrungsmittel', 'Konserven & Eingelegtes', 'Tomatenkonserven']",5.94
+395024811,EDEKA Heimatliebe Möhren,"['Obst & Gemüse', 'Gemüse', 'Wurzelgemüse', 'Karotte']",1.99
+395036751,Bio Rispentomaten,"['Obst & Gemüse', 'Gemüse', 'Tomaten']",2.89
+395058001,Bio Paprikamix,"['Obst & Gemüse', 'Gemüse', 'Paprika']",3.49
+395015561,Kohlrabi,"['Obst & Gemüse', 'Gemüse', 'Wurzelgemüse', 'Rüben']",0.79
+54083920011,GUT&GÜNSTIG Toilettenpapier premium 4-lagig,"['Drogerieartikel', 'Papier- & Hygieneartikel', 'Toilettenpapier']",4.55
+395116071,EDEKA Bio Blattspinat,"['Obst & Gemüse', 'Gemüse', 'Spinat & Blattgemüse']",1.79
+49462190011,GUT&GÜNSTIG Küchentücher 3-lagig 8x64,"['Drogerieartikel', 'Papier- & Hygieneartikel', 'Küchenrolle']",5.99
+3456520051,Harry Sammy's Super Sandwich,"['Brot, Backwaren & Brotaufstriche', 'Toast & Sandwich', 'Sandwich']",2.55
+27822850001,EDEKA Bio Gouda gerieben 48% Fett i. Tr.,"['Kühlregal', 'Käse', 'Reibekäse']",1.79
+33245260091,Oatly Hafer Barista Edition,"['Kühlregal', 'Molkereiprodukte', 'Pflanzliche Alternative', 'Hafer']",2.59
+12855130031,Eberswalder Würstchen,"['Kühlregal', 'Wurst', 'Würstchen']",2.49
+395000101,EDEKA Heimatliebe Paprika rot,"['Obst & Gemüse', 'Gemüse', 'Paprika']",0.93
+21640990091,EDEKA Bio Schinkenwürfel,"['Kühlregal', 'Wurst', 'Rohschinken']",2.69
+301175021,EDEKA Bio Wiener Würstchen,"['Kühlregal', 'Wurst', 'Würstchen']",3.29
+395113931,Kartoffeln festkochend Drillinge,"['Obst & Gemüse', 'Gemüse', 'Kartoffeln']",1.69
+3817920081,Harry 1688 Unser Mildes Weizenmischbrot,"['Brot, Backwaren & Brotaufstriche', 'Tagesfrisch', 'Geschnittenes Brot', 'Mischbrot']",1.89
+88302483351,GUT&GÜNSTIG Rinder- Hackfleisch zum Braten,"['Frischetheke', 'Fleisch Frischetheke', 'Hackfleisch']",4.89
+395139481,Bio Suppengrün,"['Obst & Gemüse', 'Gemüse', 'Wurzelgemüse', 'Suppengrün']",1.99
+395108572,Weizenbrötchen,"['Brot, Backwaren & Brotaufstriche', 'Frische Backwaren', 'Frische Brötchen']",0.99
+395038661,Zitronen behandelt,"['Obst & Gemüse', 'Obst', 'Zitrusfrüchte', 'Zitronen']",1.29
+39052810021,EDEKA Bio Nürnberger Rostbratwürste,"['Kühlregal', 'Wurst', 'Bratwurst']",3.99
+395132901,Bio Demeter Apfel Elstar,"['Obst & Gemüse', 'Obst', 'Äpfel']",2.29
+14973680061,Wiltmann Bio Geflügel Salami,"['Kühlregal', 'Wurst', 'Rohwurst', 'Salami']",2.79
+41642590052,EDEKA Bio Haferflocken,"['Cerealien & Müsli', 'Haferflocken & Porridge']",14.85
+41642590051,EDEKA Bio Haferflocken,"['Cerealien & Müsli', 'Haferflocken & Porridge']",0.99
+395210551,Bio Heimatliebe Kartoffeln festkochend,"['Obst & Gemüse', 'Gemüse', 'Kartoffeln']",2.89
+395103211,EDEKA Heimatliebe Mini Rispentomaten,"['Obst & Gemüse', 'Gemüse', 'Tomaten']",2.99
+14973700091,Wiltmann Bio Geflügel Lyoner,"['Kühlregal', 'Wurst', 'Brühwurst', 'Lyoner & Fleischwurst']",2.39
+395090551,Bio Demeter Knoblauch,"['Obst & Gemüse', 'Gemüse', 'Knoblauch']",1.69
+15075410052,EXTALER MINERALQUELL Mineralwasser,"['Getränke', 'Mineralwasser', 'Wasser mit Kohlensäure', 'Classic']",2.95
+395154561,Demeter Bio Cherrytomaten,"['Obst & Gemüse', 'Gemüse', 'Tomaten']",2.49
+395211161,Bio Heimatliebe Kartoffeln mehligkochend,"['Obst & Gemüse', 'Gemüse', 'Kartoffeln']",2.89
+3817950071,Harry Vollkorntoast,"['Brot, Backwaren & Brotaufstriche', 'Toast & Sandwich', 'Toast']",1.89
+395114541,EDEKA Bio Kresse,"['Obst & Gemüse', 'Gemüse', 'Kräuter']",0.59
+35342250041,Alnatura Bio Haferdrink ungesüßt,"['Kühlregal', 'Molkereiprodukte', 'Pflanzliche Alternative', 'Hafer']",1.69
+12551970041,Harry Vital + Fit,"['Brot, Backwaren & Brotaufstriche', 'Tagesfrisch', 'Geschnittenes Brot', 'Mischbrot']",1.89
+395038801,Bio Zucchini grün,"['Obst & Gemüse', 'Gemüse', 'Zucchinis']",1.99
+395151971,Knoblauch trocken,"['Obst & Gemüse', 'Gemüse', 'Knoblauch']",1.49
+395032311,Bio Gemüsezwiebeln,"['Obst & Gemüse', 'Gemüse', 'Zwiebeln']",2.29
+15075450072,EXTALER MINERALQUELL Mineralwasser still,"['Getränke', 'Mineralwasser', 'Stilles Wasser']",2.95
+28066300019,"Arla Bio Frische Weidemilch 3,8 % Fett","['Kühlregal', 'Molkereiprodukte', 'Milch', 'Frischmilch']",8.95
+28066300011,"Arla Bio Frische Weidemilch 3,8 % Fett","['Kühlregal', 'Molkereiprodukte', 'Milch', 'Frischmilch']",1.79
+56050180052,GUT&GÜNSTIG Laktosefreie fettarme H-Milch,"['Kühlregal', 'Molkereiprodukte', 'Milch', 'H-Milch']",11.9
+56050180051,GUT&GÜNSTIG Laktosefreie fettarme H-Milch,"['Kühlregal', 'Molkereiprodukte', 'Milch', 'H-Milch']",1.19
+36502640001,Schäfers Landbrot,"['Brot, Backwaren & Brotaufstriche', 'Frische Backwaren', 'Frisches Brot']",2.09
+30755760051,Harry Körner Balance Sandwich,"['Brot, Backwaren & Brotaufstriche', 'Toast & Sandwich', 'Sandwich']",2.55
+395114301,Mini Kopfsalatherzen,"['Obst & Gemüse', 'Gemüse', 'Salate']",2.39
+38213740061,Harry Dinkel Sandwich,"['Brot, Backwaren & Brotaufstriche', 'Toast & Sandwich', 'Sandwich']",1.99
+301049021,EDEKA Bio Joghurt mild,"['Kühlregal', 'Molkereiprodukte', 'Naturjoghurt']",1.15
+301101021,GUT&GÜNSTIG Eier aus Bodenhaltung Initiative Lebenswert,"['Kühlregal', 'Eier']",2.09
+7926330061,"Elinas Joghurt nach griechischer Art Natur 9,4 % Fett","['Kühlregal', 'Molkereiprodukte', 'Naturjoghurt']",2.19
+395119591,Bio Demeter Apfel Gala,"['Obst & Gemüse', 'Obst', 'Äpfel']",2.89
+22510630031,VIP Grana Padano 32 % Fett i. Tr.,"['Kühlregal', 'Käse', 'Hartkäse & Schnittkäse']",5.45
+15075440042,EXTALER MINERALQUELL Mineralwasser medium,"['Getränke', 'Mineralwasser', 'Wasser mit Kohlensäure', 'Medium']",2.95
+301007281,EDEKA Bio Crème Fraîche,"['Kühlregal', 'Molkereiprodukte', 'Sahne & Rahm', 'Creme Fraiche']",0.99
+301021021,GUT&GÜNSTIG Vollkorntoast,"['Brot, Backwaren & Brotaufstriche', 'Toast & Sandwich', 'Toast']",1.19
+31266470031,"Alnatura Bio Joghurt Natur 1,5%","['Kühlregal', 'Molkereiprodukte', 'Naturjoghurt']",1.59
+32544910061,Gläserne Molkerei Bio Fassbutter Natur,"['Kühlregal', 'Butter & Fette', 'Butter', 'Butter ungesalzen']",3.45
+28483090041,WIESENHOF Hähnchen-Schenkel,"['Frischetheke', 'Fleisch Frischetheke', 'Geflügel']",3.4
+32834250072,Alnatura Bio Tomatenmark,"['Nahrungsmittel', 'Konserven & Eingelegtes', 'Tomatenkonserven']",19.08
+395041591,Suppengrün,"['Obst & Gemüse', 'Gemüse', 'Wurzelgemüse', 'Suppengrün']",1.69
+395114471,Mango genussreif,"['Obst & Gemüse', 'Obst', 'Mangos']",2.59
+395228981,Tomaten-Mix 500g,"['Obst & Gemüse', 'Gemüse', 'Tomaten']",2.99
+31263290081,Alnatura Bio Parmigiano Reggiano gerieben 32 % Fett i. Tr.,"['Kühlregal', 'Käse', 'Reibekäse']",1.59
+301101031,GUT&GÜNSTIG Eier aus Freilandhaltung Initiative Lebenswert,"['Kühlregal', 'Eier']",2.59
+1380050099,Bautz'ner Senf mittelscharf,"['Nahrungsmittel', 'Ketchup, Mayonnaise & Senf', 'Senf']",1.18
+395000721,EDEKA Heimatliebe Paprika gelb,"['Obst & Gemüse', 'Gemüse', 'Paprika']",0.97
+43184750001,EDEKA Bio Kräuterquark 40% Fett i. Tr.,"['Kühlregal', 'Molkereiprodukte', 'Naturquark & Kräuterquark', 'Kräuterquark']",1.05
+7050570041,Rügenwalder Mühle Feine Rügenwalder Teewurst,"['Kühlregal', 'Wurst', 'Rohwurst', 'Teewurst']",2.75
+395054591,Clementinen behandelt,"['Obst & Gemüse', 'Obst', 'Zitrusfrüchte', 'Clementinen']",1.99
+395225462,Walnussbrötchen,"['Brot, Backwaren & Brotaufstriche', 'Frische Backwaren', 'Frische Brötchen']",1.29
+30802470022,EDEKA Bio Kokosnussmilch,"['Nahrungsmittel', 'Internationale Feinkost', 'Asiatische Lebensmittel']",11.7
+30802470021,EDEKA Bio Kokosnussmilch,"['Nahrungsmittel', 'Internationale Feinkost', 'Asiatische Lebensmittel']",1.95
+395007821,EDEKA Heimatliebe Aubergine,"['Obst & Gemüse', 'Gemüse', 'Auberginen']",2.19
+3456590061,Harry 1688 Steinofenbrot,"['Brot, Backwaren & Brotaufstriche', 'Tagesfrisch', 'Geschnittenes Brot', 'Mischbrot']",1.89
+395010821,Erdbeeren,"['Obst & Gemüse', 'Obst', 'Beeren']",5.99
+395029241,Bio Clementinen,"['Obst & Gemüse', 'Obst', 'Zitrusfrüchte', 'Clementinen']",2.99
+395024291,Bio Ingwer,"['Obst & Gemüse', 'Gemüse', 'Wurzelgemüse', 'Ingwer']",7.9
+395006451,Ananas,"['Obst & Gemüse', 'Obst', 'Ananas']",3.49
+3456570001,Harry Das volle Korn Roggenvollkornbrot,"['Brot, Backwaren & Brotaufstriche', 'Tagesfrisch', 'Geschnittenes Brot', 'Vollkornbrot']",1.89
+33899410011,Bio Emmentaler 45% Vollfettstufe,"['Frischetheke', 'Käse Frischetheke', 'Hart & Schnittkäse']",2.84
+395115911,Bio Demeter Kürbis Hokkaido,"['Obst & Gemüse', 'Gemüse', 'Kürbisse']",2.99
+1469620041,Géramont Original Französischer Weichkäse 60 % Fett i. Tr.,"['Kühlregal', 'Käse', 'Weichkäse']",3.35
+395053811,Bio Orangen,"['Obst & Gemüse', 'Obst', 'Zitrusfrüchte', 'Orangen']",3.29
+395096731,Bio Rucola,"['Obst & Gemüse', 'Gemüse', 'Salate']",1.59
+3817850001,Harry Buttertoast,"['Brot, Backwaren & Brotaufstriche', 'Toast & Sandwich', 'Toast']",1.89
+395037361,Rucola,"['Obst & Gemüse', 'Gemüse', 'Salate']",1.29
+31269860051,Alnatura Bio Mozzarella Minis 45 % Fett i. Tr.,"['Kühlregal', 'Käse', 'Mozzarella']",2.05
+40668260061,EDEKA Bio Maasdamer in Scheiben 45% Fett i. Tr.,"['Kühlregal', 'Käse', 'Hartkäse & Schnittkäse']",2.29
+395071101,Himbeeren rot,"['Obst & Gemüse', 'Obst', 'Beeren']",2.89
+395005461,Apfel Kanzi,"['Obst & Gemüse', 'Obst', 'Äpfel']",0.66
+47919490071,GUT&GÜNSTIG Hummus natur,"['Kühlregal', 'Feinkost', 'Hummus']",0.99
+44695450052,EDEKA Bio My Veggie Veganer Haferdrink Barista,"['Kühlregal', 'Molkereiprodukte', 'Pflanzliche Alternative', 'Hafer']",10.8
+44695450051,EDEKA Bio My Veggie Veganer Haferdrink Barista,"['Kühlregal', 'Molkereiprodukte', 'Pflanzliche Alternative', 'Hafer']",1.35
+395101301,EDEKA Bio Salat Mix,"['Obst & Gemüse', 'Gemüse', 'Salate']",1.69
+31647430021,GUT&GÜNSTIG Fettarme H-Milch,"['Kühlregal', 'Molkereiprodukte', 'Milch', 'H-Milch']",0.99
+395125701,Orangen behandelt,"['Obst & Gemüse', 'Obst', 'Zitrusfrüchte', 'Orangen']",3.29
+37537870061,Babybel Mini Original 45 % Fett i. Tr.,"['Kühlregal', 'Käse', 'Käsesnacks']",2.59
+46562750012,EDEKA Bio Apfelmus,"['Nahrungsmittel', 'Konserven & Eingelegtes', 'Obstkonserven']",11.88
+45783370091,Herta Finesse Hähnchenbrust ofengebacken,"['Kühlregal', 'Wurst', 'Kochschinken']",2.49
+53744190031,Rügenwalder Mühle Veganer Schinken Spicker Mortadella,"['Kühlregal', 'Fleischersatz & Wurstersatz für Veganer & Vegetarier']",1.69
+7661850032,Coca-Cola Original Taste,"['Getränke', 'Cola']",7.55
+8273250031,WIESENHOF Geflügel Mortadella,"['Kühlregal', 'Wurst', 'Brühwurst', 'Mortadella']",1.69
+35396220061,Hochland Sandwich Scheiben mit Gouda 45 % Fett i. Tr.,"['Kühlregal', 'Käse', 'Hartkäse & Schnittkäse']",2.59
+395108402,Kaiserbrötchen,"['Brot, Backwaren & Brotaufstriche', 'Frische Backwaren', 'Frische Brötchen']",1.29
+54751390021,LÄTTA Original 39 % Fett,"['Kühlregal', 'Butter & Fette', 'Margarine']",1.99
+3818070091,Harry Rosinen Stuten,"['Brot, Backwaren & Brotaufstriche', 'Süßgebäck', 'Rosinenstuten']",2.39
+395057701,Bio Paprika rot,"['Obst & Gemüse', 'Gemüse', 'Paprika']",3.49
+3456510021,Harry Sammy's Super Sandwich,"['Brot, Backwaren & Brotaufstriche', 'Toast & Sandwich', 'Sandwich']",1.69
+395205571,Bio Demeter Persische Limette,"['Obst & Gemüse', 'Obst', 'Zitrusfrüchte', 'Limetten']",2.69
+395108952,Kürbiskernbrötchen,"['Brot, Backwaren & Brotaufstriche', 'Frische Backwaren', 'Frische Brötchen']",1.49
+14869840021,Schäfers Sonnen-Vollkornbrot,"['Brot, Backwaren & Brotaufstriche', 'Frische Backwaren', 'Frisches Brot']",2.29
+395090861,EDEKA Bio Feldsalat,"['Obst & Gemüse', 'Gemüse', 'Salate']",1.69
+47876300071,EDEKA Bio Streichzart ungesalzen,"['Kühlregal', 'Butter & Fette', 'Speisefett']",1.69
+395053051,Passionsfrüchte,"['Obst & Gemüse', 'Obst', 'Exotische Früchte', 'Passionsfrüchte']",1.79
+395110411,Schalotten lang,"['Obst & Gemüse', 'Gemüse', 'Zwiebeln']",1.49
+35990170021,MILRAM Müritzer Original in Scheiben 55 % Fett i. Tr.,"['Kühlregal', 'Käse', 'Hartkäse & Schnittkäse']",2.59
+39783580091,Harry Dinkel,"['Brot, Backwaren & Brotaufstriche', 'Tagesfrisch', 'Geschnittenes Brot', 'Mischbrot']",1.89
+1681420089,Dr.Oetker Frische Hefe,"['Nahrungsmittel', 'Backen & Desserts', 'Backzutaten', 'Backpulver, Hefe & Natron']",0.78
+1681420081,Dr.Oetker Frische Hefe,"['Nahrungsmittel', 'Backen & Desserts', 'Backzutaten', 'Backpulver, Hefe & Natron']",0.39
+31263130031,Alnatura Bio Parmigiano Reggiano 32 % Fett i. Tr.,"['Kühlregal', 'Käse', 'Hartkäse & Schnittkäse']",4.29
+395135111,Apfel Granny Smith - säuerlich,"['Obst & Gemüse', 'Obst', 'Äpfel']",2.99
+395040051,Trauben dunkel kernlos,"['Obst & Gemüse', 'Obst', 'Trauben']",2.69
+395001261,Avocado Hass,"['Obst & Gemüse', 'Obst', 'Avocados']",1.55
+29872480041,Wiltmann Bio Rein Rind Salami,"['Kühlregal', 'Wurst', 'Rohwurst', 'Salami']",2.95
+395141941,Mini Möhren,"['Obst & Gemüse', 'Gemüse', 'Wurzelgemüse', 'Karotte']",1.29
+16650080081,EDEKA Bio Tomaten in Stücken,"['Nahrungsmittel', 'Konserven & Eingelegtes', 'Tomatenkonserven']",0.99
+301007379,EDEKA Bio Joghurt mild,"['Kühlregal', 'Molkereiprodukte', 'Naturjoghurt']",1.8
+30755750021,Harry Körner Balance Toast,"['Brot, Backwaren & Brotaufstriche', 'Toast & Sandwich', 'Toast']",1.89
+395151731,Bio Pink Lady,"['Obst & Gemüse', 'Obst', 'Äpfel']",3.49
+395083111,Bundmöhren,"['Obst & Gemüse', 'Gemüse', 'Wurzelgemüse', 'Karotte']",1.69
+1464430081,Weihenstephan Butter,"['Kühlregal', 'Butter & Fette', 'Butter', 'Butter ungesalzen']",2.79
+57127320011,GUT&GÜNSTIG Spaghetti,"['Nahrungsmittel', 'Nudeln', 'Lange Nudeln', 'Spaghetti']",0.85
+10016430072,Spreequell Naturell 1l Kasten,"['Getränke', 'Mineralwasser', 'Stilles Wasser']",6.99
+38130070081,Rügenwalder Mühle Veganer Schinken Spicker mit Grillgemüse,"['Kühlregal', 'Fleischersatz & Wurstersatz für Veganer & Vegetarier']",1.69
+14870490011,Schäfers Kartoffelbrot,"['Brot, Backwaren & Brotaufstriche', 'Frische Backwaren', 'Frisches Brot']",2.49
+39283130011,EDEKA Bio Leberwurst fein,"['Kühlregal', 'Wurst', 'Kochwurst', 'Leberwurst']",1.99
+1470350041,Galbani Mozzarella 45 % Fett i. Tr.,"['Kühlregal', 'Käse', 'Mozzarella']",1.99
+8701750042,Coca-Cola Zero Sugar,"['Getränke', 'Cola']",7.55
+46165710081,Lichtenberger Fleisch Delikat Frische Schinkenzwiebelmettwurst,"['Kühlregal', 'Wurst', 'Rohwurst', 'Mettwurst']",2.85
+9429000061,Ferrero kinder Riegel,"['Süßigkeiten & Salziges', 'Riegel', 'Schokoriegel']",4.35
+29679430082,Alnatura Bio Kichererbsen,"['Nahrungsmittel', 'Konserven & Eingelegtes', 'Gemüsekonserven']",16.68
+395005151,Apfel Braeburn - süß-säuerlich,"['Obst & Gemüse', 'Obst', 'Äpfel']",0.5
+20630400051,Mozzarella di Bufala Campana 52 % Fett i. Tr.,"['Kühlregal', 'Käse', 'Mozzarella']",1.99
+301007471,EDEKA Bio My Veggie Veganer Tofu Classic,"['Kühlregal', 'Fleischersatz & Wurstersatz für Veganer & Vegetarier']",2.19
+395024431,Fenchel,"['Obst & Gemüse', 'Gemüse', 'Wurzelgemüse', 'Fenchel']",0.55
+1214520032,Lorenz Saltletts Sticks Classic,"['Süßigkeiten & Salziges', 'Salzige Snacks', 'Laugengebäck']",39.42
+31266440041,Alnatura Bio Speisequark Magerstufe,"['Kühlregal', 'Molkereiprodukte', 'Naturquark & Kräuterquark', 'Naturquark']",1.15
+48782830001,"EDEKA Heimatliebe Eier Freilandhaltung, 6 Stk.. VLOG","['Kühlregal', 'Eier']",1.99
+18307710011,Mago Wiener Würstchen,"['Kühlregal', 'Wurst', 'Würstchen']",4.19
+1670100091,Wiltmann Feinschmecker Salami,"['Kühlregal', 'Wurst', 'Rohwurst', 'Salami']",2.39
+31648580032,"GUT&GÜNSTIG H-Milch 3,5%","['Kühlregal', 'Molkereiprodukte', 'Milch', 'H-Milch']",12.6
+1690980051,"MILRAM Körniger Frischkäse 3,5 % Fett i. Tr.","['Kühlregal', 'Käse', 'Körniger Frischkäse']",1.45
+24382640091,Kerrygold Extra Ungesalzen,"['Kühlregal', 'Butter & Fette', 'Butter', 'Butter ungesalzen']",4.39
+51422980031,GUT&GÜNSTIG Hähnchen-Gyros-Pfanne,"['Tiefkühlkost', 'Tiefkühlfleisch', 'Tiefkühl-Geflügel']",2.79
+301041131,GUT&GÜNSTIG Sandwich Fürst Pückler Art,"['Tiefkühlkost', 'Eis', 'Stieleis & Waffeleis']",1.99
+2069720023,"Berchtesgadener Land Frische Bergbauern Milch länger haltbar 3,5 % Fett","['Kühlregal', 'Molkereiprodukte', 'Milch', 'Frischmilch']",8.45
+2069720021,"Berchtesgadener Land Frische Bergbauern Milch länger haltbar 3,5 % Fett","['Kühlregal', 'Molkereiprodukte', 'Milch', 'Frischmilch']",1.69
+301172011,EDEKA Bio Süßrahmbutter,"['Kühlregal', 'Butter & Fette', 'Butter', 'Butter ungesalzen']",2.65
+88302474481,Hackfleisch gemischt,"['Frischetheke', 'Fleisch Frischetheke', 'Hackfleisch']",3.29
+54752510011,Rama Original 60 % Fett,"['Kühlregal', 'Butter & Fette', 'Margarine']",1.99
+16208710052,EDEKA Bio Apfelmark,"['Nahrungsmittel', 'Konserven & Eingelegtes', 'Obstkonserven']",8.94
+23169140081,"7gün Ayran Mango 3,5 % Fett","['Kühlregal', 'Molkereiprodukte', 'Milchgetränke', 'Joghurt Drinks']",0.89
+29702590061,Harry Mehrkorn Toastbrötchen,"['Brot, Backwaren & Brotaufstriche', 'Toast & Sandwich', 'Toasties']",1.79
+42064430011,Harry Rosenbrötchen,"['Brot, Backwaren & Brotaufstriche', 'Zum Fertigbacken', 'Aufbackbrötchen']",2.39
+49315250011,"GUT&GÜNSTIG Orangen-Direktsaft, gekühlt","['Obst & Gemüse', 'Frische Direktsäfte']",1.99
+1671120041,Berchtesgadener Land Bio Alpenbutter,"['Kühlregal', 'Butter & Fette', 'Butter', 'Butter ungesalzen']",3.15
+5113910082,Ferrero kinder Country,"['Süßigkeiten & Salziges', 'Riegel', 'Schokoriegel']",48.42
+395089841,EDEKA Koriander,"['Obst & Gemüse', 'Gemüse', 'Kräuter']",1.29
+1671010041,Berchtesgadener Land Butter,"['Kühlregal', 'Butter & Fette', 'Butter', 'Butter ungesalzen']",2.75
+43846010041,Harry Anno »1688« Rustikal,"['Brot, Backwaren & Brotaufstriche', 'Tagesfrisch', 'Geschnittenes Brot', 'Mischbrot']",2.29
+395143161,Apfel Elstar - süß-säuerlich,"['Obst & Gemüse', 'Obst', 'Äpfel']",3.79
+49500250071,EDEKA Bio Bacon,"['Kühlregal', 'Wurst', 'Rohschinken']",1.99
+395050462,Süsser Knoten,"['Brot, Backwaren & Brotaufstriche', 'Frische Backwaren', 'Frisches Süßes Gebäck']",1.59
+5727210002,Spreequell Medium 1l Kasten,"['Getränke', 'Mineralwasser', 'Wasser mit Kohlensäure', 'Medium']",6.99
+13085240051,Kerrygold Extra Ungesalzen,"['Kühlregal', 'Butter & Fette', 'Butter', 'Butter ungesalzen']",3.15
+2089330031,Coca-Cola Original Taste,"['Getränke', 'Cola']",1.29
+395001401,Frische Feigen,"['Obst & Gemüse', 'Obst', 'Exotische Früchte', 'Feigen']",0.89
+395126171,Fairtrade Physalis,"['Obst & Gemüse', 'Obst', 'Exotische Früchte', 'Weitere Exoten']",2.49
+395109182,Weltmeisterbrötchen,"['Brot, Backwaren & Brotaufstriche', 'Frische Backwaren', 'Frische Brötchen']",1.49
+29194310011,Demeter Bio Eier,"['Kühlregal', 'Eier']",5.49
+395027951,Bio Fenchel,"['Obst & Gemüse', 'Gemüse', 'Wurzelgemüse', 'Fenchel']",1.2
+21270870071,Wiltmann Bio Salami fein,"['Kühlregal', 'Wurst', 'Rohwurst', 'Salami']",2.79
+26812860011,BioLust Bio Kochschinken hauchfein,"['Kühlregal', 'Wurst', 'Kochschinken']",3.79
+49825470092,EDEKA Milder Orangensaft,"['Getränke', 'Saft', 'Fruchtsäfte']",10.74
+49825470091,EDEKA Milder Orangensaft,"['Getränke', 'Saft', 'Fruchtsäfte']",1.79
+1480240071,WERDER Tomatenketchup,"['Nahrungsmittel', 'Ketchup, Mayonnaise & Senf', 'Ketchup']",2.35
+1468930091,müller Joghurt mit der Ecke Schoko Balls,"['Kühlregal', 'Molkereiprodukte', 'Fruchtjoghurt', 'Cerealien & Nüsse']",0.79
+88003176121,"Steinhaus Krustenbraten, gepökelt","['Frischetheke', 'Wurst Frischetheke', 'Kochschinken']",2.59
+45666310051,EDEKA Bio My Veggie Veganer Tofu geräuchert,"['Kühlregal', 'Fleischersatz & Wurstersatz für Veganer & Vegetarier']",2.19
+27299700001,Kerrygold Extra gesalzen,"['Kühlregal', 'Butter & Fette', 'Butter', 'Butter gesalzen']",4.39
+41302770001,EDEKA Bio Gemüsemais,"['Nahrungsmittel', 'Konserven & Eingelegtes', 'Gemüsekonserven']",1.39
+18206520049,"Hemme Milch Uckermark tagesfrische Vollmilch 3,7 % Fett","['Kühlregal', 'Molkereiprodukte', 'Milch', 'Frischmilch']",7.75
+18206520041,"Hemme Milch Uckermark tagesfrische Vollmilch 3,7 % Fett","['Kühlregal', 'Molkereiprodukte', 'Milch', 'Frischmilch']",1.55
+395114611,EDEKA Bio Kartoffeln festkochend Drillinge,"['Obst & Gemüse', 'Gemüse', 'Kartoffeln']",2.29
+47851180061,Landkost BB-EI Bio,"['Kühlregal', 'Eier']",3.79
+7965090061,Conditorei Coppenrath & Wiese Unsere Goldstücke Dinkelbrötchen,"['Tiefkühlkost', 'Tiefkühlbackwaren', 'Tiefkühlbrötchen']",3.35
+35989990021,Milram kräftig-würziger Sylter 48 % Fett i. Tr.,"['Kühlregal', 'Käse', 'Hartkäse & Schnittkäse']",2.59
+5727240092,Spreequell Classic Kasten 1l Kasten,"['Getränke', 'Mineralwasser', 'Wasser mit Kohlensäure', 'Classic']",6.99
+7630570001,Pluma Flämische Leberpastete,"['Kühlregal', 'Wurst', 'Kochwurst', 'Kochwurst-Pastete']",1.79
+395051071,Laugenkranz natur,"['Brot, Backwaren & Brotaufstriche', 'Frische Backwaren', 'Frisches Laugengebäck']",2.29
+7416030071,Ferrero kinder Pingui Schoko,"['Kühlregal', 'Molkereiprodukte', 'Desserts', 'Riegel']",2.85
+52037770051,GUT&GÜNSTIG Sprühsahne,"['Kühlregal', 'Molkereiprodukte', 'Sahne & Rahm', 'Sahne']",1.79
+395155861,Mini Pak Choi weiß,"['Obst & Gemüse', 'Gemüse', 'Kohlgemüse', 'Pak Choi']",2.19
+395213071,Bio Äpfel Kanzi - säuerlich,"['Obst & Gemüse', 'Obst', 'Äpfel']",3.29
+32395390081,Alnatura Bio Frischkäse Natur Doppelrahmstufe,"['Kühlregal', 'Käse', 'Frischkäse']",1.89
+51678750032,"Alnatura Bio Haltbare Alpenmilch 3,8 % Fett","['Kühlregal', 'Molkereiprodukte', 'Milch', 'H-Milch']",19.8
+51678750031,"Alnatura Bio Haltbare Alpenmilch 3,8 % Fett","['Kühlregal', 'Molkereiprodukte', 'Milch', 'H-Milch']",1.65
+12806500061,Regina Softis Toilettenpapier super-soft 4-lagig,"['Drogerieartikel', 'Papier- & Hygieneartikel', 'Toilettenpapier']",5.79
+30653410041,"Giovanni Ferrari Grana Padano, 32 % Dreiviertelfettstufe","['Kühlregal', 'Käse', 'Reibekäse']",2.29
+8000960031,Lieken Urkorn Fit & Vital Vitaminbrot,"['Brot, Backwaren & Brotaufstriche', 'Tagesfrisch', 'Geschnittenes Brot', 'Mischbrot']",1.99
+42064520051,Harry Kernige Rosenbrötchen,"['Brot, Backwaren & Brotaufstriche', 'Zum Fertigbacken', 'Aufbackbrötchen']",2.39
+18106700051,"Englischer Cheddar, 50 % Fett i. Tr. im Frischepack","['Frischetheke', 'Käse Frischetheke', 'Hart & Schnittkäse']",2.06
+39301800061,EDEKA Bio Hinterkochschinken,"['Kühlregal', 'Wurst', 'Kochschinken']",2.79
+28066070019,"Arla Bio Frische Weidemilch 1,5 % Fett","['Kühlregal', 'Molkereiprodukte', 'Milch', 'Frischmilch']",8.45
+28066070011,"Arla Bio Frische Weidemilch 1,5 % Fett","['Kühlregal', 'Molkereiprodukte', 'Milch', 'Frischmilch']",1.69
+1291930011,THOMY Les Sauces Hollandaise,"['Nahrungsmittel', 'Ketchup, Mayonnaise & Senf', 'Hollandaise & Sahnesoßen']",1.55
+41750140041,FRoSTA Zwiebel Mix,"['Tiefkühlkost', 'Tiefkühlgemüse', 'Tiefkühlgemüse Sortenrein', 'Tiefkühlzwiebeln']",1.19
+37905250091,GUT&GÜNSTIG Toilettenpapier klassik mit mindestens 20% Recyclingfasern 3-lagig,"['Drogerieartikel', 'Papier- & Hygieneartikel', 'Toilettenpapier']",3.69
+1442550079,Würzgut Essigessenz,"['Nahrungsmittel', 'Essig, Öle & Gewürze', 'Essig']",2.85
+1442550071,Würzgut Essigessenz,"['Nahrungsmittel', 'Essig, Öle & Gewürze', 'Essig']",0.95
+27471980041,Ehrmann Robby Monster Backe Früchte-Quark Erdbeere/Banane/Himbeere,"['Kühlregal', 'Molkereiprodukte', 'Fruchtquark']",1.55
+1770340021,Eberswalder Jagdwurst im Stück,"['Kühlregal', 'Wurst', 'Brühwurst', 'Jagdwurst']",3.39
+45053430061,EDEKA Bio Kaisergemüse,"['Tiefkühlkost', 'Tiefkühlgemüse', 'Tiefkühlgemüsemix']",1.79
+12733610012,"Weihenstephan Haltbare Milch 1,5 % Fett","['Kühlregal', 'Molkereiprodukte', 'Milch', 'H-Milch']",18.6
+12733610011,"Weihenstephan Haltbare Milch 1,5 % Fett","['Kühlregal', 'Molkereiprodukte', 'Milch', 'H-Milch']",1.55
+36502670091,Schäfers Weizenmischbrot,"['Brot, Backwaren & Brotaufstriche', 'Frische Backwaren', 'Frisches Brot']",2.29
+1479260019,SweetFamily Puderzucker,"['Nahrungsmittel', 'Zucker', 'Puderzucker']",4.74
+1479260011,SweetFamily Puderzucker,"['Nahrungsmittel', 'Zucker', 'Puderzucker']",0.75
+395009661,Kopfsalat,"['Obst & Gemüse', 'Gemüse', 'Salate']",1.49
+33213260021,"FruchtZwerge Erdbeere, Aprikose & Banane weniger süß","['Kühlregal', 'Molkereiprodukte', 'Fruchtquark']",2.49
+3817820011,Harry Vollkorntoast,"['Brot, Backwaren & Brotaufstriche', 'Toast & Sandwich', 'Toast']",1.29
+35122980021,Alnatura Bio Rahmspinat,"['Tiefkühlkost', 'Tiefkühlgemüse', 'Tiefkühlspinat']",2.09
+395058241,Bio Spitzpaprika rot,"['Obst & Gemüse', 'Gemüse', 'Paprika']",3.65
+395169781,EDEKA Heimatliebe Bio Kräuterseitlinge,"['Obst & Gemüse', 'Gemüse', 'Pilze']",3.59
+16294720092,EXTALER MINERALQUELL Mineralwasser Classic,"['Getränke', 'Mineralwasser', 'Wasser mit Kohlensäure', 'Classic']",1.95
+40993030081,Rama Cremefine zum Kochen 15 % Fett,"['Kühlregal', 'Molkereiprodukte', 'Sahne & Rahm', 'Sahne']",1.39
+51941480001,Dr.Oetker Bistro Baguettes Salami,"['Tiefkühlkost', 'Pizza & Pizzasnacks', 'Pizzasnacks']",2.35
+51444780032,GUT&GÜNSTIG Gebäckstangen mit Käse,"['Süßigkeiten & Salziges', 'Salzige Snacks', 'Laugengebäck']",17.88
+51444780031,GUT&GÜNSTIG Gebäckstangen mit Käse,"['Süßigkeiten & Salziges', 'Salzige Snacks', 'Laugengebäck']",1.49
+25022260071,SweetFamily Unser Feinster,"['Nahrungsmittel', 'Zucker', 'Weißer Zucker']",1.39
+395097721,Beerenmix,"['Obst & Gemüse', 'Obst', 'Beeren']",3.49
+22612060051,Wiesenhof Hähnchen Unterschenkel,"['Frischetheke', 'Fleisch Frischetheke', 'Geflügel']",4.25
+15381390001,Reinert Bärchen-Wurst Mortadella,"['Kühlregal', 'Wurst', 'Brühwurst', 'Mortadella']",1.99
+37472870061,EDEKA Bio Rote Linsen,"['Nahrungsmittel', 'Hülsenfrüchte']",1.65
+301177031,EDEKA Bio Karottenscheiben,"['Tiefkühlkost', 'Tiefkühlgemüse', 'Tiefkühlgemüse Sortenrein', 'Tiefkühl-Wurzelgemüse']",1.79
+54791000061,Harry Sammys Sandwich Vollkorn,"['Brot, Backwaren & Brotaufstriche', 'Toast & Sandwich', 'Sandwich']",2.55
+301044031,EDEKA Bio Schwarzwälder Schinken,"['Kühlregal', 'Wurst', 'Rohschinken']",3.49
+1702420001,Henglein Schupfnudeln,"['Kühlregal', 'Convenience', 'Teigwaren']",2.89
+33245260092,Oatly Hafer Barista Edition,"['Kühlregal', 'Molkereiprodukte', 'Pflanzliche Alternative', 'Hafer']",15.54
+7689720051,Weideglück Sahne Joghurt nach griechische Art 10 % Fett,"['Kühlregal', 'Molkereiprodukte', 'Naturjoghurt']",4.15
+301008001,GUT&GÜNSTIG Edle Matjesfilets nordischer Art,"['Kühlregal', 'Fisch', 'Fisch eingelegt']",1.65
+27142270011,Golden Toast Vollkorn Toast,"['Brot, Backwaren & Brotaufstriche', 'Toast & Sandwich', 'Toast']",1.89
+395104681,Havana Club Persische Limetten,"['Obst & Gemüse', 'Obst', 'Zitrusfrüchte', 'Limetten']",2.49
+395028252,Buttercrossaint,"['Brot, Backwaren & Brotaufstriche', 'Frische Backwaren', 'Frisches Süßes Gebäck']",2.29
+301007029,EDEKA Bio Frische fettarme Milch ESL,"['Kühlregal', 'Molkereiprodukte', 'Milch', 'Frischmilch']",6.0
+301007021,EDEKA Bio Frische fettarme Milch ESL,"['Kühlregal', 'Molkereiprodukte', 'Milch', 'Frischmilch']",1.2
+49851440032,GUT&GÜNSTIG Apfelsaft,"['Getränke', 'Saft', 'Fruchtsäfte']",5.1
+1472340091,Henglein Frische Eierspätzle,"['Kühlregal', 'Convenience', 'Teigwaren']",2.49
+395069331,EDEKA Heimatliebe Salatgurke 500-600g,"['Obst & Gemüse', 'Gemüse', 'Gurken']",1.89
+395015631,Honigmelone,"['Obst & Gemüse', 'Obst', 'Melonen']",2.49
+1807460041,Mühlhäuser Konfitüre Extra Erdbeer,"['Brot, Backwaren & Brotaufstriche', 'Brotaufstrich', 'Marmelade & Konfitüre', 'Erdbeere']",2.39
+12855120001,Eberswalder Bratwurst,"['Kühlregal', 'Wurst', 'Bratwurst']",3.59
+5955950061,"Exquisa Körniger Frischkäse Fitline natur 0,8 % Fett absolut","['Kühlregal', 'Käse', 'Körniger Frischkäse']",1.69
+301094001,EDEKA Lieblingsmischung,"['Brot, Backwaren & Brotaufstriche', 'Zum Fertigbacken', 'Aufbackbrötchen']",1.99
+395004471,Apfel Elstar - süß-säuerlich,"['Obst & Gemüse', 'Obst', 'Äpfel']",0.66
+38290220021,GUT&GÜNSTIG Hähnchenbrustfilet,"['Frischetheke', 'Fleisch Frischetheke', 'Geflügel']",5.99
+44003610001,EDEKA Bio My Veggie Veganer Haferdrink Classic,"['Kühlregal', 'Molkereiprodukte', 'Pflanzliche Alternative', 'Hafer']",0.99
+395203351,Heimatliebe Bio Petersilie glatt im Topf,"['Obst & Gemüse', 'Gemüse', 'Kräuter']",1.89
+46535380001,fit Spülmittel Original,"['Drogerieartikel', 'Reinigungsmittel', 'Handspülmittel']",1.59
+1307090001,Bad Reichenhaller Alpen Jodsalz,"['Nahrungsmittel', 'Essig, Öle & Gewürze', 'Salz']",0.69
+7839920082,Coca-Cola Zero Sugar,"['Getränke', 'Cola']",16.2
+7839920081,Coca-Cola Zero Sugar,"['Getränke', 'Cola']",1.29
+8423550031,EDEKA Bio Frische Schlagsahne,"['Kühlregal', 'Molkereiprodukte', 'Sahne & Rahm', 'Sahne']",1.09
+48888790021,Harry Anno »1688« Dinkel,"['Brot, Backwaren & Brotaufstriche', 'Tagesfrisch', 'Geschnittenes Brot', 'Mischbrot']",2.49
+395108712,Roggenbrötchen,"['Brot, Backwaren & Brotaufstriche', 'Frische Backwaren', 'Frische Brötchen']",1.15
+12090550082,Spreequell Naturell 1.5l Einweg,"['Getränke', 'Mineralwasser', 'Stilles Wasser']",5.09
+1288000093,Barilla Pesto alla Genovese,"['Nahrungsmittel', 'Nudeln', 'Pesto']",44.28
+1288000091,Barilla Pesto alla Genovese,"['Nahrungsmittel', 'Nudeln', 'Pesto']",3.69
+395034841,Mini Romanasalat,"['Obst & Gemüse', 'Gemüse', 'Salate']",1.59
+37792850071,EDEKA Bio Bergkäse aus Heumilch 50% Fett i. Tr.,"['Kühlregal', 'Käse', 'Hartkäse & Schnittkäse']",2.99
+45147930013,"Gläserne Molkerei Bio Frische Heumilch 3,8 % Fett","['Kühlregal', 'Molkereiprodukte', 'Milch', 'Frischmilch']",9.95
+45147930011,"Gläserne Molkerei Bio Frische Heumilch 3,8 % Fett","['Kühlregal', 'Molkereiprodukte', 'Milch', 'Frischmilch']",1.99
+21360540011,Wiltmann Bio Geflügel Lyoner grob,"['Kühlregal', 'Wurst', 'Brühwurst', 'Lyoner & Fleischwurst']",2.39
+15336460081,OSTERLAND Rote Grütze,"['Kühlregal', 'Molkereiprodukte', 'Desserts', 'Fruchtgrützen']",0.49
+34979180011,Kerrygold Original Irischer Cheddar herzhaft gerieben 50 % Fett i. Tr.,"['Kühlregal', 'Käse', 'Reibekäse']",3.05
+4571700001,HEINZ Tomato Ketchup,"['Nahrungsmittel', 'Ketchup, Mayonnaise & Senf', 'Ketchup']",3.49
+27692770061,Harry Bäcker Premium Krüsten,"['Brot, Backwaren & Brotaufstriche', 'Zum Fertigbacken', 'Aufbackbrötchen']",2.39
+1734940082,Berliner Kindl Jubiläums Pilsener Premium,"['Getränke', 'Bier', 'Pils']",16.2
+35039780079,"Bärenmarke Die frische Milch 1,8 % Fett","['Kühlregal', 'Molkereiprodukte', 'Milch', 'Frischmilch']",9.3
+35039780071,"Bärenmarke Die frische Milch 1,8 % Fett","['Kühlregal', 'Molkereiprodukte', 'Milch', 'Frischmilch']",1.55
+1471970011,"Müller Joghurt mit der Ecke Knusper Schoko Flakes & Joghurt Bananengeschmack 3,8% Fett","['Kühlregal', 'Molkereiprodukte', 'Fruchtjoghurt', 'Cerealien & Nüsse']",0.79
+22132720032,Märkisch Kristall Medium,"['Getränke', 'Mineralwasser', 'Wasser mit Kohlensäure', 'Medium']",5.09
+1483850091,Spreewaldhof Saure Gurken,"['Nahrungsmittel', 'Konserven & Eingelegtes', 'Sauerkonserven']",2.45
+395127921,Birnen Conference,"['Obst & Gemüse', 'Obst', 'Birnen']",2.19
+8165900051,EDEKA Bio Natives Sonnenblumenöl,"['Nahrungsmittel', 'Essig, Öle & Gewürze', 'Öl']",1.85
+52869240041,Holländischer Edamer 40%,"['Frischetheke', 'Käse Frischetheke', 'Hart & Schnittkäse']",1.94
+1669510081,Alpenhain Obazda Original Klassisch,"['Kühlregal', 'Käse', 'Weichkäse']",2.49
+395033231,EDEKA Heimatliebe Heidelbeeren,"['Obst & Gemüse', 'Obst', 'Beeren']",3.49
+395065201,Champignons weiß,"['Obst & Gemüse', 'Gemüse', 'Pilze']",2.29
+46125680001,Rügenwalder Mühle Vegane Salami klassisch,"['Kühlregal', 'Fleischersatz & Wurstersatz für Veganer & Vegetarier']",1.69
+1506500031,Filinchen Das Knusper-Brot Original,"['Brot, Backwaren & Brotaufstriche', 'Zwieback, Knäckebrot, Reis- & Maiswaffeln', 'Knäckebrot']",0.99
+32790060011,Schöller Big Sandwich Multipack,"['Tiefkühlkost', 'Eis', 'Stieleis & Waffeleis']",4.29
+395173469,Nuss-Nougat Croissant,"['Brot, Backwaren & Brotaufstriche', 'Frische Backwaren', 'Frisches Süßes Gebäck']",1.69
+18307650061,Mago Schinkenknacker,"['Kühlregal', 'Wurst', 'Würstchen']",4.75
+11180230061,Börner Eisenacher Bio Salami luftgetrocknet,"['Kühlregal', 'Wurst', 'Rohwurst', 'Salami']",2.75
+12733620042,"Weihenstephan Haltbare Milch 3,5 % Fett","['Kühlregal', 'Molkereiprodukte', 'Milch', 'H-Milch']",20.28
+31263240031,Alnatura Bio Emmentaler in Scheiben 45 % Fett i. Tr.,"['Kühlregal', 'Käse', 'Hartkäse & Schnittkäse']",2.65
+34839960021,EDEKA Bio My Veggie Streichcreme Tomate-Basilikum,"['Brot, Backwaren & Brotaufstriche', 'Brotaufstrich', 'Herzhafte Aufstriche']",1.35
+28601930011,FRoSTA Rahm Geschnetzeltes vom Hähnchen mit Spätzle,"['Tiefkühlkost', 'Tiefkühl-Fertiggerichte', 'Tiefkühl-Pfannengerichte']",3.55
+301052021,"GUT&GÜNSTIG Piccos Mini-Hörnchen, 12 Stück","['Tiefkühlkost', 'Eis', 'Stieleis & Waffeleis']",1.99
+44259270031,EDEKA Bio Skyr Natur,"['Kühlregal', 'Molkereiprodukte', 'Naturquark & Kräuterquark', 'Naturquark']",1.69
+48767310081,GUT&GÜNSTIG Pflanzenmargarine,"['Kühlregal', 'Butter & Fette', 'Margarine']",1.59
+15880050031,BioLust Bio Kasslerbraten in Scheiben,"['Kühlregal', 'Wurst', 'Kochschinken']",3.79
+48659850031,EDEKA Tortilla Wraps Mais,"['Brot, Backwaren & Brotaufstriche', 'Tagesfrisch', 'Snacks']",1.49
+1201890051,McCain 1.2.3 Frites Original,"['Tiefkühlkost', 'Tiefkühl-Kartoffelprodukte', 'Pommes Frites']",2.75
+1791820062,Märkisch Kristall Classic,"['Getränke', 'Mineralwasser', 'Wasser mit Kohlensäure', 'Classic']",5.09
+395156851,Mini Paprika Mix Tri-Color,"['Obst & Gemüse', 'Gemüse', 'Paprika']",1.99
+32425950041,Conditorei Coppenrath & Wiese Unsere Goldstücke Kaiser-Semmeln,"['Tiefkühlkost', 'Tiefkühlbackwaren', 'Tiefkühlbrötchen']",2.35
+38075010001,EDEKA Bio Cashewkerne,"['Obst & Gemüse', 'Trockenfrüchte & Nüsse', 'Naturbelassene Nüsse & Kerne']",3.69
+51949110002,DeBeukelaer Prinzen Rolle Schoko,"['Süßigkeiten & Salziges', 'Kekse', 'Doppelkeks']",44.85
+51949110001,DeBeukelaer Prinzen Rolle Schoko,"['Süßigkeiten & Salziges', 'Kekse', 'Doppelkeks']",1.95
+39784110091,Harry Dinkel Toastbrötchen,"['Brot, Backwaren & Brotaufstriche', 'Toast & Sandwich', 'Toasties']",1.79
+39599200071,Herzberger Bio Baguette Französischer Art,"['Brot, Backwaren & Brotaufstriche', 'Zum Fertigbacken', 'Aufbackbrötchen']",1.99
+395066671,Apfel Braeburn - süß-säuerlich,"['Obst & Gemüse', 'Obst', 'Äpfel']",2.99
+1462280011,Dr.Oetker Crème Fraîche Classic 30 % Fett,"['Kühlregal', 'Molkereiprodukte', 'Sahne & Rahm', 'Creme Fraiche']",1.35
+22038580041,Rügenwalder Mühle Mühlen Frikadellen klassisch,"['Kühlregal', 'Convenience', 'Fertiggerichte']",2.95
+301044081,EDEKA Bio Fusilli Hartweizen,"['Nahrungsmittel', 'Nudeln', 'Kurze Nudeln', 'Fussili & Spirelli']",0.95
+26886070051,Ludwigsluster Bio Salami 1a hauchfein,"['Kühlregal', 'Wurst', 'Rohwurst', 'Salami']",2.39
+1766640041,Cornelius Pfälzer Leberwurst,"['Kühlregal', 'Wurst', 'Kochwurst', 'Leberwurst']",2.19
+27692430031,Harry Vollkorn Urtyp,"['Brot, Backwaren & Brotaufstriche', 'Tagesfrisch', 'Geschnittenes Brot', 'Vollkornbrot']",1.89
+24960180041,Wiltmann Bio Fleischkäse,"['Kühlregal', 'Wurst', 'Brühwurst', 'Lyoner & Fleischwurst']",2.39
+22038570011,Rügenwalder Mühle Mühlen Frikadellen Geflügel,"['Kühlregal', 'Convenience', 'Fertiggerichte']",2.95
+54531160091,Alnatura Bio Schmand Bioland,"['Kühlregal', 'Molkereiprodukte', 'Sahne & Rahm', 'Schmand']",1.49
+13487610001,"Andechser Natur Bio die Kleinen Jogurts mild Vanille 3,8 % Fett","['Kühlregal', 'Molkereiprodukte', 'Fruchtjoghurt', 'Vanille']",2.59
+395015491,Galia Melone,"['Obst & Gemüse', 'Obst', 'Melonen']",3.49
+11771030001,Eberswalder Leberkäse Stapelaufschnitt,"['Kühlregal', 'Wurst', 'Brühwurst', 'Leberkäse']",1.79
+8144270021,EDEKA Bio Broccoli,"['Tiefkühlkost', 'Tiefkühlgemüse', 'Tiefkühlgemüse Sortenrein', 'Tiefkühl-Brokkoli']",1.69
+8978670011,EDEKA Bio Trauben-Direktsaft,"['Getränke', 'Saft', 'Fruchtsäfte']",2.29
+53213300071,EDEKA Bio Frischkäse Kräuter,"['Kühlregal', 'Käse', 'Frischkäse']",1.19
+1475490081,Landliebe Sahnepudding Schokolade,"['Kühlregal', 'Molkereiprodukte', 'Desserts', 'Pudding']",0.99
+16953360011,Schäfers Sonnen Roggen Pur Brot,"['Brot, Backwaren & Brotaufstriche', 'Frische Backwaren', 'Frisches Brot']",1.79
+52374280091,Rücker Gouda mittelalt 51%,"['Frischetheke', 'Käse Frischetheke', 'Hart & Schnittkäse']",3.38
+13912400022,Bad Liebenwerda Naturell,"['Getränke', 'Mineralwasser', 'Stilles Wasser']",5.09
+2475400001,Golden Toast American Classic Sandwich,"['Brot, Backwaren & Brotaufstriche', 'Toast & Sandwich', 'Sandwich']",2.79
+395015321,Cantaloupe-Melone,"['Obst & Gemüse', 'Obst', 'Melonen']",3.49
+13912380092,Bad Liebenwerda Medium,"['Getränke', 'Mineralwasser', 'Wasser mit Kohlensäure', 'Medium']",5.09
+301009061,GUT&GÜNSTIG Mozzarella 45% Fett i. Tr.,"['Kühlregal', 'Käse', 'Mozzarella']",0.89
+57697830051,Männl Bio-Holzofenbrot Natur 750g,"['Brot, Backwaren & Brotaufstriche', 'Frische Backwaren', 'Frisches Brot']",4.79
+29676550041,Alnatura Bio Pesto Basilico,"['Nahrungsmittel', 'Nudeln', 'Pesto']",2.59
+51941500031,Dr.Oetker Bistro Baguettes a la Provence,"['Tiefkühlkost', 'Pizza & Pizzasnacks', 'Pizzasnacks']",2.35
+395060871,EDEKA Bio Heimatliebe Minze im Topf 13cm,"['Obst & Gemüse', 'Gemüse', 'Kräuter']",1.89
+9080290062,Mutti Polpa,"['Nahrungsmittel', 'Konserven & Eingelegtes', 'Tomatenkonserven']",10.5
+9080290061,Mutti Polpa,"['Nahrungsmittel', 'Konserven & Eingelegtes', 'Tomatenkonserven']",1.75
+18077200031,Golßener Spreewälder Geflügelsalat,"['Kühlregal', 'Feinkost', 'Feinkostsalate', 'Fleischsalate']",3.05
+10891780081,Berschneider Graved Lachsschinken,"['Kühlregal', 'Wurst', 'Rohschinken']",1.99
+395051522,La Nouvelle Boulangerie Laugenbrezel schwäbische Art,"['Brot, Backwaren & Brotaufstriche', 'Frische Backwaren', 'Frisches Laugengebäck']",2.29
+29680110031,Alnatura Bio Mais,"['Nahrungsmittel', 'Konserven & Eingelegtes', 'Gemüsekonserven']",1.45
+5942120019,Barilla Pesto Rosso,"['Nahrungsmittel', 'Nudeln', 'Pesto']",22.14
+5942120011,Barilla Pesto Rosso,"['Nahrungsmittel', 'Nudeln', 'Pesto']",3.69
+35123000041,Alnatura Bio Erdbeeren ungesüßt,"['Tiefkühlkost', 'Tiefkühlfrüchte']",3.55
+395088781,EDEKA Heimatliebe Rettich weiß,"['Obst & Gemüse', 'Gemüse', 'Wurzelgemüse', 'Rettich']",2.19
+14870180071,Schäfers Kastenweißbrot,"['Brot, Backwaren & Brotaufstriche', 'Frische Backwaren', 'Frisches Brot']",2.29
+395153711,Bio Demeter Staudensellerie,"['Obst & Gemüse', 'Gemüse', 'Wurzelgemüse', 'Sellerie']",2.29
+10633660012,Adello Medium Mineralwasser,"['Getränke', 'Mineralwasser', 'Wasser mit Kohlensäure', 'Medium']",4.69
+1735110022,Berliner Pilsner,"['Getränke', 'Bier', 'Pils']",15.0
+36043710042,Alnatura Bio Kokos Natur vegan,"['Kühlregal', 'Molkereiprodukte', 'Pflanzliche Alternative', 'Kokos']",15.54
+36043710041,Alnatura Bio Kokos Natur vegan,"['Kühlregal', 'Molkereiprodukte', 'Pflanzliche Alternative', 'Kokos']",2.59
+48883500061,GUT&GÜNSTIG Küchentücher 3-lagig 2x64,"['Drogerieartikel', 'Papier- & Hygieneartikel', 'Küchenrolle']",1.79
+9679220051,"WERDER Tomaten Ketchup ""Ohne Zuckerzusatz""","['Nahrungsmittel', 'Ketchup, Mayonnaise & Senf', 'Ketchup']",2.35
+44323200063,"Nord Frische Demeter Unsere Bio Vollmilch 3,8 %","['Kühlregal', 'Molkereiprodukte', 'Milch', 'Frischmilch']",8.95
+44323200061,"Nord Frische Demeter Unsere Bio Vollmilch 3,8 %","['Kühlregal', 'Molkereiprodukte', 'Milch', 'Frischmilch']",1.79
+41942860081,Arla Buko Der Sahnige Doppelrahmstufe,"['Kühlregal', 'Käse', 'Frischkäse']",2.09
+301007342,GUT&GÜNSTIG Haltbare Schlagsahne,"['Kühlregal', 'Molkereiprodukte', 'Sahne & Rahm', 'Sahne']",26.73
+35123560071,Alnatura Bio Junge Erbsen,"['Tiefkühlkost', 'Tiefkühlgemüse', 'Tiefkühlgemüse Sortenrein', 'Tiefkühlerbsen']",1.99
+395109251,Bio Demeter Rote Bete gekocht,"['Obst & Gemüse', 'Gemüse', 'Wurzelgemüse', 'Rote Bete']",1.69
+7926340091,"Elinas Joghurt nach griechischer Art Honig 9,4 % Fett","['Kühlregal', 'Molkereiprodukte', 'Fruchtjoghurt', 'Exotisch']",2.39
+395026279,Bio Zitronen,"['Obst & Gemüse', 'Obst', 'Zitrusfrüchte', 'Zitronen']",1.45
+395136101,EDEKA Heimatliebe Bio Champignons weiß,"['Obst & Gemüse', 'Gemüse', 'Pilze']",2.29
+1669390081,"Chavroux Frischkäse aus Ziegenmilch mild, 13,5 % Fett","['Kühlregal', 'Käse', 'Frischkäse']",3.55
+51678450022,"Alnatura Bio Haltbare Alpenmilch 1,5 % Fett","['Kühlregal', 'Molkereiprodukte', 'Milch', 'H-Milch']",19.8
+31266450071,Alnatura Bio Speisequark 20 % Fett,"['Kühlregal', 'Molkereiprodukte', 'Naturquark & Kräuterquark', 'Naturquark']",1.39
+301015001,GUT&GÜNSTIG Hähnchen-Cordon-Bleu,"['Tiefkühlkost', 'Tiefkühlfleisch', 'Tiefkühl-Geflügel']",4.29
+34435930091,Der Grüne Altenburger Ziegenrolle 45 % Fett i. Tr.,"['Kühlregal', 'Käse', 'Weichkäse']",3.15
+395102391,Mini Pflaumentomaten,"['Obst & Gemüse', 'Gemüse', 'Tomaten']",2.99
+36650430071,Zewa Wisch & Weg Original,"['Drogerieartikel', 'Papier- & Hygieneartikel', 'Küchenrolle']",3.45
+1270800001,Danke Haushaltsrollen,"['Drogerieartikel', 'Papier- & Hygieneartikel', 'Küchenrolle']",3.15
+395034911,Mini Wassermelone,"['Obst & Gemüse', 'Obst', 'Melonen']",2.99
+8030660012,"GUT&GÜNSTIG Tomaten, passiert","['Nahrungsmittel', 'Konserven & Eingelegtes', 'Tomatenkonserven']",9.48
+29697580081,Alnatura Bio Rohrohrzucker,"['Nahrungsmittel', 'Zucker', 'Rohrzucker & Brauner Zucker']",2.85
+8090320061,Rügenwalder Mühle Pommersche Feine Gutsleberwurst,"['Kühlregal', 'Wurst', 'Kochwurst', 'Leberwurst']",2.85
+395050772,Kartoffelbrötchen hell,"['Brot, Backwaren & Brotaufstriche', 'Frische Backwaren', 'Frische Brötchen']",1.49
+52502860001,Alnatura Bio Penne,"['Nahrungsmittel', 'Nudeln', 'Kurze Nudeln', 'Penne']",1.69
+49380460041,EDEKA Bio Kichererbsen,"['Nahrungsmittel', 'Konserven & Eingelegtes', 'Gemüsekonserven']",1.39
+31680230072,Alnatura Bio Milder Apfelsaft naturtrüb,"['Getränke', 'Saft', 'Fruchtsäfte']",11.94
+6100320081,Harry 1688 Unser Mildes,"['Brot, Backwaren & Brotaufstriche', 'Tagesfrisch', 'Geschnittenes Brot', 'Mischbrot']",1.39
+38551570061,EDEKA Bio Hörnchen Dinkel,"['Nahrungsmittel', 'Nudeln', 'Vollkorn- & Dinkelnudeln']",1.79
+1389200092,Riesa Schlemmerliebling Spirelli,"['Nahrungsmittel', 'Nudeln', 'Kurze Nudeln', 'Fussili & Spirelli']",24.75
+1389200091,Riesa Schlemmerliebling Spirelli,"['Nahrungsmittel', 'Nudeln', 'Kurze Nudeln', 'Fussili & Spirelli']",1.65
+395215431,Kiwis,"['Obst & Gemüse', 'Obst', 'Exotische Früchte', 'Kiwis']",2.99
+31623460091,TUC Original,"['Süßigkeiten & Salziges', 'Salzige Snacks', 'Cracker']",1.49
+51941570041,Dr.Oetker Bistro Baguettes Champignon,"['Tiefkühlkost', 'Pizza & Pizzasnacks', 'Pizzasnacks']",2.39
+301110022,EDEKA Bio Apfel-Direktsaft naturtrüb,"['Getränke', 'Saft', 'Fruchtsäfte']",13.52
+301110021,EDEKA Bio Apfel-Direktsaft naturtrüb,"['Getränke', 'Saft', 'Fruchtsäfte']",1.69
+301019081,GUT&GÜNSTIG Hinterkochschinken,"['Kühlregal', 'Wurst', 'Kochschinken']",1.69
+25218310041,Hakle Klassisch Weiss Toilettenpapier 3-lagig,"['Drogerieartikel', 'Papier- & Hygieneartikel', 'Toilettenpapier']",3.99
+15245690081,iglo MSC Fischstäbchen,"['Tiefkühlkost', 'Fisch & Meeresfrüchte', 'Fischstäbchen & Backfisch']",2.99
+395180281,EDEKA Bio Heimatliebe Petersilie kraus im Topf,"['Obst & Gemüse', 'Gemüse', 'Kräuter']",1.89
+1293810062,ORO di Parma Tomatenmark 3-fach konzentriert,"['Nahrungsmittel', 'Konserven & Eingelegtes', 'Tomatenkonserven']",33.75
+1293810061,ORO di Parma Tomatenmark 3-fach konzentriert,"['Nahrungsmittel', 'Konserven & Eingelegtes', 'Tomatenkonserven']",2.25
+49788600001,EDEKA Milder Multivitaminsaft,"['Getränke', 'Saft', 'Fruchtsäfte']",1.79
+31263280051,Alnatura Bio Gouda in Scheiben 40 % Fett i. Tr.,"['Kühlregal', 'Käse', 'Hartkäse & Schnittkäse']",2.09
+7732770092,CLUB-MATE Mate-Tee,"['Getränke', 'Eistee']",17.99
+9810360091,Weihenstephan Sahne zum Kochen 15 % Fett,"['Kühlregal', 'Molkereiprodukte', 'Sahne & Rahm', 'Sahne']",1.65
+53327460081,GUT&GÜNSTIG Feine Sahneheringsfilets,"['Kühlregal', 'Fisch', 'Fisch eingelegt']",1.95
+41664720021,Jütro Bio Breakfast-Topper rot,"['Tiefkühlkost', 'Tiefkühlfrüchte']",2.95
+35342250042,Alnatura Bio Haferdrink ungesüßt,"['Kühlregal', 'Molkereiprodukte', 'Pflanzliche Alternative', 'Hafer']",13.52
+39466620081,Popp Pellkartoffelsalat mit Ei & Gurke,"['Kühlregal', 'Feinkost', 'Beilagensalate', 'Kartoffelsalate']",2.59
+37412280091,EDEKA Bio Italienische Kräuter,"['Tiefkühlkost', 'Tiefkühlgemüse', 'Tiefkühlkräuter']",0.95
+57117780049,GUT&GÜNSTIG Frische Vollmilch,"['Kühlregal', 'Molkereiprodukte', 'Milch', 'Frischmilch']",5.25
+57117780041,GUT&GÜNSTIG Frische Vollmilch,"['Kühlregal', 'Molkereiprodukte', 'Milch', 'Frischmilch']",1.05
+395155179,Toscana Brötchen,"['Brot, Backwaren & Brotaufstriche', 'Frische Backwaren', 'Frische Brötchen']",0.99
+88004701171,Reinert Hähnchenfleisch in Aspik im Frischepack,"['Frischetheke', 'Wurst Frischetheke', 'Kochwurst', 'Sülzen']",2.39
+395228361,Rosenkohl 750g NL I,"['Obst & Gemüse', 'Gemüse', 'Kohlgemüse', 'Rosenkohl']",1.49
+395061411,EDEKA Heimatliebe Chicoree,"['Obst & Gemüse', 'Gemüse', 'Salate']",2.29
+30673490041,Actimel Drink Erdbeere,"['Kühlregal', 'Molkereiprodukte', 'Milchgetränke', 'Joghurt Drinks']",3.99
+8632880011,Montorsi Salami Milano,"['Kühlregal', 'Wurst', 'Rohwurst', 'Salami']",4.15
+29665250011,Harry Weizen Toastbrötchen,"['Brot, Backwaren & Brotaufstriche', 'Toast & Sandwich', 'Toasties']",1.79
+6524830062,"MinusL Laktosefrei fettarme H-Milch 1,5% Fett","['Kühlregal', 'Molkereiprodukte', 'Milch', 'H-Milch']",18.9
+395032621,Bio Heidelbeeren,"['Obst & Gemüse', 'Obst', 'Beeren']",2.99
+39818080051,"Weideglück Bio Natur Joghurt mild 1,8 % Fett","['Kühlregal', 'Molkereiprodukte', 'Naturjoghurt']",4.05
+33652710031,Bautz'ner Senf mittelscharf,"['Nahrungsmittel', 'Ketchup, Mayonnaise & Senf', 'Senf']",1.25
+395179661,Pinke Perle Trauben rot,"['Obst & Gemüse', 'Obst', 'Trauben']",3.99
+395124191,Bio Mangold rot,"['Obst & Gemüse', 'Gemüse', 'Spinat & Blattgemüse']",1.79
+1480230041,WERDER Tomaten Ketchup,"['Nahrungsmittel', 'Ketchup, Mayonnaise & Senf', 'Ketchup']",3.35
+53520480052,EDEKA elkos Baby Glück Sensitiv Feuchttücher Doppelpack,"['Baby & Kind', 'Babypflege', 'Baby-Feuchttücher']",11.94
+7483970062,RAUCH Happy Day Mango,"['Getränke', 'Saft', 'Fruchtsäfte']",14.34
+7483970061,RAUCH Happy Day Mango,"['Getränke', 'Saft', 'Fruchtsäfte']",2.39
+9535130061,Golßener Spreewälder Gurkensülze,"['Kühlregal', 'Wurst', 'Kochwurst', 'Sülzen']",2.99
+395132831,EDEKA Heimatliebe Mairüben,"['Obst & Gemüse', 'Gemüse', 'Wurzelgemüse', 'Rüben']",1.99
+1215590031,GRIESSON Soft Cake Orange,"['Süßigkeiten & Salziges', 'Kekse', 'Gefüllte Kekse']",1.55
+18077290001,Golßener Spreewälder Fleischsalat mit Gurke,"['Kühlregal', 'Feinkost', 'Feinkostsalate', 'Fleischsalate']",2.19
+395203661,Bio Demeter Heimatliebe Basilikum im Topf,"['Obst & Gemüse', 'Gemüse', 'Kräuter']",1.99
+11690410021,"Harzbube Handkäse Kümmel 0,5 % Fett absolut","['Kühlregal', 'Käse', 'Hartkäse & Schnittkäse']",3.15
+31233450011,iglo ASC Filegro Ofen-Backfisch XXL-Pack,"['Tiefkühlkost', 'Fisch & Meeresfrüchte', 'Fischstäbchen & Backfisch']",7.05
+36650710021,Zewa Wisch&Weg Original,"['Drogerieartikel', 'Papier- & Hygieneartikel', 'Küchenrolle']",6.09
+11049860091,Spreewaldhof Das andere Apfelmus,"['Nahrungsmittel', 'Konserven & Eingelegtes', 'Obstkonserven']",1.75
+28230050062,"Weihenstephan Haltbare Milch 3,5 % Fett","['Kühlregal', 'Molkereiprodukte', 'Milch', 'H-Milch']",13.8
+395135661,Apfel Holsteiner Cox - fein-säuerlich,"['Obst & Gemüse', 'Obst', 'Äpfel']",3.79
+301044071,EDEKA Bio Penne Vollkorn,"['Nahrungsmittel', 'Nudeln', 'Vollkorn- & Dinkelnudeln']",0.95
+32079120021,Alnatura Bio Gouda gerieben 45 % Fett i. Tr.,"['Kühlregal', 'Käse', 'Reibekäse']",2.19
+14029500011,"Andechser Natur Bio Kefir mild 1,5 % Fett","['Kühlregal', 'Molkereiprodukte', 'Milchgetränke', 'Kefir']",1.45
+1892520011,Dr.Oetker Bourbon Vanille Zucker,"['Nahrungsmittel', 'Backen & Desserts', 'Backzutaten', 'Vanillin & Bourbon-Vanillezucker']",1.29
+50624470081,GUT&GÜNSTIG Halbfettmargarine,"['Kühlregal', 'Butter & Fette', 'Margarine']",1.19
+28095890031,Herta Finesse Schinken hauchzart & feinwürzig,"['Kühlregal', 'Wurst', 'Kochschinken']",2.49
+3818060061,Harry Buttertoast,"['Brot, Backwaren & Brotaufstriche', 'Toast & Sandwich', 'Toast']",1.29
+50647510001,GUT&GÜNSTIG Grüne Oliven mit Kräutern und Chili,"['Kühlregal', 'Feinkost', 'Antipasti']",1.99
+49545770051,GUT&GÜNSTIG Smoothie Erdbeer-Banane-Traube,"['Obst & Gemüse', 'Smoothies']",1.19
+24612220051,Henglein Kartoffel-Gnocchi,"['Kühlregal', 'Convenience', 'Teigwaren']",2.99
+22623040012,Brandenburger Quell Mineralwasser Medium,"['Getränke', 'Mineralwasser', 'Wasser mit Kohlensäure', 'Medium']",5.45
+1769550071,Rügenwalder Mühle Schinken Spicker Feine Schinkenwurst,"['Kühlregal', 'Wurst', 'Brühwurst', 'Lyoner & Fleischwurst']",1.59
+43494870071,Bonduelle Goldmais,"['Nahrungsmittel', 'Konserven & Eingelegtes', 'Gemüsekonserven']",1.29
+1679110039,"Schwarzwaldmilch Bio Frische Vollmilch 3,8 % Fett","['Kühlregal', 'Molkereiprodukte', 'Milch', 'Frischmilch']",5.37
+1679110031,"Schwarzwaldmilch Bio Frische Vollmilch 3,8 % Fett","['Kühlregal', 'Molkereiprodukte', 'Milch', 'Frischmilch']",1.79
+54750990051,LÄTTA Joghurt 39 % Fett,"['Kühlregal', 'Butter & Fette', 'Margarine']",2.09
+2172390022,Coca-Cola Original Taste,"['Getränke', 'Cola']",21.36
+395214441,Bio Demeter Süßkartoffeln,"['Obst & Gemüse', 'Gemüse', 'Kartoffeln']",3.99
+395050602,Kartoffelbrötchen dunkel,"['Brot, Backwaren & Brotaufstriche', 'Frische Backwaren', 'Frische Brötchen']",1.49
+395184241,Äpfel Fräulein -süß-säuerlich,"['Obst & Gemüse', 'Obst', 'Äpfel']",0.6
+1484780001,Kunella Leinöl,"['Nahrungsmittel', 'Essig, Öle & Gewürze', 'Öl']",1.69
+395231731,Zwiebelbaguette,"['Brot, Backwaren & Brotaufstriche', 'Frische Backwaren', 'Frische Brötchen']",1.29
+46869320081,Dr.Oetker Götterspeise Waldmeister,"['Kühlregal', 'Molkereiprodukte', 'Desserts', 'Götterspeise']",0.59
+52168900031,Grünländer Scheiben mild & nussig 48 % Fett i. Tr.,"['Kühlregal', 'Käse', 'Hartkäse & Schnittkäse']",2.69
+395103761,Bio Kiwi Gold,"['Obst & Gemüse', 'Obst', 'Exotische Früchte', 'Kiwis']",2.69
+13464160071,Conditorei Coppenrath & Wiese Cafeteria Minis Berliner mit Himbeer-Füllung,"['Tiefkühlkost', 'Torten & Kuchen', 'Tiefkühl-Kleingebäck']",4.15
+13869680011,iglo Rahm-Spinat,"['Tiefkühlkost', 'Tiefkühlgemüse', 'Tiefkühlspinat']",1.99
+32726950042,"Sachsenmilch Unsere Haltbare fettarme Milch 1,5 % Fett","['Kühlregal', 'Molkereiprodukte', 'Milch', 'H-Milch']",24.6
+32726950041,"Sachsenmilch Unsere Haltbare fettarme Milch 1,5 % Fett","['Kühlregal', 'Molkereiprodukte', 'Milch', 'H-Milch']",2.09
+20675130009,müller Reine Buttermilch max. 1 % Fett,"['Kühlregal', 'Molkereiprodukte', 'Milchgetränke', 'Buttermilch']",6.3
+11695490011,Kühne Sandwich Gurken,"['Nahrungsmittel', 'Konserven & Eingelegtes', 'Sauerkonserven']",2.25
+12006400031,Abraham Serrano Schinken,"['Kühlregal', 'Wurst', 'Rohschinken']",2.59
+395001331,Mango,"['Obst & Gemüse', 'Obst', 'Mangos']",1.95
+37185090051,FRoSTA Thai Hähnchen mit Bandnudeln,"['Tiefkühlkost', 'Tiefkühl-Fertiggerichte', 'Tiefkühl-Pfannengerichte']",3.55
+32337410011,EDEKA Bio Landhonig cremig,"['Brot, Backwaren & Brotaufstriche', 'Brotaufstrich', 'Honig']",4.59
+22749840041,iglo Natur-Gemüse Brokkoli,"['Tiefkühlkost', 'Tiefkühlgemüse', 'Tiefkühlgemüse Sortenrein', 'Tiefkühl-Brokkoli']",2.99
+88300620431,"Fleischkäse mit Einlage aus Salami, Käse und Paprika im Frischepack","['Frischetheke', 'Wurst Frischetheke', 'Brühwurst', 'Brühwurst-Pastete']",2.03
+395028011,Brokkoli,"['Obst & Gemüse', 'Gemüse', 'Kohlgemüse', 'Brokkoli']",1.89
+1681510021,Miree Meerrettich,"['Kühlregal', 'Käse', 'Frischkäse']",1.99
+56050710062,GUT&GÜNSTIG Laktosefreie H-Vollmilch,"['Kühlregal', 'Molkereiprodukte', 'Milch', 'H-Milch']",12.9
+56050710061,GUT&GÜNSTIG Laktosefreie H-Vollmilch,"['Kühlregal', 'Molkereiprodukte', 'Milch', 'H-Milch']",1.29
+57115880039,"GUT&GÜNSTIG ESL Milch 1,5% ","['Kühlregal', 'Molkereiprodukte', 'Milch', 'Frischmilch']",4.95
+57115880031,"GUT&GÜNSTIG ESL Milch 1,5% ","['Kühlregal', 'Molkereiprodukte', 'Milch', 'Frischmilch']",0.99
+18077180001,Golßener Spreewälder Gurkensalat,"['Kühlregal', 'Feinkost', 'Beilagensalate', 'Gemüsesalate']",2.65
+29862950071,Rügenwalder Mühle Veganes Mühlen Hack,"['Kühlregal', 'Fleischersatz & Wurstersatz für Veganer & Vegetarier']",3.45
+32949990031,Alnatura Bio Hefe Frisch,"['Nahrungsmittel', 'Backen & Desserts', 'Backzutaten', 'Backpulver, Hefe & Natron']",0.69
+40911930091,Mühlhäuser Original Thüringer Pflaumenmus gewürzt,"['Brot, Backwaren & Brotaufstriche', 'Brotaufstrich', 'Marmelade & Konfitüre', 'weitere Fruchtaufstriche']",2.39
+395173771,EDEKA Bio Schweine Filet,"['Frischetheke', 'Fleisch Frischetheke', 'Schweinefleisch']",12.83
+2101240003,"Berchtesgadener Land Bio Frische Alpenmilch länger haltbar 3,5 % Fett","['Kühlregal', 'Molkereiprodukte', 'Milch', 'Frischmilch']",9.75
+2101240001,"Berchtesgadener Land Bio Frische Alpenmilch länger haltbar 3,5 % Fett","['Kühlregal', 'Molkereiprodukte', 'Milch', 'Frischmilch']",1.95
+395013271,Chinakohl,"['Obst & Gemüse', 'Gemüse', 'Kohlgemüse', 'Pak Choi']",1.39
+12955270092,Coca-Cola Original Taste,"['Getränke', 'Cola']",4.19
+7425950001,Dafgårds Original Köttbullar,"['Tiefkühlkost', 'Tiefkühlfleisch', 'Tiefkühl-Schweinefleisch']",5.35
+1246580081,Heichelheimer Echte Thüringer Kartoffelpuffer,"['Tiefkühlkost', 'Tiefkühl-Kartoffelprodukte', 'Tiefkühlrösti & Tiefkühlkartoffelpuffer']",3.39
+11351200011,"Bresso feine Kräuter, 32 % Fett","['Kühlregal', 'Käse', 'Frischkäse']",2.39
+49264270061,Tempo Taschentücher Duo-Box,"['Drogerieartikel', 'Papier- & Hygieneartikel', 'Taschentücher']",4.19
+10633670042,Adello Mineralwasser,"['Getränke', 'Mineralwasser', 'Wasser mit Kohlensäure', 'Classic']",4.69
+33465200011,Patros Natur 52 % Fett i. Tr.,"['Kühlregal', 'Käse', 'Feta']",3.09
+37192550041,"Gläserne Molkerei Bio Joghurt mild aus Heumilch 3,8 % Fett im Milchanteil","['Kühlregal', 'Molkereiprodukte', 'Naturjoghurt']",1.45
+395109012,Sonnenblumenbrötchen,"['Brot, Backwaren & Brotaufstriche', 'Frische Backwaren', 'Frische Brötchen']",1.39
+50909210061,"GUT&GÜNSTIG Pfannengemüse ""Rustikale Art""","['Tiefkühlkost', 'Tiefkühlgemüse', 'Tiefkühlgemüsemix']",1.89
+11072870081,Rügenwalder Mühle Mühlen Schinken Zarter Kochschinken,"['Kühlregal', 'Wurst', 'Kochschinken']",2.69
+53744230021,Rügenwalder Mühle Veganer Schinken Spicker mit bunter Paprika,"['Kühlregal', 'Fleischersatz & Wurstersatz für Veganer & Vegetarier']",1.69
+44414910011,MILRAM Frühlingsquark leicht 12 % Fett i. Tr.,"['Kühlregal', 'Molkereiprodukte', 'Naturquark & Kräuterquark', 'Kräuterquark']",1.49
+1905870041,Dr.Quendt Dresdner Russisch Brot,"['Süßigkeiten & Salziges', 'Kekse', 'Russisches Brot']",1.09
+301009071,GUT&GÜNSTIG Käseaufschnitt,"['Kühlregal', 'Käse', 'Hartkäse & Schnittkäse']",1.99
+395212151,Bio Demeter Rote Bete,"['Obst & Gemüse', 'Gemüse', 'Wurzelgemüse', 'Rote Bete']",2.49
+55887200071,Alnatura Bio Blattspinat,"['Tiefkühlkost', 'Tiefkühlgemüse', 'Tiefkühlspinat']",2.29
+29672400061,Alnatura Bio Schoko Müsli,"['Cerealien & Müsli', 'Müsli', 'Schokomüsli']",3.25
+34134690061,Alnatura Bio Weiße Bohnen,"['Nahrungsmittel', 'Konserven & Eingelegtes', 'Gemüsekonserven']",1.69
+1973590022,Augustiner Lagerbier Hell,"['Getränke', 'Bier', 'Helle Biere']",23.49
+6818840031,Saint Albray L'Original vollmundig & würzig 62 % Fett i. Tr.,"['Kühlregal', 'Käse', 'Weichkäse']",3.49
+38186630071,Alnatura Bio Gouda mittelalt am Stück 50 % Rahmstufe,"['Kühlregal', 'Käse', 'Hartkäse & Schnittkäse']",4.25
+29706370022,Alnatura Bio Kokos Milch,"['Nahrungsmittel', 'Internationale Feinkost', 'Asiatische Lebensmittel']",13.14
+53921490051,GUT&GÜNSTIG Joghurterzeugnis nach griechischer Art,"['Kühlregal', 'Molkereiprodukte', 'Naturjoghurt']",1.99
+51929180052,Dr.Oetker Ristorante Tonno,"['Tiefkühlkost', 'Pizza & Pizzasnacks', 'Tiefkühlpizza']",25.13
+51929180051,Dr.Oetker Ristorante Tonno,"['Tiefkühlkost', 'Pizza & Pizzasnacks', 'Tiefkühlpizza']",3.59
+88003132071,Schweine-Hackfleisch zum Braten,"['Frischetheke', 'Fleisch Frischetheke', 'Hackfleisch']",2.79
+5898860042,Ferrero Yogurette,"['Süßigkeiten & Salziges', 'Riegel', 'Schokoriegel']",27.12
+5898860041,Ferrero Yogurette,"['Süßigkeiten & Salziges', 'Riegel', 'Schokoriegel']",3.39
+29723600011,Alnatura Bio Mango Stücke,"['Obst & Gemüse', 'Trockenfrüchte & Nüsse', 'Trockenfrüchte']",2.59
+3456600061,Harry Sonnenkern Roggenvollkornbrot,"['Brot, Backwaren & Brotaufstriche', 'Tagesfrisch', 'Geschnittenes Brot', 'Vollkornbrot']",1.89
+32505590091,Alnatura Bio Soja Natur vegan,"['Kühlregal', 'Molkereiprodukte', 'Pflanzliche Alternative', 'Soja']",2.05
+395256051,GUT&GÜNSTIG Kartoffeln mehligkochend aus Deutschland,"['Obst & Gemüse', 'Gemüse', 'Kartoffeln']",2.29
+51680500051,GUT&GÜNSTIG Vanillepudding und Sahne,"['Kühlregal', 'Molkereiprodukte', 'Desserts', 'Pudding']",1.25
+301072131,GUT&GÜNSTIG Hirtenkäse 45% Fett i. Tr.,"['Kühlregal', 'Käse', 'Feta']",1.79
+395140021,Bio Kurkuma,"['Obst & Gemüse', 'Gemüse', 'Wurzelgemüse', 'Ingwer']",7.9
+56285580011,Bunte Eier,"['Kühlregal', 'Eier']",2.65
+395060631,EDEKA Bio Himbeeren rot,"['Obst & Gemüse', 'Obst', 'Beeren']",3.99
+10797840001,Andechser Natur Bio Frischkäse mit Jogurt Natur 65 % Fett i. Tr.,"['Kühlregal', 'Käse', 'Frischkäse']",2.15
+1465040021,Almette Alpenfrischkäse Natur 60 % Fett i. Tr.,"['Kühlregal', 'Käse', 'Frischkäse']",1.99
+1213860071,LEIBNIZ Butterkeks Das Original,"['Süßigkeiten & Salziges', 'Kekse', 'Butterkekse']",1.89
+40413950081,EDEKA Bio Mini Wiener,"['Kühlregal', 'Wurst', 'Würstchen']",2.49
+49504300051,"GUT&GÜNSTIG Power Cell Alkaline Micro AAA 1,5V LR03","['Küche & Haushalt', 'Batterien & Leuchtmittel', 'Batterien & Akkus']",1.95
+55340720081,Lorenz Crunchips Paprika,"['Süßigkeiten & Salziges', 'Salzige Snacks', 'Chips']",1.99
+395012971,Blumenkohl,"['Obst & Gemüse', 'Gemüse', 'Kohlgemüse', 'Blumenkohl']",2.89
+29674870031,Alnatura Bio Hafer Crunchy,"['Cerealien & Müsli', 'Müsli', 'Crunchmüsli']",4.25
+43913930042,EDEKA Bio My Veggie Veganer Sojadrink Classic,"['Kühlregal', 'Molkereiprodukte', 'Pflanzliche Alternative', 'Soja']",7.92
+395148041,Bio Brokkoli,"['Obst & Gemüse', 'Gemüse', 'Kohlgemüse', 'Brokkoli']",2.69
+25988030091,Kühlmann Omas Kartoffelsalat,"['Kühlregal', 'Feinkost', 'Beilagensalate', 'Kartoffelsalate']",3.65
+33655260001,Rügenwalder Mühle Mühlen Mett Zwiebelmettwurst,"['Kühlregal', 'Wurst', 'Rohwurst', 'Mettwurst']",1.99
+35342610002,Alnatura Bio Mandeldrink ungesüßt,"['Kühlregal', 'Molkereiprodukte', 'Pflanzliche Alternative', 'Mandel & Nuss']",23.6
+16929500021,FRoSTA Penne Gorgonzola mit Blattspinat,"['Tiefkühlkost', 'Tiefkühl-Fertiggerichte', 'Tiefkühl-Pfannengerichte']",4.89
+45184170021,GUT&GÜNSTIG Gratinkäse mild gerieben 42% Fett i. Tr.,"['Kühlregal', 'Käse', 'Reibekäse']",1.99
+6035580071,Ludwigsluster Zungenwurst,"['Kühlregal', 'Wurst', 'Kochwurst', 'Rotwurst']",1.99
+1288400072,Barilla Fusilli N°98,"['Nahrungsmittel', 'Nudeln', 'Kurze Nudeln', 'Fussili & Spirelli']",27.0
+1288400071,Barilla Fusilli N°98,"['Nahrungsmittel', 'Nudeln', 'Kurze Nudeln', 'Fussili & Spirelli']",2.25
+36680180001,Zewa Wisch&Weg Sparblatt 74 Blatt,"['Drogerieartikel', 'Papier- & Hygieneartikel', 'Küchenrolle']",3.45
+29667020061,Alnatura Bio Basmati Reis weiß,"['Nahrungsmittel', 'Reis', 'Basmatireis']",3.45
+301116141,GUT&GÜNSTIG Hähnchen-Minutenschnitzel,"['Frischetheke', 'Fleisch Frischetheke', 'Geflügel']",4.98
+3845680061,SodaStream Kohlensäure-Zylinder,"['Getränke', 'Wassersprudler & Zubehör', 'CO2-Zylinder']",6.99
+27658610032,Oatly Bio Haferdrink,"['Kühlregal', 'Molkereiprodukte', 'Pflanzliche Alternative', 'Hafer']",13.74
+27658610031,Oatly Bio Haferdrink,"['Kühlregal', 'Molkereiprodukte', 'Pflanzliche Alternative', 'Hafer']",2.29
+6149210011,LAWA Feine Pfannkuchen,"['Kühlregal', 'Convenience', 'Teigwaren']",2.85
+41750040071,FRoSTA Dill,"['Tiefkühlkost', 'Tiefkühlgemüse', 'Tiefkühlkräuter']",1.19
+301062381,EDEKA Bio Fenchel-Anis-Kümmel-Tee,"['Heißgetränke', 'Tee', 'Kräutertee']",1.49
+39399170071,deli dip Hummus natur,"['Kühlregal', 'Feinkost', 'Hummus']",3.45
+88302451381,"GUT&GÜNSTIG Frische Bratwurst, grob, roh","['Frischetheke', 'Wurst Frischetheke', 'Bratwurst']",3.69
+24688330001,Eberswalder Wacholdersalami,"['Kühlregal', 'Wurst', 'Rohwurst', 'Salami']",2.09
+45044390031,Herzberger Rhönweck Bio-Brötchen,"['Tiefkühlkost', 'Tiefkühlbackwaren', 'Tiefkühlbrötchen']",3.09
+16363040059,"EDEKA Bio Caffè Crema, ganze Bohnen","['Heißgetränke', 'Kaffee', 'Kaffeebohnen']",47.96
+16363040051,"EDEKA Bio Caffè Crema, ganze Bohnen","['Heißgetränke', 'Kaffee', 'Kaffeebohnen']",11.99
+8182700001,"EDEKA Bio Roggenvollkornbrot, geschnitten","['Brot, Backwaren & Brotaufstriche', 'Tagesfrisch', 'Geschnittenes Brot', 'Vollkornbrot']",2.19
+29693070041,Alnatura Bio Kartoffel Chips Meersalz,"['Süßigkeiten & Salziges', 'Salzige Snacks', 'Chips']",1.99
+15255330021,KleeHof Harzer Käse weniger als 1 % Fett,"['Kühlregal', 'Käse', 'Hartkäse & Schnittkäse']",1.99
+12192280012,GUT&GÜNSTIG Tomatenmark,"['Nahrungsmittel', 'Konserven & Eingelegtes', 'Tomatenkonserven']",26.16
+12192280011,GUT&GÜNSTIG Tomatenmark,"['Nahrungsmittel', 'Konserven & Eingelegtes', 'Tomatenkonserven']",1.09
+47838790081,Demeter für EDEKA Unsere Bio Süßrahmbutter,"['Kühlregal', 'Butter & Fette', 'Butter', 'Butter ungesalzen']",3.05
+33655060061,Rügenwalder Mühle Mühlen Mett Schinken-Zwiebelmettwurst,"['Kühlregal', 'Wurst', 'Rohwurst', 'Mettwurst']",1.99
+395013581,Spitzkohl Klasse I,"['Obst & Gemüse', 'Gemüse', 'Kohlgemüse', 'Spitzkohl']",2.33
+14669270051,Conditorei Coppenrath & Wiese Cafeteria fein & sahnig Erdbeer-Joghurt,"['Tiefkühlkost', 'Torten & Kuchen', 'Tiefkühlkuchen']",5.89
+21543980061,Zum Dorfkrug Rote Grütze,"['Kühlregal', 'Molkereiprodukte', 'Desserts', 'Fruchtgrützen']",2.39
+1743200011,Henglein Kloßteig Thüringer Art,"['Kühlregal', 'Convenience', 'Teigwaren']",2.49
+8461190011,EDEKA Bio Speisequark Magerstufe,"['Kühlregal', 'Molkereiprodukte', 'Naturquark & Kräuterquark', 'Naturquark']",0.99
+301062401,EDEKA Bio Kamillen-Tee,"['Heißgetränke', 'Tee', 'Kräutertee']",1.49
+1676100031,Tulip Bacon Streifen,"['Kühlregal', 'Wurst', 'Rohschinken']",3.29
+35122310091,Alnatura Bio Pizza Spinat,"['Tiefkühlkost', 'Pizza & Pizzasnacks', 'Tiefkühlpizza']",3.59
+16293470042,EXTALER MINERALQUELL Mineralwasser Naturell,"['Getränke', 'Mineralwasser', 'Stilles Wasser']",1.95
+2226040049,Frigeo Knusper-Puffreis,"['Süßigkeiten & Salziges', 'Fruchtgummi & Bonbons', 'Brausepulver & Schaumzucker']",8.9
+2226040041,Frigeo Knusper-Puffreis,"['Süßigkeiten & Salziges', 'Fruchtgummi & Bonbons', 'Brausepulver & Schaumzucker']",0.89
+8109800062,EDEKA Bio Orangensaft,"['Getränke', 'Saft', 'Fruchtsäfte']",22.32
+8109800061,EDEKA Bio Orangensaft,"['Getränke', 'Saft', 'Fruchtsäfte']",2.79
+35123090011,Alnatura Bio Mango gewürfelt,"['Tiefkühlkost', 'Tiefkühlfrüchte']",3.75
+18017520029,BUSSY MIX Schleckdrinks,"['Tiefkühlkost', 'Eis', 'Schleckdrinks']",4.6
+18017520021,BUSSY MIX Schleckdrinks,"['Tiefkühlkost', 'Eis', 'Schleckdrinks']",1.15
+52482260051,Möhlenhof Eier Freilandhaltung M,"['Kühlregal', 'Eier']",2.29
+25366740051,Dr.Oetker Die Ofenfrische Pizza Pepperoni-Salami,"['Tiefkühlkost', 'Pizza & Pizzasnacks', 'Tiefkühlpizza']",3.89
+32078490051,Alnatura Bio Mozzarella gerieben 45 % Fett i. Tr.,"['Kühlregal', 'Käse', 'Mozzarella']",1.99
+40992470091,Rama Cremefine zum Kochen 7 % Fett,"['Kühlregal', 'Molkereiprodukte', 'Sahne & Rahm', 'Sahne']",1.39
+395017851,Papaya,"['Obst & Gemüse', 'Obst', 'Exotische Früchte', 'Papayas']",3.59
+52118910011,Ritter SPORT Marzipan Tafel,"['Süßigkeiten & Salziges', 'Schokolade', 'Schokoladentafeln', 'Gefüllte Schokolade']",1.49
+2209080071,Berschneider Lachsschinken Pariser Art,"['Kühlregal', 'Wurst', 'Rohschinken']",1.99
+2066090071,"Exquisa Fitline 0,2 % Fett","['Kühlregal', 'Käse', 'Frischkäse']",1.99
+32834250071,Alnatura Bio Tomatenmark,"['Nahrungsmittel', 'Konserven & Eingelegtes', 'Tomatenkonserven']",1.59
+8351270022,Volvic Mineralwasser Naturelle,"['Getränke', 'Mineralwasser', 'Stilles Wasser']",7.19
+51928520061,Dr.Oetker Ristorante Salame,"['Tiefkühlkost', 'Pizza & Pizzasnacks', 'Tiefkühlpizza']",3.59
+25561900061,GUT&GÜNSTIG Sonnenmais,"['Nahrungsmittel', 'Konserven & Eingelegtes', 'Gemüsekonserven']",0.99
+395231661,Rustikales Baguette,"['Brot, Backwaren & Brotaufstriche', 'Frische Backwaren', 'Frisches Brot']",1.39
+23289760092,Wasa Tasty Snacks Crackers Sea Salt,"['Süßigkeiten & Salziges', 'Salzige Snacks', 'Cracker']",14.95
+23289760091,Wasa Tasty Snacks Crackers Sea Salt,"['Süßigkeiten & Salziges', 'Salzige Snacks', 'Cracker']",2.99
+43501810021,Oatly Hafer Cuisine zum Kochen,"['Kühlregal', 'Molkereiprodukte', 'Pflanzliche Alternative', 'Hafer']",1.35
+31269790071,Alnatura Bio Mozzarella 45 % Fett i. Tr.,"['Kühlregal', 'Käse', 'Mozzarella']",1.69
+1305590071,Dr.Oetker Original Pudding Vanille Geschmack,"['Nahrungsmittel', 'Backen & Desserts', 'Desserts', 'Pudding']",0.99
+15943840081,EDEKA Bio Kaffee Auslese,"['Heißgetränke', 'Kaffee', 'Filterkaffee']",6.49
+301015121,GUT&GÜNSTIG Backofen-Kroketten,"['Tiefkühlkost', 'Tiefkühl-Kartoffelprodukte', 'Tiefkühlkroketten & Tiefkühlkartoffelecken']",1.99
+1205570041,Alberto Lasagne Bolognese,"['Tiefkühlkost', 'Tiefkühl-Fertiggerichte', 'Tiefkühl-Lasagne']",2.79
+7477010081,SweetFamily Würfelzucker,"['Nahrungsmittel', 'Zucker', 'Würfelzucker']",2.19
+18306330001,Hemme Milch Uckermark Frische Fassbutter,"['Kühlregal', 'Butter & Fette', 'Butter', 'Butter ungesalzen']",3.05
+15825960061,Kerrygold Original Irische Butter gesalzen,"['Kühlregal', 'Butter & Fette', 'Butter', 'Butter gesalzen']",3.15
+29724880082,Alnatura Bio Orangensaft,"['Getränke', 'Saft', 'Fruchtsäfte']",20.7
+29724880081,Alnatura Bio Orangensaft,"['Getränke', 'Saft', 'Fruchtsäfte']",3.45
+41815130011,Matilde Dänische Dessertsoße mit Vanillegeschmack,"['Nahrungsmittel', 'Backen & Desserts', 'Desserts', 'Dessertsoßen']",2.79
+43515980091,FRoSTA Steakhouse Pfanne,"['Tiefkühlkost', 'Tiefkühl-Fertiggerichte', 'Tiefkühl-Pfannengerichte']",4.79
+29091480051,"müller Kalinka Kefir mild Pur 1,5 % Fett","['Kühlregal', 'Molkereiprodukte', 'Milchgetränke', 'Kefir']",1.35
+33280570001,Dr.Oetker Creme Vega,"['Kühlregal', 'Molkereiprodukte', 'Sahne & Rahm', 'Creme Fraiche']",1.35
+18055430021,Appenzeller mind. 45% Fett i. Tr.,"['Frischetheke', 'Käse Frischetheke', 'Hart & Schnittkäse']",3.49
+395156921,Bio Speisekürbis Butternut,"['Obst & Gemüse', 'Gemüse', 'Kürbisse']",2.99
+52959820041,GUT&GÜNSTIG Gefrierbeutel 3l,"['Drogerieartikel', 'Folien & Müllbeutel', 'Gefrierbeutel']",1.99
+1388910022,Barilla Girandole N°34,"['Nahrungsmittel', 'Nudeln', 'Kurze Nudeln', 'Fussili & Spirelli']",27.0
+46125690031,Rügenwalder Mühle Vegane Salami mit buntem Pfeffer,"['Kühlregal', 'Fleischersatz & Wurstersatz für Veganer & Vegetarier']",1.69
+29722460061,Alnatura Bio Bananen Chips,"['Obst & Gemüse', 'Trockenfrüchte & Nüsse', 'Trockenfrüchte']",1.39
+3817910051,Harry 1688 Steinofenbrot,"['Brot, Backwaren & Brotaufstriche', 'Tagesfrisch', 'Geschnittenes Brot', 'Mischbrot']",1.39
+8701460061,FRoSTA Hähnchen Curry,"['Tiefkühlkost', 'Tiefkühl-Fertiggerichte', 'Tiefkühl-Pfannengerichte']",4.89
+29679430081,Alnatura Bio Kichererbsen,"['Nahrungsmittel', 'Konserven & Eingelegtes', 'Gemüsekonserven']",1.39
+45609850011,EDEKA Bio Maisstangen,"['Baby & Kind', 'Babynahrung & Kindernahrung', 'Süßigkeiten für Kinder']",0.65
+1209750081,Ferrero kinder Riegel,"['Süßigkeiten & Salziges', 'Riegel', 'Schokoriegel']",2.69
+43845950001,Harry Schweizer Weckli,"['Brot, Backwaren & Brotaufstriche', 'Zum Fertigbacken', 'Aufbackbrötchen']",2.29
+41796150032,Kölln Bio Hafer Flocken zart,"['Cerealien & Müsli', 'Haferflocken & Porridge']",24.5
+41796150031,Kölln Bio Hafer Flocken zart,"['Cerealien & Müsli', 'Haferflocken & Porridge']",2.45
+301072051,GUT&GÜNSTIG Maasdamer in Scheiben 45% Fett  i. Tr.,"['Kühlregal', 'Käse', 'Hartkäse & Schnittkäse']",2.39
+6967140071,Harry 1688 Mehrkornbrot,"['Brot, Backwaren & Brotaufstriche', 'Tagesfrisch', 'Geschnittenes Brot', 'Mischbrot']",1.89
+6621910071,müller Doppeldecker Himbeer & Vanilla,"['Kühlregal', 'Molkereiprodukte', 'Desserts', 'Götterspeise']",1.59
+18081030071,Golßener Spreewälder Kartoffelsalat,"['Kühlregal', 'Feinkost', 'Beilagensalate', 'Kartoffelsalate']",2.05
+53520470021,EDEKA elkos Baby Glück Babytücher Comfort,"['Baby & Kind', 'Babypflege', 'Baby-Feuchttücher']",1.99
+395005531,Apfel Pink Lady - süß,"['Obst & Gemüse', 'Obst', 'Äpfel']",0.7
+50902790021,"GUT&GÜNSTIG Pfannengemüse ""Französische Art“","['Tiefkühlkost', 'Tiefkühlgemüse', 'Tiefkühlgemüsemix']",1.99
+43317110061,Alnatura Bio Linsenwaffeln,"['Brot, Backwaren & Brotaufstriche', 'Fertige Kuchen', 'Reiswaffeln']",0.99
+50649020061,GUT&GÜNSTIG Grüne Peperoni,"['Kühlregal', 'Feinkost', 'Antipasti']",1.99
+38753090091,Ferrero Kinder Choco fresh,"['Kühlregal', 'Molkereiprodukte', 'Desserts', 'Riegel']",1.89
+41664650041,Jütro Bio Breakfast-Topper gelb,"['Tiefkühlkost', 'Tiefkühlfrüchte']",2.95
+8024210011,Kerrygold Original Irischer Cheddar herzhaft 50 % Fett i. Tr.,"['Kühlregal', 'Käse', 'Hartkäse & Schnittkäse']",3.09
+1470110081,"Bergader Bavaria Blu ""Der Feinwürzige"" Minitorte 70 % Fett i. Tr.","['Kühlregal', 'Käse', 'Weichkäse']",2.79
+1213940081,LEIBNIZ Choco Vollmilch,"['Süßigkeiten & Salziges', 'Kekse', 'Kekse mit Schokolade']",1.99
+1770220091,Gutfried Geflügel Corned Turkey,"['Kühlregal', 'Wurst', 'Kochwurst', 'Sülzen']",1.99
+29276880061,vinzenzmurr Wiener,"['Frischetheke', 'Wurst Frischetheke', 'Würstchen']",7.49
+4451000082,Manner Original Neapolitaner,"['Süßigkeiten & Salziges', 'Kekse', 'Waffeln']",37.5
+4451000081,Manner Original Neapolitaner,"['Süßigkeiten & Salziges', 'Kekse', 'Waffeln']",3.75
+395140401,Clementinen mit Blatt,"['Obst & Gemüse', 'Obst', 'Zitrusfrüchte', 'Clementinen']",2.49
+29721150031,Alnatura Bio Meersalz,"['Nahrungsmittel', 'Essig, Öle & Gewürze', 'Salz']",0.99
+4567110021,Müller's Heidefrühstück,"['Kühlregal', 'Wurst', 'Kochwurst', 'Sülzen']",1.99
+3805680041,"7gün Ayran Natur 3,5 % Fett","['Kühlregal', 'Molkereiprodukte', 'Milchgetränke', 'Joghurt Drinks']",0.89
+1293800031,ORO di Parma Tomaten Stückig,"['Nahrungsmittel', 'Konserven & Eingelegtes', 'Tomatenkonserven']",2.09
+37904690001,SweetFamily Rohrzucker,"['Nahrungsmittel', 'Zucker', 'Rohrzucker & Brauner Zucker']",1.05
+21046750051,McCain Frites Deluxe,"['Tiefkühlkost', 'Tiefkühl-Kartoffelprodukte', 'Pommes Frites']",2.85
+29692190082,Alnatura Bio Dinkel Spirelli,"['Nahrungsmittel', 'Nudeln', 'Vollkorn- & Dinkelnudeln']",18.32
+29705040032,Alnatura Bio Linseneintopf,"['Nahrungsmittel', 'Schnelle Küche', 'Eintöpfe']",11.94
+301044091,EDEKA Bio Hörnchen Vollkorn,"['Nahrungsmittel', 'Nudeln', 'Vollkorn- & Dinkelnudeln']",0.95
+47537470011,Zott Sahnejoghurt mild Erdbeer-Vanille,"['Kühlregal', 'Molkereiprodukte', 'Fruchtjoghurt', 'Erdbeere']",0.95
+36095900081,"Elinas Joghurt nach griechischer Art Heidelbeere 9,4 % Fett","['Kühlregal', 'Molkereiprodukte', 'Fruchtjoghurt', 'Beere']",2.39
+29698020041,Alnatura Bio Apfelmark mit Banane,"['Nahrungsmittel', 'Konserven & Eingelegtes', 'Obstkonserven']",1.49
+14017760021,nimm2 Lachgummi,"['Süßigkeiten & Salziges', 'Fruchtgummi & Bonbons', 'Fruchtgummi & Weingummi']",2.05
+301044121,EDEKA Bio Spaghetti Vollkorn,"['Nahrungsmittel', 'Nudeln', 'Vollkorn- & Dinkelnudeln']",0.95
+23984420001,Wiesenhof Puten Gulasch,"['Frischetheke', 'Fleisch Frischetheke', 'Geflügel']",5.95
+11788690061,Tillman's Toasty Hähnchenbrustfilet,"['Tiefkühlkost', 'Tiefkühl-Fertiggerichte', 'Tiefkühlsnacks']",3.89
+40411750061,Alnatura Bio Pesto Rosso,"['Nahrungsmittel', 'Nudeln', 'Pesto']",2.39
+6703900031,Dr.Oetker Götterspeise Waldmeister-Geschmack mit Bourbon-Vanillesoße,"['Kühlregal', 'Molkereiprodukte', 'Desserts', 'Götterspeise']",0.85
+29274940031,vinzenzmurr Original Münchner Weißwurst,"['Kühlregal', 'Wurst', 'Würstchen']",4.59
+14073950051,"Andechser Natur Bio Jogurt mild Natur 3,8 % Fett","['Kühlregal', 'Molkereiprodukte', 'Naturjoghurt']",1.45
+12724510001,müller Grießpudding mit Kirschsoße,"['Kühlregal', 'Molkereiprodukte', 'Desserts', 'Pudding']",1.69
+51386250021,Alnatura Bio Flammkuchen Käse Lauch,"['Tiefkühlkost', 'Pizza & Pizzasnacks', 'Tiefkühl-Flammkuchen']",3.39
+301099031,GUT&GÜNSTIG Weizenbrötchen,"['Brot, Backwaren & Brotaufstriche', 'Zum Fertigbacken', 'Aufbackbrötchen']",1.29
+41813380021,Zewa Smart Toilettenpapier 3-lagig weiß,"['Drogerieartikel', 'Papier- & Hygieneartikel', 'Toilettenpapier']",4.69
+301175001,EDEKA Bio Lyoner,"['Kühlregal', 'Wurst', 'Brühwurst', 'Lyoner & Fleischwurst']",1.79
+1336800091,funny-frisch Riffels Naturell,"['Süßigkeiten & Salziges', 'Salzige Snacks', 'Chips']",2.49
+29708620062,Alnatura Bio Apfelsaft,"['Getränke', 'Saft', 'Fruchtsäfte']",11.94
+29708620061,Alnatura Bio Apfelsaft,"['Getränke', 'Saft', 'Fruchtsäfte']",1.99
+22750880081,iglo Natur-Gemüse Prinzessbohnen,"['Tiefkühlkost', 'Tiefkühlgemüse', 'Tiefkühlgemüse Sortenrein', 'Tiefkühlerbsen']",2.89
+1711980071,Pfanner Ice Tea Pfirsich,"['Getränke', 'Eistee']",1.99
+13895140071,Gutfried Geflügel Hähnchen-Salami,"['Kühlregal', 'Wurst', 'Rohwurst', 'Salami']",2.19
+22159260092,Proviant Bio Limonade Rhabarber naturtrüb,"['Getränke', 'Limonade']",28.56
+22159260091,Proviant Bio Limonade Rhabarber naturtrüb,"['Getränke', 'Limonade']",1.19
+15855790001,"Lobetaler Bio Fruchtjoghurt mild Pfirsich Maracuja 3,7 % Fett","['Kühlregal', 'Molkereiprodukte', 'Fruchtjoghurt', 'Pfirsich']",0.75
+17946590071,Mylos Kritharaki - Reisnudeln,"['Nahrungsmittel', 'Nudeln', 'Suppennudeln']",1.45
+51005810081,GUT&GÜNSTIG Rohrfrei Gel,"['Drogerieartikel', 'Reinigungsmittel', 'Spezialreiniger']",1.49
+49535180031,GUT&GÜNSTIG Smoothie Banane-Apfel-Kirsche,"['Obst & Gemüse', 'Smoothies']",1.19
+32722010031,Valess Vegetarische Schnitzel mit Gouda,"['Kühlregal', 'Fleischersatz & Wurstersatz für Veganer & Vegetarier']",3.19
+36449510021,Ziegengouda 50% Rahmstufe im Frischepack,"['Frischetheke', 'Käse Frischetheke', 'Hart & Schnittkäse']",3.32
+11700450041,EDEKA Bio Weizenmehl,"['Nahrungsmittel', 'Mehl', 'Weizenmehl']",1.29
+1698270051,Alsan S-Reform-Margarine,"['Kühlregal', 'Butter & Fette', 'Margarine']",1.35
+6618520021,müller Doppeldecker Schoko & Vanille,"['Kühlregal', 'Molkereiprodukte', 'Desserts', 'Pudding']",1.59
+301020011,GUT & GÜNSTIG Salami,"['Kühlregal', 'Wurst', 'Rohwurst', 'Salami']",1.89
+52161640011,Intenso Energy Ultra AA LR6,"['Küche & Haushalt', 'Batterien & Leuchtmittel', 'Batterien & Akkus']",2.89
+13362810062,"GUT&GÜNSTIG Tomaten, gehackt","['Nahrungsmittel', 'Konserven & Eingelegtes', 'Tomatenkonserven']",9.48
+13362810061,"GUT&GÜNSTIG Tomaten, gehackt","['Nahrungsmittel', 'Konserven & Eingelegtes', 'Tomatenkonserven']",0.79
+6703910061,Dr.Oetker Götterspeise Himbeer-Geschmack mit Bourbon-Vanillesoße,"['Kühlregal', 'Molkereiprodukte', 'Desserts', 'Götterspeise']",0.85
+4001650022,Paulaner-SPEZI Cola-Mix,"['Getränke', 'Cola']",17.8
+4001650021,Paulaner-SPEZI Cola-Mix,"['Getränke', 'Cola']",0.99
+1466530031,Zott Sahne-Joghurt mild Erdbeere 10 % Fett,"['Kühlregal', 'Molkereiprodukte', 'Fruchtjoghurt', 'Erdbeere']",0.95
+301040001,EDEKA Bio Junge Erbsen,"['Tiefkühlkost', 'Tiefkühlgemüse', 'Tiefkühlgemüse Sortenrein', 'Tiefkühlerbsen']",1.79
+56090540031,GUT&GÜNSTIG Sahnepudding Schoko,"['Kühlregal', 'Molkereiprodukte', 'Desserts', 'Pudding']",0.49
+10382370081,Andechser Natur Bio Almbutter,"['Kühlregal', 'Butter & Fette', 'Butter', 'Butter ungesalzen']",3.39
+88302471341,GUT&GÜNSTIG Rückensteaks vom Schwein in Paprika-Marinade,"['Frischetheke', 'Fleisch Frischetheke', 'Schweinefleisch']",3.99
+33275240021,Gustavo Gusto Steinofenpizza Salame,"['Tiefkühlkost', 'Pizza & Pizzasnacks', 'Tiefkühlpizza']",4.95
+88003176361,Schulte Filetpastete mit Brokkoli,"['Frischetheke', 'Wurst Frischetheke', 'Brühwurst', 'Brühwurst-Pastete']",2.51
+41750230081,FRoSTA Knoblauch,"['Tiefkühlkost', 'Tiefkühlgemüse', 'Tiefkühlkräuter']",1.19
+43135790062,Maggi 5 Minuten Terrine Kartoffelbrei mit Röstzwiebeln & Croutons,"['Nahrungsmittel', 'Schnelle Küche', 'Terrinen']",11.92
+14925960041,FRoSTA Tortellini Tomaten-Sahne,"['Tiefkühlkost', 'Tiefkühl-Fertiggerichte', 'Tiefkühl-Pfannengerichte']",4.89
+395254151,Avocados Hass,"['Obst & Gemüse', 'Obst', 'Avocados']",2.39
+17569540071,"Söbbeke Bio ABC Joghurt mild Natur 3,8 % Fett","['Kühlregal', 'Molkereiprodukte', 'Naturjoghurt']",2.05
+395004541,Birne Abate Fetel,"['Obst & Gemüse', 'Obst', 'Birnen']",1.08
+53345710021,EDEKA Bio Mittelalter Gouda am Stück 53% Fett i. Tr.,"['Kühlregal', 'Käse', 'Hartkäse & Schnittkäse']",2.99
+39659220081,Alnatura Bio Brombeeren,"['Tiefkühlkost', 'Tiefkühlfrüchte']",3.45
+1201900051,McCain Chef Frites,"['Tiefkühlkost', 'Tiefkühl-Kartoffelprodukte', 'Pommes Frites']",2.99
+3456380091,Ölz Mohn-Streuselkuchen,"['Brot, Backwaren & Brotaufstriche', 'Fertige Kuchen', 'Kuchen']",3.05
+6832250062,"MinusL Laktosefrei Haltbare Vollmilch 3,5 % Fett","['Kühlregal', 'Molkereiprodukte', 'Milch', 'H-Milch']",19.9
+1475310071,"Landliebe Joghurt mit echter Vanille 3,8 % Fett","['Kühlregal', 'Molkereiprodukte', 'Fruchtjoghurt', 'Vanille']",2.19
+30944220001,Parmareggio Parmigiano Reggiano DOP gerieben 32 % Fett i. Tr.,"['Kühlregal', 'Käse', 'Hartkäse & Schnittkäse']",2.65
+2474340061,LIEKEN URKORN Kleines Kerni,"['Brot, Backwaren & Brotaufstriche', 'Tagesfrisch', 'Geschnittenes Brot', 'Vollkornbrot']",1.39
+395051141,Laugenkranz mit Sesam,"['Brot, Backwaren & Brotaufstriche', 'Frische Backwaren', 'Frisches Laugengebäck']",2.29
+29706460061,Alnatura Bio Soja Sauce Shoyu,"['Nahrungsmittel', 'Internationale Feinkost', 'Asiatische Lebensmittel']",3.79
+29694390001,Alnatura Bio Schoko Reis Waffeln,"['Brot, Backwaren & Brotaufstriche', 'Fertige Kuchen', 'Reiswaffeln']",1.49
+48697420001,Bio Bergkäse 50% Rahmstufe,"['Frischetheke', 'Käse Frischetheke', 'Hart & Schnittkäse']",4.71
+28393650001,EDEKA Bio Vegane Falafel orientalisch,"['Kühlregal', 'Fleischersatz & Wurstersatz für Veganer & Vegetarier']",2.49
+41536950071,Conditorei Coppenrath & Wiese Café Landhaus Gedeckter Apfel Blechkuchen,"['Tiefkühlkost', 'Torten & Kuchen', 'Tiefkühlkuchen']",5.89
+55043430061,funny-frisch Chipsfrisch ungarisch,"['Süßigkeiten & Salziges', 'Salzige Snacks', 'Chips']",1.99
+395015701,Wassermelone,"['Obst & Gemüse', 'Obst', 'Melonen']",9.45
+12012490072,LaCheteau Crémant de Loire Brut,"['Wein, Sekt & Spirituosen', 'Sekt', 'Französischer Sekt']",43.14
+12012490071,LaCheteau Crémant de Loire Brut,"['Wein, Sekt & Spirituosen', 'Sekt', 'Französischer Sekt']",7.19
+44276120001,Beyond Meat Beyond Burger,"['Kühlregal', 'Fleischersatz & Wurstersatz für Veganer & Vegetarier']",4.19
+301077001,EDEKA Bio Norwegische Lachsfilets,"['Tiefkühlkost', 'Fisch & Meeresfrüchte', 'Fisch naturbelassen']",6.39
+52088390071,funny-frisch Linsen Chips Paprika,"['Süßigkeiten & Salziges', 'Salzige Snacks', 'Cracker']",1.99
+25674190041,Conditorei Coppenrath & Wiese Cafeteria fein & sahnig Mandel-Bienenstich,"['Tiefkühlkost', 'Torten & Kuchen', 'Tiefkühlkuchen']",5.89
+1676110061,Gutfried Geflügel Fleischwurst,"['Kühlregal', 'Wurst', 'Brühwurst', 'Lyoner & Fleischwurst']",3.65
+54956090001,GUT&GÜNSTIG Junger Gouda Holland am Stück 48% Fett i. Tr.,"['Kühlregal', 'Käse', 'Hartkäse & Schnittkäse']",3.99
+48979760061,"alpro Haferdrink This is not Milk 3,5 % Fett","['Kühlregal', 'Molkereiprodukte', 'Pflanzliche Alternative', 'Hafer']",2.59
+29694120051,Alnatura Bio Apfelessig,"['Nahrungsmittel', 'Essig, Öle & Gewürze', 'Essig']",1.99
+31269650081,Alnatura Bio Bergbauern Sauerrahm Butter,"['Kühlregal', 'Butter & Fette', 'Butter', 'Butter ungesalzen']",3.29
+1701670001,Meggle Feine Butter,"['Kühlregal', 'Butter & Fette', 'Butter', 'Butter ungesalzen']",2.79
+31266760011,"Alnatura Bio Joghurt mild 1,5 % Fett","['Kühlregal', 'Molkereiprodukte', 'Naturjoghurt']",0.59
+1807480001,Mühlhäuser Konfitüre Extra Aprikose,"['Brot, Backwaren & Brotaufstriche', 'Brotaufstrich', 'Marmelade & Konfitüre', 'Aprikose & Pfirsich']",2.39
+46883690021,EDEKA Bio Hafercookie Zartbitter,"['Süßigkeiten & Salziges', 'Kekse', 'Vollkornkekse']",1.59
+1213510011,Super Dickmann´s Schokoladen-Schaumküsse,"['Süßigkeiten & Salziges', 'Schokolade', 'Schaumküsse & -waffeln']",2.35
+46636720061,Ehrmann High Protein Chocolate Mousse,"['Kühlregal', 'Molkereiprodukte', 'Desserts', 'Dessertspezialitäten']",1.99
+301088021,EDEKA Bio Sauerrahm,"['Kühlregal', 'Molkereiprodukte', 'Sahne & Rahm', 'Saure Sahne']",0.89
+25306890092,alpro Mandeldrink ungesüßt,"['Kühlregal', 'Molkereiprodukte', 'Pflanzliche Alternative', 'Mandel & Nuss']",25.2
+1462950011,Bresso Frischkäse Kräuter aus der Provence 60 % Fett i. Tr.,"['Kühlregal', 'Käse', 'Frischkäse']",2.39
+24807840091,"Lobetaler Bio Fruchtjoghurt mild Sauerkirsche 3,7 % Fett","['Kühlregal', 'Molkereiprodukte', 'Fruchtjoghurt', 'Kirsche']",0.75
+6881910091,BURGER Sesam,"['Brot, Backwaren & Brotaufstriche', 'Zwieback, Knäckebrot, Reis- & Maiswaffeln', 'Knäckebrot']",1.49
+6603680099,müller Müllermilch Original Schoko-Geschmack,"['Kühlregal', 'Molkereiprodukte', 'Milchgetränke', 'Milchmischgetränke']",8.7
+1462590051,Ferrero kinder Maxi King,"['Kühlregal', 'Molkereiprodukte', 'Desserts', 'Riegel']",1.69
+30673210061,Actimel Drink Classic,"['Kühlregal', 'Molkereiprodukte', 'Milchgetränke', 'Joghurt Drinks']",3.99
+15862860042,Volvic Tee mit Pfirsich-Geschmack,"['Getränke', 'Eistee']",11.1
+15862860041,Volvic Tee mit Pfirsich-Geschmack,"['Getränke', 'Eistee']",1.85
+395213521,GUT&GÜNSTIG Pinky Donut 4 Stück,"['Brot, Backwaren & Brotaufstriche', 'Süßgebäck', 'Muffins, Donuts & Cookies']",1.99
+14952120081,EDEKA Bio Knäckebrot Roggen-Vollkorn mit Sesam,"['Brot, Backwaren & Brotaufstriche', 'Zwieback, Knäckebrot, Reis- & Maiswaffeln', 'Knäckebrot']",1.59
+13945100071,"müller Joghurt mit der Ecke Knusper Waffelwürfel 3,8 % Fett","['Kühlregal', 'Molkereiprodukte', 'Fruchtjoghurt', 'Cerealien & Nüsse']",0.79
+29837860091,Harry XXL Burger Brötchen,"['Brot, Backwaren & Brotaufstriche', 'Burgerbrötchen', 'Buns']",2.09
+43099730051,WC FRISCH Blau Kraft Aktiv Blütenfrische,"['Drogerieartikel', 'Reinigungsmittel', 'Badreiniger & WC-Reiniger']",2.25
+23690580011,followfood MSC Thunfisch Filets in eigenem Saft,"['Nahrungsmittel', 'Konserven & Eingelegtes', 'Fischkonserven']",3.35
+2207950031,Houdek Kabanos,"['Kühlregal', 'Wurst', 'Wurstsnacks']",2.75
+38631630021,Nestlé Pirulo Watermelon Multipack,"['Tiefkühlkost', 'Eis', 'Wassereis & Fruchteis']",4.29
+2474310071,LIEKEN URKORN Roggenbäcker,"['Brot, Backwaren & Brotaufstriche', 'Tagesfrisch', 'Geschnittenes Brot', 'Mischbrot']",2.29
+57880770081,GUT&GÜNSTIG Vanille-Nuss-Hörnchen,"['Tiefkühlkost', 'Eis', 'Stieleis & Waffeleis']",1.99
+51929190081,Dr.Oetker Ristorante Funghi,"['Tiefkühlkost', 'Pizza & Pizzasnacks', 'Tiefkühlpizza']",3.59
+44414680011,MILRAM Gurkenquark 40 % Fett i. Tr.,"['Kühlregal', 'Molkereiprodukte', 'Naturquark & Kräuterquark', 'Kräuterquark']",1.49
+9654970081,Spreewaldhof Cornichons klein und fein,"['Nahrungsmittel', 'Konserven & Eingelegtes', 'Sauerkonserven']",3.19
+13428390041,Filinchen Das Knusper-Brot Vollkorn,"['Brot, Backwaren & Brotaufstriche', 'Zwieback, Knäckebrot, Reis- & Maiswaffeln', 'Knäckebrot']",0.99
+29723830042,Alnatura Bio Cornflakes ungesüßt,"['Cerealien & Müsli', 'Cornflakes']",13.14
+29723830041,Alnatura Bio Cornflakes ungesüßt,"['Cerealien & Müsli', 'Cornflakes']",2.19
+1474570001,"Landliebe Joghurt mit erlesenen Erdbeeren 3,8 % Fett","['Kühlregal', 'Molkereiprodukte', 'Fruchtjoghurt', 'Erdbeere']",2.19
+29709250062,Alnatura Bio Sojadrink ungesüßt,"['Kühlregal', 'Molkereiprodukte', 'Pflanzliche Alternative', 'Soja']",14.8
+29709250061,Alnatura Bio Sojadrink ungesüßt,"['Kühlregal', 'Molkereiprodukte', 'Pflanzliche Alternative', 'Soja']",1.85
+5759050052,RIXDORFER Fassbrause,"['Getränke', 'Limonade']",9.48
+5759050051,RIXDORFER Fassbrause,"['Getränke', 'Limonade']",0.79
+8463800011,Rügenwalder Mühle Pommersche mit Apfel und Zwiebel,"['Kühlregal', 'Wurst', 'Kochwurst', 'Leberwurst']",2.85
+1352780062,Gerolsteiner Mineralwasser Medium,"['Getränke', 'Mineralwasser', 'Wasser mit Kohlensäure', 'Medium']",8.39
+1212800001,HARIBO Starmix,"['Süßigkeiten & Salziges', 'Fruchtgummi & Bonbons', 'Fruchtgummi & Weingummi']",2.49
+395041971,Süßkartoffeln lose,"['Obst & Gemüse', 'Gemüse', 'Kartoffeln']",2.49
+12090650052,Spreequell Classic 500ml Einweg,"['Getränke', 'Mineralwasser', 'Wasser mit Kohlensäure', 'Classic']",3.29
+13912410052,Bad Liebenwerda Spritzig,"['Getränke', 'Mineralwasser', 'Wasser mit Kohlensäure', 'Classic']",5.09
+37779030021,EDEKA Bio My Veggie Streichcreme Rote Beete-Meerrettich,"['Brot, Backwaren & Brotaufstriche', 'Brotaufstrich', 'Herzhafte Aufstriche']",1.35
+5354710092,Staatl. Fachingen Mineralwasser Still,"['Getränke', 'Mineralwasser', 'Stilles Wasser']",9.89
+31266590061,"Alnatura Bio Mango-Lassi 3,6 % Fett","['Kühlregal', 'Molkereiprodukte', 'Milchgetränke', 'Joghurt Drinks']",1.29
+15840510041,"Lobetaler Bio Fruchtjoghurt mild Erdbeere 3,7 % Fett","['Kühlregal', 'Molkereiprodukte', 'Fruchtjoghurt', 'Erdbeere']",0.75
+31266500091,"Alnatura Bio Joghurt Natur 3,8%","['Kühlregal', 'Molkereiprodukte', 'Naturjoghurt']",0.59
+14186720091,"Elinas Joghurt nach griechischer Art Vanille-Mandel 9,4 % Fett","['Kühlregal', 'Molkereiprodukte', 'Fruchtjoghurt', 'Vanille']",2.39
+1325060092,GUT&GÜNSTIG Pflanzenöl aus Raps,"['Nahrungsmittel', 'Essig, Öle & Gewürze', 'Öl']",7.95
+1325060091,GUT&GÜNSTIG Pflanzenöl aus Raps,"['Nahrungsmittel', 'Essig, Öle & Gewürze', 'Öl']",1.59
+36288040051,Lorenz Naturals Rosmarin,"['Süßigkeiten & Salziges', 'Salzige Snacks', 'Chips']",2.19
+46014340081,Herzberger Bio Roggenbrötchen,"['Tiefkühlkost', 'Tiefkühlbackwaren', 'Tiefkühlbrötchen']",1.99
+1836960091,Weideglück Joghurt mild Stracciatella 5 % Fett,"['Kühlregal', 'Molkereiprodukte', 'Fruchtjoghurt', 'Stracciatella']",3.95
+1439490021,Bautz'ner Gewürzgurken,"['Nahrungsmittel', 'Konserven & Eingelegtes', 'Sauerkonserven']",1.65
+40722200091,EDEKA Bio My Veggie Erdnussmus,"['Brot, Backwaren & Brotaufstriche', 'Brotaufstrich', 'Erdnussbutter & Nussmus']",2.19
+41185170051,Friki Putenmedaillons,"['Frischetheke', 'Fleisch Frischetheke', 'Geflügel']",5.92
+301013411,GUT&GÜNSTIG Junge Brechbohnen,"['Tiefkühlkost', 'Tiefkühlgemüse', 'Tiefkühlgemüse Sortenrein', 'Tiefkühlerbsen']",2.19
+27027770081,Dr.Oetker Die Ofenfrische Pizza Margherita,"['Tiefkühlkost', 'Pizza & Pizzasnacks', 'Tiefkühlpizza']",3.89
+8077730041,Werder Premium Tomaten Ketchup,"['Nahrungsmittel', 'Ketchup, Mayonnaise & Senf', 'Ketchup']",2.79
+894662141,GUT&GÜNSTIG Rosa (Moosrosen) Fair Trade verschiedene Farben,"['Blumen & Pflanzen', 'Schnittblumen']",1.99
+49457740001,GUT&GÜNSTIG Quarkbällchen,"['Brot, Backwaren & Brotaufstriche', 'Frische Backwaren', 'Frische Snacks']",2.29
+1217220092,Dallmayr Prodomo Filterkaffee gemahlen,"['Heißgetränke', 'Kaffee', 'Filterkaffee']",89.88
+1217220091,Dallmayr Prodomo Filterkaffee gemahlen,"['Heißgetränke', 'Kaffee', 'Filterkaffee']",7.49
+49822750071,EDEKA Bananen-Nektar,"['Getränke', 'Saft', 'Nektar']",1.79
+8674070021,RAUCH Happy Day Maracuja,"['Getränke', 'Saft', 'Nektar']",2.39
+37899100031,Ehrmann High Protein Chocolate Pudding,"['Kühlregal', 'Molkereiprodukte', 'Desserts', 'Pudding']",1.55
+7068400011,Spreewaldhof Schattenmorellen,"['Nahrungsmittel', 'Konserven & Eingelegtes', 'Obstkonserven']",3.49
+39313720061,vinzenzmurr Kassler Ripperl mit Knochen gekocht geschnitten,"['Frischetheke', 'Fleisch Frischetheke', 'Schweinefleisch']",3.99
+1698100071,Deli Reform Zwiebelschmalz,"['Kühlregal', 'Butter & Fette', 'Schmalz']",2.19
+7687510001,Hexen-Eis Hexen-Kerze Vanille,"['Tiefkühlkost', 'Eis', 'Stieleis & Waffeleis']",2.49
+33903740072,Jacobs Meisterröstung gemahlen,"['Heißgetränke', 'Kaffee', 'Filterkaffee']",64.68
+33903740071,Jacobs Meisterröstung gemahlen,"['Heißgetränke', 'Kaffee', 'Filterkaffee']",5.49
+7875870021,GUT&GÜNSTIG Müllbeutel mit Zugband 60l,"['Drogerieartikel', 'Folien & Müllbeutel', 'Müllbeutel']",1.75
+39600170001,Herzberger Bio Dinkelbrötchen,"['Brot, Backwaren & Brotaufstriche', 'Zum Fertigbacken', 'Aufbackbrötchen']",2.59
+1297000031,Dr.Oetker Trockenbackhefe,"['Nahrungsmittel', 'Backen & Desserts', 'Backzutaten', 'Backpulver, Hefe & Natron']",1.29
+37080450091,GUT&GÜNSTIG Edelsalami,"['Kühlregal', 'Wurst', 'Rohwurst', 'Salami']",1.85
+33481390051,GUT&GÜNSTIG Haltbarer Schmand,"['Kühlregal', 'Molkereiprodukte', 'Sahne & Rahm', 'Schmand']",0.99
+88301306321,"Hähnchenbrust mit Zitronenpfeffer gepöckelt, gegart und geräuchert im Frischepack","['Frischetheke', 'Wurst Frischetheke', 'Kochschinken']",2.75
+88002009811,Salami mit Truthahnfleisch geräuchert,"['Frischetheke', 'Wurst Frischetheke', 'Rohwurst', 'Salami']",2.99
+1214520031,Lorenz Saltletts Sticks Classic,"['Süßigkeiten & Salziges', 'Salzige Snacks', 'Laugengebäck']",2.19
+27017990051,Conditorei Coppenrath & Wiese Lust auf Kuchen Feiner Apfel,"['Tiefkühlkost', 'Torten & Kuchen', 'Tiefkühlkuchen']",5.05
+1207510041,Ferrero nutella,"['Brot, Backwaren & Brotaufstriche', 'Brotaufstrich', 'Schokoladencreme']",4.59
+25114660071,Kleehof Handkäse mit Edelschimmel,"['Kühlregal', 'Käse', 'Hartkäse & Schnittkäse']",1.99
+6535060011,Ferrero Milch-Schnitte,"['Kühlregal', 'Molkereiprodukte', 'Desserts', 'Riegel']",2.85
+30351320011,iglo Veggie Love Meals Tagliatelle Pilz-Pfanne,"['Tiefkühlkost', 'Tiefkühl-Fertiggerichte', 'Tiefkühl-Pfannengerichte']",3.89
+12601990021,GRIESSON Erfrischungs-Sticks,"['Süßigkeiten & Salziges', 'Schokolade', 'Schokoladenknabbereien', 'Schokolierte Zuckerwaren']",1.29
+33917450081,cheestrings Original 40 % Fett i. Tr.,"['Kühlregal', 'Käse', 'Käsesnacks']",2.29
+1250980052,Meßmer Earl Grey,"['Heißgetränke', 'Tee', 'Schwarztee']",25.08
+1692410071,Popp Brotaufstrich Geflügelsalat,"['Kühlregal', 'Feinkost', 'Brotaufstriche', 'Herzhafte Aufstriche']",1.89
+21696590001,Wolf Original Thüringer Leberwurst,"['Kühlregal', 'Wurst', 'Kochwurst', 'Leberwurst']",3.15
+13462160091,GUT&GÜNSTIG Kidneybohnen,"['Nahrungsmittel', 'Konserven & Eingelegtes', 'Gemüsekonserven']",0.79
+12581850002,Märkisch Kristall Multivitamin,"['Getränke', 'Saft', 'Fruchtsäfte']",8.1
+12581850001,Märkisch Kristall Multivitamin,"['Getränke', 'Saft', 'Fruchtsäfte']",1.35
+39183240042,deit Orange,"['Getränke', 'Limonade']",12.6
+39183240041,deit Orange,"['Getränke', 'Limonade']",1.05
+57697920091,Männl Bio-Holzofenbrot mit Sonnenblumenkernen 750g,"['Brot, Backwaren & Brotaufstriche', 'Frische Backwaren', 'Frisches Brot']",5.29
+20568280099,Florida Eis Vanille Chocolate,"['Tiefkühlkost', 'Eis', 'Bechereis']",3.98
+25339000021,Spreewaldhof Apfel-Rotkohl,"['Nahrungsmittel', 'Konserven & Eingelegtes', 'Sauerkonserven']",1.89
+50094600001,GUT&GÜNSTIG Essigessenz,"['Nahrungsmittel', 'Essig, Öle & Gewürze', 'Essig']",0.79
+28621880051,Dentagard Original Zahnpasta,"['Drogerieartikel', 'Körperpflege', 'Mundhygiene & Zahnhygiene', 'Zahnpasta']",0.99
+51928540021,Dr.Oetker Ristorante Salame Mozzarella Pesto,"['Tiefkühlkost', 'Pizza & Pizzasnacks', 'Tiefkühlpizza']",3.59
+45721950091,EDEKA Bio Himalaya Basmatireis,"['Nahrungsmittel', 'Reis', 'Basmatireis']",2.49
+1218660082,Meßmer Pfefferminze,"['Heißgetränke', 'Tee', 'Kräutertee']",25.08
+43871560081,MILRAM Frühlingsquark 40 % Fett i. Tr.,"['Kühlregal', 'Molkereiprodukte', 'Naturquark & Kräuterquark', 'Kräuterquark']",1.49
+43185010081,iglo MSC Schlemmer-Filet à la Bordelaise Knusprig Kross,"['Tiefkühlkost', 'Fisch & Meeresfrüchte', 'Schlemmerfilets']",4.69
+52088420031,funny-frisch Linsen Chips Sour Cream,"['Süßigkeiten & Salziges', 'Salzige Snacks', 'Cracker']",1.99
+29708260001,Alnatura Bio Traubensaft naturtrüb,"['Getränke', 'Saft', 'Fruchtsäfte']",2.35
+395042031,Tafeltrauben Mix,"['Obst & Gemüse', 'Obst', 'Trauben']",2.99
+12090590002,Spreequell Medium 500ml Einweg,"['Getränke', 'Mineralwasser', 'Wasser mit Kohlensäure', 'Medium']",3.29
+1305460011,Dr.Oetker Original Backin,"['Nahrungsmittel', 'Backen & Desserts', 'Backzutaten', 'Backpulver, Hefe & Natron']",0.65
+395050532,Dinkelcrusty,"['Brot, Backwaren & Brotaufstriche', 'Frische Backwaren', 'Frische Brötchen']",2.19
+27692660061,Harry Bauern Goldkrüstchen,"['Brot, Backwaren & Brotaufstriche', 'Zum Fertigbacken', 'Aufbackbrötchen']",2.49
+395028322,Laugenstange,"['Brot, Backwaren & Brotaufstriche', 'Frische Backwaren', 'Frisches Laugengebäck']",1.99
+301018091,GUT & GÜNSTIG Geflügel-Fleischwurst,"['Kühlregal', 'Wurst', 'Brühwurst', 'Lyoner & Fleischwurst']",1.95
+59112070051,EDEKA Bio Gouda in Scheiben 48% Fett i. Tr.,"['Kühlregal', 'Käse', 'Hartkäse & Schnittkäse']",2.19
+1701810061,Leckermäulchen Milch-Quark Stracciatella,"['Kühlregal', 'Molkereiprodukte', 'Fruchtquark']",1.15
+11868890011,FRoSTA Spätzle Pfanne,"['Tiefkühlkost', 'Tiefkühl-Fertiggerichte', 'Tiefkühl-Pfannengerichte']",4.79
+46562750011,EDEKA Bio Apfelmus,"['Nahrungsmittel', 'Konserven & Eingelegtes', 'Obstkonserven']",0.99
+8701410011,FRoSTA Bami Goreng,"['Tiefkühlkost', 'Tiefkühl-Fertiggerichte', 'Tiefkühl-Pfannengerichte']",4.89
+395055581,Brombeeren,"['Obst & Gemüse', 'Obst', 'Beeren']",3.29
+41302770002,EDEKA Bio Gemüsemais,"['Nahrungsmittel', 'Konserven & Eingelegtes', 'Gemüsekonserven']",8.34
+6696900001,"Géramont cremig-zarte Scheiben, 60 % Fett i. Tr.","['Kühlregal', 'Käse', 'Weichkäse']",3.45
+23613440051,"Weihenstephan Frischer Kakao 3,5 % Fett","['Kühlregal', 'Molkereiprodukte', 'Milch', 'Kakao']",1.99
+301075041,EDEKA Bio Camembert 60% Fett i.Tr.,"['Kühlregal', 'Käse', 'Weichkäse']",1.99
+8671240009,Schweppes American Ginger Ale,"['Getränke', 'Limonade']",5.97
+8671240001,Schweppes American Ginger Ale,"['Getränke', 'Limonade']",1.99
+31200380072,Notte Rossa Bio Primitivo Puglia IGP,"['Wein, Sekt & Spirituosen', 'Wein', 'Rotwein', 'Italienischer Rotwein']",35.1
+31200380071,Notte Rossa Bio Primitivo Puglia IGP,"['Wein, Sekt & Spirituosen', 'Wein', 'Rotwein', 'Italienischer Rotwein']",5.85
+45011790051,EDEKA Bio My Veggie Chiasamen,"['Cerealien & Müsli', 'Haferflocken & Porridge']",1.99
+12698880021,Popp Meistersalat Feinster Fleischsalat,"['Kühlregal', 'Feinkost', 'Feinkostsalate', 'Fleischsalate']",1.99
+395086011,EDEKA Heimatliebe Kartoffeln vorwiegend festkochend,"['Obst & Gemüse', 'Gemüse', 'Kartoffeln']",2.69
+11435120071,"Andechser Natur Bio Jogurt mild Mango-Vanille 3,7 % Fett","['Kühlregal', 'Molkereiprodukte', 'Fruchtjoghurt', 'Vanille']",1.95
+51110020001,GUT&GÜNSTIG Chicken Burger Patties,"['Tiefkühlkost', 'Tiefkühlfleisch', 'Tiefkühl-Geflügel']",3.29
+5908170081,GAZi Halloumi Natur mind. 43 % Fett i. Tr.,"['Kühlregal', 'Käse', 'Back- & Grillkäse']",4.99
+38832220042,EDEKA Bio Tomatensaft,"['Getränke', 'Saft', 'Gemüsesäfte']",15.12
+38832220041,EDEKA Bio Tomatensaft,"['Getränke', 'Saft', 'Gemüsesäfte']",1.89
+8410890061,Conditorei Coppenrath & Wiese Cafeteria fein & sahnig Donauwelle,"['Tiefkühlkost', 'Torten & Kuchen', 'Tiefkühlkuchen']",5.89
+33220880061,Weihenstephan Die Streichzarte ungesalzen,"['Kühlregal', 'Butter & Fette', 'Butter', 'Butter ungesalzen']",2.65
+5976090002,Milka Luflée Alpenmilch,"['Süßigkeiten & Salziges', 'Schokolade', 'Schokoladentafeln', 'Vollmilchschokolade']",17.55
+5976090001,Milka Luflée Alpenmilch,"['Süßigkeiten & Salziges', 'Schokolade', 'Schokoladentafeln', 'Vollmilchschokolade']",1.35
+50634200061,GUT&GÜNSTIG Getrocknete Tomaten,"['Kühlregal', 'Feinkost', 'Antipasti']",1.89
+395226521,Dewi Kirschstreuselkuchen,"['Brot, Backwaren & Brotaufstriche', 'Frische Backwaren', 'Frische Kuchen']",2.79
+3456540011,Harry Das Volle Korn Katen,"['Brot, Backwaren & Brotaufstriche', 'Tagesfrisch', 'Geschnittenes Brot', 'Vollkornbrot']",1.89
+1284830082,Erasco Hühner Nudel-Topf,"['Nahrungsmittel', 'Schnelle Küche', 'Eintöpfe']",19.5
+47276560071,EDEKA Bio Frische Buttermilch,"['Kühlregal', 'Molkereiprodukte', 'Milchgetränke', 'Buttermilch']",0.89
+39659230011,Alnatura Bio Sauerkirschen,"['Tiefkühlkost', 'Tiefkühlfrüchte']",3.55
+53298860091,Vernel Aroma-Therapie Zauberhafte Malediven 32WL,"['Drogerieartikel', 'Waschmittel', 'Weichspüler']",2.29
+49778070061,Harry Vital + Dinkel Vollkorn Schnitte,"['Brot, Backwaren & Brotaufstriche', 'Tagesfrisch', 'Geschnittenes Brot', 'Vollkornbrot']",1.99
+49628580022,EDEKA Milder Apfelsaft,"['Getränke', 'Saft', 'Fruchtsäfte']",1.99
+301089021,GUT&GÜNSTIG Bami Goreng,"['Tiefkühlkost', 'Tiefkühl-Fertiggerichte', 'Tiefkühl-Pfannengerichte']",3.39
+52118660051,Ritter SPORT Nugat Tafel,"['Süßigkeiten & Salziges', 'Schokolade', 'Schokoladentafeln', 'Gefüllte Schokolade']",1.49
+15195330071,iglo MSC Fischstäbchen,"['Tiefkühlkost', 'Fisch & Meeresfrüchte', 'Fischstäbchen & Backfisch']",4.49
+15855770041,"Lobetaler Bio Fruchtjoghurt mild Mango Vanille 3,7 % Fett","['Kühlregal', 'Molkereiprodukte', 'Fruchtjoghurt', 'Vanille']",0.75
+33807810041,Original Wagner Steinofen Salami,"['Tiefkühlkost', 'Pizza & Pizzasnacks', 'Tiefkühlpizza']",3.49
+12120670079,Berliner Kindl Jubiläums Pilsener Premium,"['Getränke', 'Bier', 'Pils']",6.99
+12120670072,Berliner Kindl Jubiläums Pilsener Premium,"['Getränke', 'Bier', 'Pils']",27.96
+1287300012,Birkel No.1 Schwäbische Spätzle,"['Nahrungsmittel', 'Nudeln', 'Spätzle']",18.32
+1287300011,Birkel No.1 Schwäbische Spätzle,"['Nahrungsmittel', 'Nudeln', 'Spätzle']",2.29
+1692390041,Popp MSC Brotaufstrich Alaska-Seelachs,"['Kühlregal', 'Feinkost', 'Feinkostsalate', 'Fischsalate']",1.89
+43705340062,Aperol Aperitivo Italiano 11 % vol.,"['Wein, Sekt & Spirituosen', 'Spirituosen', 'Bitter & Aperitifs']",77.7
+43705340061,Aperol Aperitivo Italiano 11 % vol.,"['Wein, Sekt & Spirituosen', 'Spirituosen', 'Bitter & Aperitifs']",12.95
+52117930081,Ritter SPORT Alpenmilch Tafel,"['Süßigkeiten & Salziges', 'Schokolade', 'Schokoladentafeln', 'Vollmilchschokolade']",1.49
+12255180061,EDEKA Bio Frankendammer in Scheiben 45% Fett i. Tr.,"['Kühlregal', 'Käse', 'Hartkäse & Schnittkäse']",2.25
+2007260031,geti wilba Hühnerfrikassee,"['Tiefkühlkost', 'Tiefkühl-Fertiggerichte', 'Tiefkühl-Pfannengerichte']",3.59
+301116171,GUT&GÜNSTIG Putenbrustfilet,"['Frischetheke', 'Fleisch Frischetheke', 'Geflügel']",9.65
+36064610021,alpro Soja-Joghurtalternative Mehr Frucht ohne Zuckerzusatz Mango,"['Kühlregal', 'Molkereiprodukte', 'Pflanzliche Alternative', 'Soja']",2.09
+1216860041,Coppenrath Feingebäck Wiener Sandringe,"['Süßigkeiten & Salziges', 'Kekse', 'Butterkekse']",1.99
+34423060041,Wiltmann Bio Hähnchenbrustfilet,"['Kühlregal', 'Wurst', 'Kochschinken']",2.79
+20916460021,"7gün Ayran Kirsch 3,5 % Fett","['Kühlregal', 'Molkereiprodukte', 'Milchgetränke', 'Joghurt Drinks']",0.89
+1701590091,Leckermäulchen Milch-Quark Vanillegeschmack,"['Kühlregal', 'Molkereiprodukte', 'Fruchtquark']",1.15
+44621780081,Pril Original,"['Drogerieartikel', 'Reinigungsmittel', 'Handspülmittel']",1.85
+49848750072,GUT&GÜNSTIG Multivitaminsaft,"['Getränke', 'Saft', 'Fruchtsäfte']",7.74
+12090540052,Spreequell Naturell 500ml Einweg,"['Getränke', 'Mineralwasser', 'Stilles Wasser']",3.29
+1317170041,Dr.Oetker Vanillin-Zucker,"['Nahrungsmittel', 'Backen & Desserts', 'Backzutaten', 'Vanillin & Bourbon-Vanillezucker']",1.29
+1288530032,Barilla Spaghetti N°5,"['Nahrungsmittel', 'Nudeln', 'Lange Nudeln', 'Spaghetti']",54.0
+1288530031,Barilla Spaghetti N°5,"['Nahrungsmittel', 'Nudeln', 'Lange Nudeln', 'Spaghetti']",2.25
+37205420051,Alnatura Bio Griechischer Ziegenkäse 43 % Fett i. Tr.,"['Kühlregal', 'Käse', 'Feta']",4.65
+1440710011,Rügen Fisch Heringsfilets in Tomaten Creme,"['Nahrungsmittel', 'Konserven & Eingelegtes', 'Fischkonserven']",1.99
+50996700081,Zewa Ultra Soft Toilettenpapier Limited Edition 4-lagig,"['Drogerieartikel', 'Papier- & Hygieneartikel', 'Toilettenpapier']",5.15
+301018151,G&G Teewurst fein,"['Kühlregal', 'Wurst', 'Rohwurst', 'Teewurst']",1.29
+32682050061,Alnatura Bio Früchte Müsli,"['Cerealien & Müsli', 'Müsli', 'Früchtemüsli']",3.59
+301022021,GUT&GÜNSTIG Frühstücksbrötchen,"['Brot, Backwaren & Brotaufstriche', 'Zum Fertigbacken', 'Aufbackbrötchen']",0.75
+40465200071,Bonduelle Goldmais,"['Nahrungsmittel', 'Konserven & Eingelegtes', 'Gemüsekonserven']",1.69
+395122661,Rote Johannisbeeren,"['Obst & Gemüse', 'Obst', 'Beeren']",3.29
+48705670011,Bio Gouda 55 % Fett i. Tr.,"['Frischetheke', 'Käse Frischetheke', 'Hart & Schnittkäse']",4.01
+53891560071,HARIBO Primavera Erdbeeren,"['Süßigkeiten & Salziges', 'Fruchtgummi & Bonbons', 'Brausepulver & Schaumzucker']",1.19
+36303190051,Tempo Verwöhnmoment Calendula&Kamille feuchtes Toilettenpapier,"['Drogerieartikel', 'Papier- & Hygieneartikel', 'Toilettenpapier']",1.99
+31169680001,nimm2 Lachgummi Softies Rote Früchte,"['Süßigkeiten & Salziges', 'Fruchtgummi & Bonbons', 'Fruchtgummi & Weingummi']",1.29
+20566960042,EDEKA Bio Reiswaffeln natur,"['Brot, Backwaren & Brotaufstriche', 'Fertige Kuchen', 'Reiswaffeln']",9.48
+20566960041,EDEKA Bio Reiswaffeln natur,"['Brot, Backwaren & Brotaufstriche', 'Fertige Kuchen', 'Reiswaffeln']",0.79
+1966230071,ODERfrucht Hefeklöße,"['Tiefkühlkost', 'Torten & Kuchen', 'Tiefkühldesserts']",1.69
+1291980061,Miracel Whip Original,"['Nahrungsmittel', 'Ketchup, Mayonnaise & Senf', 'Mayonnaise & Remoulade']",2.65
+395012591,Kiwis,"['Obst & Gemüse', 'Obst', 'Exotische Früchte', 'Kiwis']",0.49
+395026031,Staudensellerie,"['Obst & Gemüse', 'Gemüse', 'Wurzelgemüse', 'Sellerie']",1.49
+25910890001,FRoSTA Mediterrane Gemüsepfanne,"['Tiefkühlkost', 'Tiefkühlgemüse', 'Tiefkühlgemüsemix']",3.59
+33729800081,Golden Toast Dinkelharmonie Sandwich,"['Brot, Backwaren & Brotaufstriche', 'Toast & Sandwich', 'Sandwich']",3.59
+1748220021,Henglein Frischer Blätterteig,"['Kühlregal', 'Convenience', 'Teigwaren']",1.89
+395117371,Zitronen kernlos,"['Obst & Gemüse', 'Obst', 'Zitrusfrüchte', 'Zitronen']",1.99
+39481990011,SweetFamily Bio Zucker,"['Nahrungsmittel', 'Zucker', 'Weißer Zucker']",2.59
+28222480081,Andechser Natur Bio Quark Vanille 20 % Fett,"['Kühlregal', 'Molkereiprodukte', 'Fruchtquark']",1.15
+43516270061,FRoSTA MSC Tagliatelle Wildlachs,"['Tiefkühlkost', 'Tiefkühl-Fertiggerichte', 'Tiefkühl-Pfannengerichte']",4.89
+1339890031,Schulte Feingebäck Schweinsöhrchen,"['Süßigkeiten & Salziges', 'Kekse', 'Kekse ohne Schokolade']",2.29
+1334200091,Delverde Farfalle,"['Nahrungsmittel', 'Nudeln', 'Kurze Nudeln', 'Farfalle']",1.99
+23343990031,"Elinas Joghurt nach Griechischer Art Blutorange-Granatapfel 9,4 % Fett","['Kühlregal', 'Molkereiprodukte', 'Fruchtjoghurt', 'Exotisch']",2.39
+23467960039,Paulaner-SPEZI Erfrischungsgestränk,"['Getränke', 'Cola']",3.49
+1303250061,Maggi Würze,"['Nahrungsmittel', 'Essig, Öle & Gewürze', 'Würzpasten']",2.29
+10716660091,Golßener Spreewälder Frühlings-Kartoffelsalat,"['Kühlregal', 'Feinkost', 'Beilagensalate', 'Kartoffelsalate']",2.05
+301072101,GUT&GÜNSTIG Frischkäse Kräuter 65 % Fett i. Tr.,"['Kühlregal', 'Käse', 'Frischkäse']",1.49
+42186340081,Alnatura Bio Feine Bitterschokolade,"['Süßigkeiten & Salziges', 'Schokolade', 'Schokoladentafeln', 'Zartbitterschokolade']",1.49
+41211750012,GUT&GÜNSTIG Thunfischfilets in eigenem Saft und Aufguss,"['Nahrungsmittel', 'Konserven & Eingelegtes', 'Fischkonserven']",9.3
+14647040081,Golßener Spreewälder Gurkensülze,"['Kühlregal', 'Wurst', 'Kochwurst', 'Sülzen']",1.99
+8372090091,Gepa Bio Grand Noir Edelbitter 85%,"['Süßigkeiten & Salziges', 'Schokolade', 'Schokoladentafeln', 'Zartbitterschokolade']",2.35
+1807470071,Mühlhäuser Konfitüre Extra Sauerkirsche,"['Brot, Backwaren & Brotaufstriche', 'Brotaufstrich', 'Marmelade & Konfitüre', 'Kirsche']",2.39
+1757440061,Mevgal Griechischer Sahne-Joghurt 10 % Fett,"['Kühlregal', 'Molkereiprodukte', 'Naturjoghurt']",1.69
+29691470041,Alnatura Bio Leinöl nativ,"['Nahrungsmittel', 'Essig, Öle & Gewürze', 'Öl']",2.99
+43842210021,HiPP Bio Reiswaffeln Himbeer ab 8. Monat,"['Baby & Kind', 'Babynahrung & Kindernahrung', 'Süßigkeiten für Kinder']",0.99
+23023990061,iglo MSC Lachs-Stäbchen,"['Tiefkühlkost', 'Fisch & Meeresfrüchte', 'Fischstäbchen & Backfisch']",4.69
+1288460052,Barilla Pasta-Sauce Basilico,"['Nahrungsmittel', 'Nudeln', 'Nudelsoßen']",19.14
+36098760091,EDEKA Bio Sauerkirschen,"['Nahrungsmittel', 'Konserven & Eingelegtes', 'Obstkonserven']",1.99

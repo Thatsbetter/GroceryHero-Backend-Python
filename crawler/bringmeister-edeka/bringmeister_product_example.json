@@ -1,0 +1,69 @@
+{
+   "id": "cHJvZHVjdC0zOTUyMTQ0NDE=",
+   "productId": "395214441",
+   "name": "Bio Demeter S\u00fc\u00dfkartoffeln",
+   "isAvailable": true,
+   "isBasePrice": true,
+   "packing": "Wiegeware",
+   "packingShort": "Wiegeware",
+   "packagingMaterial": null,
+   "units": [
+      {
+         "id": "eyJ0eXBlIjoicHJvZHVjdFVuaXQiLCJwcm9kdWN0SWQiOiIzOTUyMTQ0NDEiLCJwcm9kdWN0VW5pdElkIjoxMn0=",
+         "unitId": 12,
+         "name": "g",
+         "default": true,
+         "price": 0.00399,
+         "specialPrice": null,
+         "strikeThroughPrice": null
+      },
+      {
+         "id": "eyJ0eXBlIjoicHJvZHVjdFVuaXQiLCJwcm9kdWN0SWQiOiIzOTUyMTQ0NDEiLCJwcm9kdWN0VW5pdElkIjo2NH0=",
+         "unitId": 64,
+         "name": "Kg",
+         "default": false,
+         "price": 3.99,
+         "specialPrice": null,
+         "strikeThroughPrice": null
+      }
+   ],
+   "sku": "395214441",
+   "image": "//assets.bringmeister.de/media/p/395214441/0/f2a89a7446202ddfcc09bbf21430096b.jpg",
+   "properties": [
+      "ORGANIC"
+   ],
+   "browserUrl": "bio-demeter-suesskartoffeln-395214441",
+   "prices": {
+      "price": 3.99,
+      "specialDiscount": 0,
+      "specialPrice": null,
+      "specialBasePrice": null,
+      "specialStartDateTs": null,
+      "specialEndDateTs": null,
+      "basePrice": 3.99,
+      "baseUnit": "1 kg",
+      "deposit": 0
+   },
+   "depositType": null,
+   "rootCategory": {
+      "id": "Y2F0ZWdvcnktMTAwMA==",
+      "name": "Obst & Gem\u00fcse",
+      "path": "obst-und-gemuese",
+      "position": 1
+   },
+   "hierarchicalCategories": [
+      {
+         "name": "Obst & Gem\u00fcse"
+      },
+      {
+         "name": "Gem\u00fcse"
+      },
+      {
+         "name": "Kartoffeln"
+      }
+   ],
+   "multibuy": null,
+   "bubble": null,
+   "ageRestricted": false,
+   "multipacks": []
+}
