@@ -14,7 +14,7 @@ for j in [0,1]:
         simplified_data = {
             'productId': data['productId'],
             'name': data['name'],
-            'categories': [category['name'] for category in data['hierarchicalCategories']],
+            'categories': data['rootCategory']['name'],
             'price': data['prices']['price']
         }
         simplified_list.append(simplified_data)
