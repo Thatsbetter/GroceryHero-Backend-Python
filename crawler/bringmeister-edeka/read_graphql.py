@@ -15,7 +15,7 @@ for j in [0, 1]:
         data = (i['node'])
         if not (data)['bubble']:
             simplified_data = {
-                'productId': data['productId'],
+                'product_id': data['productId'],
                 'name': data['name'],
                 'categories': data['rootCategory']['name'],
                 'price': data['prices']['price'],
