@@ -10,9 +10,9 @@ from sqlalchemy.orm.session import sessionmaker
 import stripe
 
 from databasecredential import Credential
-from models.RegisteredUser import RegisteredUser
 from models.ShoppingItem import ShoppingItem
 from models.ShoppingList import ShoppingList
+from models.User import User
 
 conn_string = Credential().get_conn_uri()
 
@@ -98,7 +98,7 @@ class RegisterUser(Resource):
                 # Generate new Password Hash
                 hash = generatePasswordHash(password).hex()
 
-                new_user = RegisteredUser(name=name, age=age, email=email, password=hash, location=location)
+                new_user = User(name=name, age=age, email=email, password=hash, location=location)
                 session.add(new_user)
                 session.commit()
 
@@ -140,7 +140,7 @@ class CheckLoginDetails(Resource):
             email = request_data.get("email")
             password = request_data.get("password")
 
-            result = session.query(RegisteredUser).filter(RegisteredUser.email == email).all()
+            result = session.query(User).filter(User.email == email).all()
             session.close()
 
             if (len(result) == 1):
@@ -187,9 +187,9 @@ class DeleteUser(Resource):
             email = request_data.get("email")
             if checkUserExists(email):
                 # checks if name and email are the same
-                address = session.query(RegisteredUser).filter(
-                    and_(RegisteredUser.email == email,
-                         RegisteredUser.name == name))
+                address = session.query(User).filter(
+                    and_(User.email == email,
+                         User.name == name))
                 address.delete()
                 session.commit()
                 session.close()
@@ -385,7 +385,7 @@ A Function to check if a user already in database exists
 
 
 def checkUserExists(email):
-    users = session.query(RegisteredUser).filter(RegisteredUser.email == email).all()
+    users = session.query(User).filter(User.email == email).all()
     session.close()
 
     exists = False
