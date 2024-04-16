@@ -8,7 +8,7 @@ df = pd.read_csv("simplified_data.csv", index_col="product_id")
 
 connection_string = Credential().get_conn_uri()
 engine = create_engine(connection_string)
-table_name = 'edeka_products'
+table_name = 'product'
 
 df.to_sql(table_name, engine, if_exists='replace', index=True)
 
