@@ -75,42 +75,34 @@ then saves it to database
 
 @:return 201 : if new user created
 @:return 409 : if user already exists
-@:return 418 : if data is not in a correct form or has missing parameters
 '''
 
 
 class RegisterUser(Resource):
     def post(self):
-        status = 400
-        required_params = {"name", "password", "email", "age", "location"}
-        request_data = request.get_json()
+        parser = reqparse.RequestParser()
+        parser.add_argument('name', type=str, required=True)
+        parser.add_argument('password', type=str, required=True)
+        parser.add_argument('email', type=str, required=True)
+        parser.add_argument('birthday', type=str, required=True)
+        request_data = parser.parse_args()
 
-        # Validate Parameters
-        if (request_data is not None and validateParameters(request_data, required_params, request_data.keys(),
-                                                            required_params)):
-            name = request_data.get("name")
-            password = request_data.get("password")
-            age = request_data.get("age")
-            email = request_data.get("email")
-            location = request_data.get("location")
+        name = request_data.get("name")
+        password = request_data.get("password")
+        email = request_data.get("email")
+        age = request_data.get("birthday")
 
-            if (not checkUserExists(email)):
-                # Generate new Password Hash
-                hash = generatePasswordHash(password).hex()
+        if (User.user_exists(email)):
+            return jsonify({'message': 'User already exists'}), 409
 
-                new_user = User(name=name, age=age, email=email, password=hash, location=location)
-                session.add(new_user)
-                session.commit()
+        # Generate new Password Hash
+        hash = generatePasswordHash(password).hex()
 
-                status = 201
-            else:
-                status = 409
-        else:
-            status = 418
+        new_user = User(name=name, email=email, password=hash, birthday=birthday)
+        session.add(new_user)
+        session.commit()
 
-        return jsonify({
-            "status": status,
-        })
+        return '', 201
 
 
 '''
@@ -360,9 +352,10 @@ class CreateStripePayment(Resource):
             },
         )
         response = jsonify(paymentIntent=payment_intent.client_secret,
-                      publishableKey=stripe_publishable_key
-                      )
+                           publishableKey=stripe_publishable_key
+                           )
         return response
+
 
 class LogStripePaymentError(Resource):
     def post(self):
@@ -530,4 +523,4 @@ api.add_resource(CreateStripePayment, "/api/stripe/create")
 api.add_resource(LogStripePaymentError, "/api/stripe/error")
 
 if (__name__ == "__main__"):
-    app.run(debug=True,host="0.0.0.0", port=1111)
+    app.run(debug=True, host="0.0.0.0", port=1111)
