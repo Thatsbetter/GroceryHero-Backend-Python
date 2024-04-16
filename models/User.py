@@ -16,3 +16,9 @@ class User(Base):
     email = Column(String, nullable=False, unique=True)
     password = Column(String, nullable=False)
 
+    @classmethod
+    def user_exists(cls, email):
+        session = Session()
+        user = session.query(cls).filter_by(email=email).first()
+        session.close()
+        return user is not None
