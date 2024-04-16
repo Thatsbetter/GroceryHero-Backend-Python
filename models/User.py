@@ -22,3 +22,10 @@ class User(Base):
         user = session.query(cls).filter_by(email=email).first()
         session.close()
         return user is not None
+
+    @classmethod
+    def authenticate(cls, email, password):
+        session = Session()
+        user = session.query(cls).filter_by(email=email, password=password).first()
+        session.close()
+        return user is not None
