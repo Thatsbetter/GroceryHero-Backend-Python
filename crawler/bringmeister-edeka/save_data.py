@@ -5,7 +5,7 @@ from sqlalchemy import text
 from backend.databasecredential import Credential
 
 df = pd.read_csv("simplified_data.csv", index_col="product_id")
-
+df['supermarket'] = 'edeka'
 connection_string = Credential().get_conn_uri()
 engine = create_engine(connection_string)
 table_name = 'product'
