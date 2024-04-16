@@ -115,42 +115,27 @@ then saves it to database
 @:param: password (string)   : password to login
 
 @:return 200 : if password is correct
-@:return 409 : if password is incorrect
-@:return 418 : if data is not in a correct form or has missing parameters
+@:return 403 : if password is incorrect
 '''
 
 
 class CheckLoginDetails(Resource):
     def post(self):
-        status = 402
-        required_params = {"email", "password"}
-        request_data = request.get_json()
+        parser = reqparse.RequestParser()
+        parser.add_argument('password', type=str, required=True)
+        parser.add_argument('email', type=str, required=True)
+        request_data = parser.parse_args()
 
-        # Validate Parameters
-        if (request_data is not None and validateParameters(request_data, required_params, request_data.keys(),
-                                                            required_params)):
-            email = request_data.get("email")
-            password = request_data.get("password")
+        email = request_data.get("email")
+        password = request_data.get("password")
 
-            result = session.query(User).filter(User.email == email).all()
-            session.close()
+        hash = generatePasswordHash(password)
 
-            if (len(result) == 1):
-                user = result[0]
-                hash = user.password
-
-                if (checkPasswordHash(password, hash)):
-                    status = 200
-                else:
-                    status = 401
-            else:
-                status = 404
-        else:
-            status = 418
-
+        if (User.authenticate(email, hash)):
+            return '', 200
         return jsonify({
-            "status": status
-        })
+            "message": 'Incorrect login Details'
+        }), 403
 
 
 '''
@@ -466,14 +451,6 @@ A Function to check if a password matches with the hashed password
 @:return: True : if password matches with hashed password
 @:return: False : if password does not matches with hashed password
 '''
-
-
-def checkPasswordHash(password, storedHash):
-    password = password.encode()
-    generatedHash = bcrypt.hashpw(password, SALT)
-
-    return (generatedHash.hex() == storedHash)
-
 
 '''
 a Function to check if all of required Parameters exist in data
