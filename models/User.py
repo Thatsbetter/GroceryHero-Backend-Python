@@ -29,3 +29,16 @@ class User(Base):
         user = session.query(cls).filter_by(email=email, password=password).first()
         session.close()
         return user is not None
+
+    @classmethod
+    def delete_user(cls, email):
+        session = Session()
+        user = session.query(cls).filter_by(email=email).first()
+        if user:
+            session.delete(user)
+            session.commit()
+            session.close()
+            return True
+        else:
+            session.close()
+            return False
