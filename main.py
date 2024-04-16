@@ -4,7 +4,7 @@ import os
 import bcrypt
 from flask import Flask, jsonify, request
 from flask_restful import Resource, Api
-from sqlalchemy import create_engine, and_
+from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm.session import sessionmaker
 import stripe
@@ -147,37 +147,22 @@ TODO secure endpoint so not everyone can just delete a user
 
 @:return 200 : if user has been successfully deleted
 @:return 400 : Error while trying to delete the user
-@:return 418 : if data is not in a correct form or has missing parameters
 '''
 
 
 class DeleteUser(Resource):
     def post(self):
-        status = 400
-        required_params = {"name", "email"}
-        request_data = request.get_json()
+        parser = reqparse.RequestParser()
+        parser.add_argument('email', type=str, required=True)
+        request_data = parser.parse_args()
 
-        # Validate Parameters
-        if (request_data is not None and validateParameters(request_data, required_params, request_data.keys(),
-                                                            required_params)):
-            name = request_data.get("name")
-            email = request_data.get("email")
-            if checkUserExists(email):
-                # checks if name and email are the same
-                address = session.query(User).filter(
-                    and_(User.email == email,
-                         User.name == name))
-                address.delete()
-                session.commit()
-                session.close()
+        email = request_data.get("email")
 
-                status = 200
-        else:
-            status = 418
-
+        if (User.delete_user(email)):
+            return '', 200
         return jsonify({
-            "status": status
-        })
+            "message": 'Deleting User failed'
+        }), 400
 
 
 '''
