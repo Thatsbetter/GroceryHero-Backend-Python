@@ -16,4 +16,3 @@ class User(Base):
     email = Column(String, nullable=False)
     password = Column(String, nullable=False)
 
-Base.metadata.create_all(db)

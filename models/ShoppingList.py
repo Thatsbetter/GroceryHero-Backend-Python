@@ -13,5 +13,3 @@ class ShoppingList(Base):
     status = Column(String, nullable=False)
     created_by = Column(Integer, ForeignKey('user.id'))
     delivery_address = Column(Integer, ForeignKey('address.id'))
-
-Base.metadata.create_all(db)

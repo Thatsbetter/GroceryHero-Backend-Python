@@ -12,5 +12,3 @@ class ShoppingItem(Base):
         id = Column(Integer, primary_key=True)
         product = Column(String, ForeignKey('product.product_id'), nullable=False)
         quantity = Column(Integer, nullable=False)
-
-Base.metadata.create_all(db)

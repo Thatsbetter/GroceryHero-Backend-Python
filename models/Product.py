@@ -16,6 +16,3 @@ class Product(Base):
     price = Column(String, nullable=True)
     packing = Column(String, nullable=True)
     image = Column(String, nullable=False)
-
-
-Base.metadata.create_all(db)

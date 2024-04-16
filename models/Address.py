@@ -16,6 +16,3 @@ class ShoppingItem(Base):
         house_number = Column(Integer, nullable=True)
         postal_code = Column(Integer, nullable=False)
         additional_comment = Column(String, nullable=True)
-
-
-Base.metadata.create_all(db)
