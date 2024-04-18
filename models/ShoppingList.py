@@ -9,7 +9,7 @@ db = create_engine(conn_string)
 
 class ShoppingList(Base):
     __tablename__ = "shopping_list"
-    id = Column(Integer, primary_key=True)
+    id = Column(Integer, primary_key=True, autoincrement=True)
     status = Column(String, nullable=False)
     created_by = Column(Integer, ForeignKey('user.id'))
     delivery_address = Column(Integer, ForeignKey('address.id'))
