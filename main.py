@@ -1,9 +1,8 @@
-import logging
 import os
 
 import bcrypt
 from flask import Flask, jsonify, request
-from flask_restful import Resource, Api
+from flask_restful import Resource, Api, reqparse
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm.session import sessionmaker
@@ -337,26 +336,6 @@ class LogStripePaymentError(Resource):
 Helper Methods
 '''
 
-'''
-A Function to check if a user already in database exists
-
-@:param: email (string) : email that user is registered with it
-
-@:return: True : if user exists
-@:return: False : if user does not exist
-'''
-
-
-def checkUserExists(email):
-    users = session.query(User).filter(User.email == email).all()
-    session.close()
-
-    exists = False
-
-    if (len(users) > 0):
-        exists = True
-
-    return exists
 
 
 '''
