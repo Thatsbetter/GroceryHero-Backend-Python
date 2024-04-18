@@ -10,5 +10,6 @@ db = create_engine(conn_string)
 class ShoppingItem(Base):
         __tablename__ = "shopping_item"
         id = Column(Integer, primary_key=True)
+        shopping_list = Column(Integer, ForeignKey('shopping_list.id'), nullable=False)
         product = Column(String, ForeignKey('product.product_id'), nullable=False)
         quantity = Column(Integer, nullable=False)
