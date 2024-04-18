@@ -18,27 +18,25 @@ class User(Base):
 
     @classmethod
     def user_exists(cls, email):
-        session = Session()
-        user = session.query(cls).filter_by(email=email).first()
-        session.close()
-        return user is not None
+        with Session(db) as session:
+            with session.begin():
+                user = session.query(cls).filter_by(email=email).first()
+                return user is not None
 
     @classmethod
     def authenticate(cls, email, password):
-        session = Session()
-        user = session.query(cls).filter_by(email=email, password=password).first()
-        session.close()
-        return user is not None
+        with Session(db) as session:
+            with session.begin():
+                user = session.query(cls).filter_by(email=email, password=password).first()
+                return user is not None
 
     @classmethod
     def delete_user(cls, email):
-        session = Session()
-        user = session.query(cls).filter_by(email=email).first()
-        if user:
-            session.delete(user)
-            session.commit()
-            session.close()
-            return True
-        else:
-            session.close()
-            return False
+        with Session(db) as session:
+            with session.begin():
+                user = session.query(cls).filter_by(email=email).first()
+                if user:
+                    session.delete(user)
+                    return True
+                else:
+                    return False
