@@ -7,7 +7,7 @@ conn_string = Credential().get_conn_uri()
 db = create_engine(conn_string)
 
 
-class ShoppingItem(Base):
+class Address(Base):
         __tablename__ = "address"
         id = Column(Integer, primary_key=True)
         country = Column(String, nullable=False)
