@@ -5,13 +5,10 @@ from flask import Flask, jsonify, request
 from flask_restful import Resource, Api, reqparse
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm.session import sessionmaker
-import stripe
+from sqlalchemy.orm.session import Session
 
 from databasecredential import Credential
-from models.ShoppingItem import ShoppingItem
-from models.ShoppingList import ShoppingList
-from models.User import User
+from models.models import ShoppingItem, ShoppingList, User
 
 conn_string = Credential().get_conn_uri()
 
@@ -20,10 +17,6 @@ stripe_publishable_key = Credential().get_stripe_publishable_key_test()
 
 db = create_engine(conn_string)
 base = declarative_base()
-base.metadata.create_all(db)
-
-Session = sessionmaker(db)
-session = Session()
 
 app = Flask(__name__)
 
